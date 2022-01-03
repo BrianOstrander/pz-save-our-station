@@ -1,0 +1,27 @@
+module SWWS_KnoxCountry
+{
+	imports
+	{
+		Base
+	}
+
+/******************* SWWS KNOX COUNTRY ITEMS *******************/
+
+	item Register
+	{
+		Weight = 0.1,
+		Type = Normal,
+		DisplayName = NWS Register,
+		Icon = swws_station_map_icon,
+		Map = media/ui/content/swws_station_map_knox_country.png
+	}
+
+	item RegisterAnnotated
+	{
+		Weight = 0.1,
+		Type = Normal,
+		DisplayName = NWS Register - Annotated,
+		Icon = swws_station_map_icon,
+		Map = media/ui/content/swws_station_map_knox_country_annotated.png
+	}
+}
