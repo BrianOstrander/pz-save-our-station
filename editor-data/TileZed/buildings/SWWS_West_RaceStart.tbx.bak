@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<building version="2" width="16" height="6" ExteriorWall="5" ExteriorWallTrim="0" Door="1" DoorFrame="0" Window="16" Curtains="0" Shutters="0" Stairs="15" RoofCap="11" RoofSlope="12" RoofTop="14" GrimeWall="0">
+ <tile_entry category="doors">
+  <tile enum="West" tile="fixtures_doors_01_056"/>
+  <tile enum="North" tile="fixtures_doors_01_057"/>
+  <tile enum="WestOpen" tile="fixtures_doors_01_058"/>
+  <tile enum="NorthOpen" tile="fixtures_doors_01_059"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="industry_01_000"/>
+  <tile enum="North" tile="industry_01_001"/>
+  <tile enum="NorthWest" tile="industry_01_002"/>
+  <tile enum="SouthEast" tile="industry_01_003"/>
+  <tile enum="WestWindow" tile="industry_01_008"/>
+  <tile enum="NorthWindow" tile="industry_01_009"/>
+  <tile enum="WestDoor" tile="industry_01_010"/>
+  <tile enum="NorthDoor" tile="industry_01_011"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="location_barn_01_000"/>
+  <tile enum="North" tile="location_barn_01_001"/>
+  <tile enum="NorthWest" tile="location_barn_01_002"/>
+  <tile enum="SouthEast" tile="location_barn_01_003"/>
+  <tile enum="WestWindow" tile="location_barn_01_008"/>
+  <tile enum="NorthWindow" tile="location_barn_01_009"/>
+  <tile enum="WestDoor" tile="location_barn_01_010"/>
+  <tile enum="NorthDoor" tile="location_barn_01_011"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="location_community_church_small_01_000"/>
+  <tile enum="North" tile="location_community_church_small_01_001"/>
+  <tile enum="NorthWest" tile="location_community_church_small_01_002"/>
+  <tile enum="SouthEast" tile="location_community_church_small_01_003"/>
+  <tile enum="WestWindow" tile="location_community_church_small_01_008"/>
+  <tile enum="NorthWindow" tile="location_community_church_small_01_009"/>
+  <tile enum="WestDoor" tile="location_community_church_small_01_010"/>
+  <tile enum="NorthDoor" tile="location_community_church_small_01_011"/>
+ </tile_entry>
+ <tile_entry category="exterior_walls">
+  <tile enum="West" tile="walls_exterior_house_01_032"/>
+  <tile enum="North" tile="walls_exterior_house_01_033"/>
+  <tile enum="NorthWest" tile="walls_exterior_house_01_034"/>
+  <tile enum="SouthEast" tile="walls_exterior_house_01_035"/>
+  <tile enum="WestWindow" tile="walls_exterior_house_01_040"/>
+  <tile enum="NorthWindow" tile="walls_exterior_house_01_041"/>
+  <tile enum="WestDoor" tile="walls_exterior_house_01_042"/>
+  <tile enum="NorthDoor" tile="walls_exterior_house_01_043"/>
+ </tile_entry>
+ <tile_entry category="floors">
+  <tile enum="Floor" tile="floors_exterior_street_01_017"/>
+ </tile_entry>
+ <tile_entry category="grime_floor">
+  <tile enum="West" tile="overlay_grime_floor_01_000"/>
+  <tile enum="North" tile="overlay_grime_floor_01_001"/>
+  <tile enum="East" tile="overlay_grime_floor_01_009"/>
+  <tile enum="South" tile="overlay_grime_floor_01_008"/>
+  <tile enum="SouthWest" tile="overlay_grime_floor_01_011"/>
+  <tile enum="NorthWest" tile="overlay_grime_floor_01_002"/>
+  <tile enum="NorthEast" tile="overlay_grime_floor_01_003"/>
+  <tile enum="SouthEast" tile="overlay_grime_floor_01_010"/>
+ </tile_entry>
+ <tile_entry category="grime_wall">
+  <tile enum="West" tile="overlay_grime_wall_01_016"/>
+  <tile enum="North" tile="overlay_grime_wall_01_017"/>
+  <tile enum="NorthWest" tile="overlay_grime_wall_01_018"/>
+  <tile enum="SouthEast" tile="overlay_grime_wall_01_019"/>
+  <tile enum="WestWindow" tile="overlay_grime_wall_01_024"/>
+  <tile enum="NorthWindow" tile="overlay_grime_wall_01_025"/>
+  <tile enum="WestDoor" tile="overlay_grime_wall_01_026"/>
+  <tile enum="NorthDoor" tile="overlay_grime_wall_01_027"/>
+  <tile enum="WestTrim" tile=""/>
+  <tile enum="NorthTrim" tile=""/>
+  <tile enum="NorthWestTrim" tile=""/>
+  <tile enum="SouthEastTrim" tile=""/>
+  <tile enum="WestDoubleLeft" tile=""/>
+  <tile enum="WestDoubleRight" tile=""/>
+  <tile enum="NorthDoubleLeft" tile=""/>
+  <tile enum="NorthDoubleRight" tile=""/>
+ </tile_entry>
+ <tile_entry category="interior_walls">
+  <tile enum="West" tile="walls_garage_01_032"/>
+  <tile enum="North" tile="walls_garage_01_033"/>
+  <tile enum="NorthWest" tile="walls_garage_01_034"/>
+  <tile enum="SouthEast" tile="walls_garage_01_035"/>
+  <tile enum="WestWindow" tile="walls_garage_01_040"/>
+  <tile enum="NorthWindow" tile="walls_garage_01_041"/>
+  <tile enum="WestDoor" tile="walls_garage_01_042"/>
+  <tile enum="NorthDoor" tile="walls_garage_01_043"/>
+ </tile_entry>
+ <tile_entry category="interior_walls">
+  <tile enum="West" tile="walls_interior_house_03_020"/>
+  <tile enum="North" tile="walls_interior_house_03_021"/>
+  <tile enum="NorthWest" tile="walls_interior_house_03_022"/>
+  <tile enum="SouthEast" tile="walls_interior_house_03_023"/>
+  <tile enum="WestWindow" tile="walls_interior_house_03_028"/>
+  <tile enum="NorthWindow" tile="walls_interior_house_03_029"/>
+  <tile enum="WestDoor" tile="walls_interior_house_03_030"/>
+  <tile enum="NorthDoor" tile="walls_interior_house_03_031"/>
+ </tile_entry>
+ <tile_entry category="roof_caps">
+  <tile enum="CapRiseE1" tile="location_barn_01_024"/>
+  <tile enum="CapRiseE2" tile="location_barn_01_025"/>
+  <tile enum="CapRiseE3" tile="location_barn_01_026"/>
+  <tile enum="CapFallE1" tile="location_barn_01_032"/>
+  <tile enum="CapFallE2" tile="location_barn_01_033"/>
+  <tile enum="CapFallE3" tile="location_barn_01_034"/>
+  <tile enum="CapRiseS1" tile="location_barn_01_037"/>
+  <tile enum="CapRiseS2" tile="location_barn_01_036"/>
+  <tile enum="CapRiseS3" tile="location_barn_01_035"/>
+  <tile enum="CapFallS1" tile="location_barn_01_029"/>
+  <tile enum="CapFallS2" tile="location_barn_01_028"/>
+  <tile enum="CapFallS3" tile="location_barn_01_027"/>
+  <tile enum="PeakPt5S" tile="location_barn_01_031"/>
+  <tile enum="PeakPt5E" tile="location_barn_01_039"/>
+  <tile enum="PeakOnePt5S" tile="location_barn_01_030"/>
+  <tile enum="PeakOnePt5E" tile="location_barn_01_038"/>
+  <tile enum="PeakTwoPt5S" tile="location_barn_01_041"/>
+  <tile enum="PeakTwoPt5E" tile="location_barn_01_040"/>
+  <tile enum="CapGapS1" tile=""/>
+  <tile enum="CapGapS2" tile=""/>
+  <tile enum="CapGapS3" tile="location_barn_01_001"/>
+  <tile enum="CapGapE1" tile=""/>
+  <tile enum="CapGapE2" tile=""/>
+  <tile enum="CapGapE3" tile="location_barn_01_000"/>
+  <tile enum="CapShallowRiseS1" tile=""/>
+  <tile enum="CapShallowRiseS2" tile=""/>
+  <tile enum="CapShallowFallS1" tile=""/>
+  <tile enum="CapShallowFallS2" tile=""/>
+  <tile enum="CapShallowRiseE1" tile=""/>
+  <tile enum="CapShallowRiseE2" tile=""/>
+  <tile enum="CapShallowFallE1" tile=""/>
+  <tile enum="CapShallowFallE2" tile=""/>
+ </tile_entry>
+ <tile_entry category="roof_slopes">
+  <tile enum="SlopeS1" tile="roofs_01_000"/>
+  <tile enum="SlopeS2" tile="roofs_01_001"/>
+  <tile enum="SlopeS3" tile="roofs_01_002"/>
+  <tile enum="SlopeE1" tile="roofs_01_005"/>
+  <tile enum="SlopeE2" tile="roofs_01_004"/>
+  <tile enum="SlopeE3" tile="roofs_01_003"/>
+  <tile enum="SlopePt5S" tile="roofs_01_015" offset="1,1"/>
+  <tile enum="SlopePt5E" tile="roofs_01_014" offset="1,1"/>
+  <tile enum="SlopeOnePt5S" tile="roofs_01_015"/>
+  <tile enum="SlopeOnePt5E" tile="roofs_01_014"/>
+  <tile enum="SlopeTwoPt5S" tile="roofs_01_015" offset="-1,-1"/>
+  <tile enum="SlopeTwoPt5E" tile="roofs_01_014" offset="-1,-1"/>
+  <tile enum="ShallowSlopeW1" tile=""/>
+  <tile enum="ShallowSlopeW2" tile=""/>
+  <tile enum="ShallowSlopeE1" tile=""/>
+  <tile enum="ShallowSlopeE2" tile=""/>
+  <tile enum="ShallowSlopeN1" tile=""/>
+  <tile enum="ShallowSlopeN2" tile=""/>
+  <tile enum="ShallowSlopeS1" tile=""/>
+  <tile enum="ShallowSlopeS2" tile=""/>
+  <tile enum="Inner1" tile="roofs_01_011"/>
+  <tile enum="Inner2" tile="roofs_01_012"/>
+  <tile enum="Inner3" tile="roofs_01_013"/>
+  <tile enum="Outer1" tile="roofs_01_008"/>
+  <tile enum="Outer2" tile="roofs_01_009"/>
+  <tile enum="Outer3" tile="roofs_01_010"/>
+  <tile enum="InnerPt5" tile=""/>
+  <tile enum="InnerOnePt5" tile=""/>
+  <tile enum="InnerTwoPt5" tile=""/>
+  <tile enum="OuterPt5" tile=""/>
+  <tile enum="OuterOnePt5" tile=""/>
+  <tile enum="OuterTwoPt5" tile=""/>
+  <tile enum="CornerSW1" tile=""/>
+  <tile enum="CornerSW2" tile=""/>
+  <tile enum="CornerSW3" tile=""/>
+  <tile enum="CornerNE1" tile=""/>
+  <tile enum="CornerNE2" tile=""/>
+  <tile enum="CornerNE3" tile=""/>
+ </tile_entry>
+ <tile_entry category="roof_tops">
+  <tile enum="West1" tile="industry_01_037" offset="-1,-1"/>
+  <tile enum="West2" tile="industry_01_037" offset="-2,-2"/>
+  <tile enum="West3" tile="industry_01_037"/>
+  <tile enum="North1" tile="industry_01_037" offset="-1,-1"/>
+  <tile enum="North2" tile="industry_01_037" offset="-2,-2"/>
+  <tile enum="North3" tile="industry_01_037"/>
+ </tile_entry>
+ <tile_entry category="roof_tops">
+  <tile enum="West1" tile="industry_01_038" offset="-1,-1"/>
+  <tile enum="West2" tile="industry_01_038" offset="-2,-2"/>
+  <tile enum="West3" tile="industry_01_038"/>
+  <tile enum="North1" tile="industry_01_038" offset="-1,-1"/>
+  <tile enum="North2" tile="industry_01_038" offset="-2,-2"/>
+  <tile enum="North3" tile="industry_01_038"/>
+ </tile_entry>
+ <tile_entry category="stairs">
+  <tile enum="West1" tile="fixtures_stairs_01_000"/>
+  <tile enum="West2" tile="fixtures_stairs_01_001"/>
+  <tile enum="West3" tile="fixtures_stairs_01_002"/>
+  <tile enum="North1" tile="fixtures_stairs_01_008"/>
+  <tile enum="North2" tile="fixtures_stairs_01_009"/>
+  <tile enum="North3" tile="fixtures_stairs_01_010"/>
+ </tile_entry>
+ <tile_entry category="windows">
+  <tile enum="West" tile="fixtures_windows_01_000"/>
+  <tile enum="North" tile="fixtures_windows_01_001"/>
+ </tile_entry>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_048"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_052"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="advertising_01_014"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="advertising_01_006"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_018"/>
+   <tile x="0" y="1" name="construction_01_017"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_027"/>
+   <tile x="1" y="0" name="construction_01_028"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_029"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_016"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="construction_01_024"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="construction_01_021"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="vegetation_farm_01_010"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="vegetation_farm_01_011"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="vegetation_farm_01_008"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="vegetation_farm_01_009"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="industry_railroad_05_020"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="industry_railroad_05_021"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_049"/>
+   <tile x="1" y="0" name="construction_01_050"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_055"/>
+   <tile x="0" y="1" name="construction_01_054"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="construction_01_050"/>
+   <tile x="1" y="0" name="construction_01_051"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="construction_01_054"/>
+   <tile x="0" y="1" name="construction_01_053"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_decoration_01_017"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_decoration_01_016"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_023"/>
+   <tile x="0" y="1" name="construction_01_022"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_030"/>
+   <tile x="1" y="0" name="construction_01_031"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="location_shop_accessories_01_032"/>
+   <tile x="1" y="0" name="location_shop_accessories_01_033"/>
+   <tile x="2" y="0" name="location_shop_accessories_01_033"/>
+   <tile x="3" y="0" name="location_shop_accessories_01_034"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="location_shop_accessories_01_037"/>
+   <tile x="0" y="1" name="location_shop_accessories_01_036"/>
+   <tile x="0" y="2" name="location_shop_accessories_01_036"/>
+   <tile x="0" y="3" name="location_shop_accessories_01_035"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_decoration_01_064"/>
+   <tile x="1" y="0" name="walls_decoration_01_065"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_decoration_01_067"/>
+   <tile x="0" y="1" name="walls_decoration_01_066"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_decoration_01_067"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_decoration_01_064"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="walls_decoration_01_065"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="walls_decoration_01_066"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="fixtures_railings_01_048"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="fixtures_railings_01_049"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="fixtures_railings_01_052"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="fixtures_railings_01_050"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="signs_one-off_01_064"/>
+   <tile x="1" y="0" name="signs_one-off_01_065"/>
+   <tile x="2" y="0" name="signs_one-off_01_066"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="signs_one-off_01_067"/>
+   <tile x="1" y="0" name="signs_one-off_01_068"/>
+   <tile x="2" y="0" name="signs_one-off_01_069"/>
+   <tile x="3" y="0" name="signs_one-off_01_070"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="signs_one-off_01_056"/>
+   <tile x="1" y="0" name="signs_one-off_01_057"/>
+   <tile x="2" y="0" name="signs_one-off_01_058"/>
+   <tile x="3" y="0" name="signs_one-off_01_059"/>
+  </entry>
+ </furniture>
+ <furniture layer="Walls">
+  <entry orient="E">
+   <tile x="0" y="0" name="walls_garage_01_002"/>
+   <tile x="0" y="1" name="walls_garage_01_001"/>
+   <tile x="0" y="2" name="walls_garage_01_000"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="walls_garage_01_003"/>
+   <tile x="1" y="0" name="walls_garage_01_004"/>
+   <tile x="2" y="0" name="walls_garage_01_005"/>
+  </entry>
+ </furniture>
+ <furniture layer="Walls">
+  <entry orient="E">
+   <tile x="0" y="0" name="walls_garage_01_018"/>
+   <tile x="0" y="1" name="walls_garage_01_017"/>
+   <tile x="0" y="2" name="walls_garage_01_016"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="walls_garage_01_019"/>
+   <tile x="1" y="0" name="walls_garage_01_020"/>
+   <tile x="2" y="0" name="walls_garage_01_021"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="swws_antennas_0_000"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="swws_antennas_0_001"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="swws_antennas_0_002"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="construction_01_041"/>
+   <tile x="0" y="1" name="construction_01_041"/>
+   <tile x="0" y="2" name="construction_01_040"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="construction_01_042"/>
+   <tile x="1" y="0" name="construction_01_042"/>
+   <tile x="2" y="0" name="construction_01_043"/>
+  </entry>
+ </furniture>
+ <furniture layer="WallFurniture">
+  <entry orient="W">
+   <tile x="0" y="0" name="lighting_outdoor_01_033"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="lighting_outdoor_01_032"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="lighting_outdoor_01_037"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="lighting_outdoor_01_036"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="advertising_01_023"/>
+   <tile x="0" y="1" name="advertising_01_022"/>
+   <tile x="0" y="2" name="advertising_01_031"/>
+   <tile x="0" y="3" name="advertising_01_030"/>
+   <tile x="0" y="4" name="advertising_01_029"/>
+   <tile x="0" y="5" name="advertising_01_028"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="advertising_01_016"/>
+   <tile x="1" y="0" name="advertising_01_017"/>
+   <tile x="2" y="0" name="advertising_01_018"/>
+   <tile x="3" y="0" name="advertising_01_019"/>
+   <tile x="4" y="0" name="advertising_01_020"/>
+   <tile x="5" y="0" name="advertising_01_021"/>
+  </entry>
+ </furniture>
+ <user_tiles>
+  <tile tile="floors_interior_tilesandwood_01_007"/>
+  <tile tile="industry_01_046"/>
+  <tile tile="industry_01_047"/>
+  <tile tile="overlay_grime_floor_01_001"/>
+  <tile tile="overlay_grime_floor_01_002"/>
+  <tile tile="overlay_grime_floor_01_003"/>
+  <tile tile="overlay_grime_floor_01_008"/>
+  <tile tile="overlay_grime_floor_01_010"/>
+  <tile tile="overlay_grime_floor_01_011"/>
+  <tile tile="overlay_grime_floor_01_029"/>
+  <tile tile="overlay_grime_floor_01_036"/>
+  <tile tile="overlay_grime_floor_01_038"/>
+  <tile tile="overlay_grime_floor_01_039"/>
+ </user_tiles>
+ <used_tiles>3 9 6 7 8 2 4 10 16 5 11 12 13 14</used_tiles>
+ <used_furniture>15 16 17 0 18 19 7 13 20 8 1 2 3 9 10 21 14 11 12 4 5 6</used_furniture>
+ <room Name="storage" InternalName="garage_storage" Color="200 200 200" InteriorWall="9" InteriorWallTrim="0" Floor="6" GrimeFloor="7" GrimeWall="8"/>
+ <floor>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="13" y="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="14" y="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="2" orient="W" x="0" y="1"/>
+  <object type="furniture" FurnitureTiles="2" orient="W" x="14" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="N" x="0" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="N" x="14" y="1"/>
+  <object type="furniture" FurnitureTiles="2" orient="W" x="1" y="1"/>
+  <object type="furniture" FurnitureTiles="2" orient="W" x="15" y="1"/>
+  <object type="furniture" FurnitureTiles="4" orient="W" x="0" y="4"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="0" y="5"/>
+  <object type="furniture" FurnitureTiles="4" orient="W" x="14" y="4"/>
+  <object type="furniture" FurnitureTiles="4" orient="W" x="15" y="4"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="15" y="3"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="14" y="5"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="15" y="5"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="0" y="0"/>
+  <object type="furniture" FurnitureTiles="6" orient="W" x="15" y="2"/>
+  <rooms>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</rooms>
+  <tiles layer="Floor">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
+  <tiles layer="FloorGrime">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+8,7,7,7,7,7,7,7,7,7,7,7,7,7,9,0,0,
+6,4,4,4,4,4,4,4,4,4,4,4,4,4,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
+  <tiles layer="FloorGrime2">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+12,11,11,11,11,11,11,11,11,11,11,11,11,11,13,0,0,
+0,10,10,10,10,10,10,10,10,10,10,10,10,10,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
+ </floor>
+ <floor>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="13" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="1" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="3" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="5" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="7" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="9" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="12" y="3"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="11" y="3"/>
+  <object type="furniture" FurnitureTiles="8" orient="N" x="1" y="4"/>
+  <object type="furniture" FurnitureTiles="8" orient="N" x="13" y="4"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="14" y="3"/>
+  <object type="furniture" FurnitureTiles="1" orient="N" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="0" orient="N" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="9" orient="W" x="14" y="1"/>
+  <object type="furniture" FurnitureTiles="9" orient="W" x="0" y="1"/>
+  <object type="furniture" FurnitureTiles="10" orient="E" x="6" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="1" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="3" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="5" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="7" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="9" y="4"/>
+  <object type="furniture" FurnitureTiles="11" orient="E" x="11" y="4"/>
+  <object type="furniture" FurnitureTiles="12" orient="N" x="13" y="4"/>
+  <rooms>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</rooms>
+ </floor>
+ <floor>
+  <object type="roof" width="13" height="1" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="11" SlopeTiles="12" TopTiles="13" x="1" y="3"/>
+  <object type="roof" width="1" height="1" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="11" SlopeTiles="12" TopTiles="14" x="14" y="3"/>
+  <object type="roof" width="1" height="1" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="11" SlopeTiles="12" TopTiles="14" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="14" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="13" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="12" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="11" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="10" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="9" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="8" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="7" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="6" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="5" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="4" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="3" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="2" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="1" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="E" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="0" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="1" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="2" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="3" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="4" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="5" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="6" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="7" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="8" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="9" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="10" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="11" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="12" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="13" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="N" x="14" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="S" x="15" y="4"/>
+  <object type="furniture" FurnitureTiles="13" orient="W" x="15" y="3"/>
+  <object type="furniture" FurnitureTiles="14" orient="N" x="10" y="4"/>
+  <rooms>
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</rooms>
+  <tiles layer="Walls">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</tiles>
+ </floor>
+</building>

@@ -1,0 +1,18 @@
+module SWWS_Core
+{
+	imports
+	{
+		Base
+	}
+
+/******************* SWWS CORE ITEMS *******************/
+
+    item DiagnosticManual
+	{
+		Weight = 0.1,
+		Type = Normal,
+		DisplayName = NWS Diagnostic Manual,
+		Icon = swws_error_codes_icon,
+		Map = media/ui/content/swws_error_codes.png
+	}
+}

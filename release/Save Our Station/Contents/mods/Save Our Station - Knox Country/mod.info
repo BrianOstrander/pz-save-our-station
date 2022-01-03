@@ -1,0 +1,8 @@
+name=Save Our Station - Knox Country
+id=SaveOurStation_KnoxCountry
+description=Adds five new weather station locations to Knox Country. To enable automated broadcast repair events, ensure you have the "Save Our Station - Core" mod enabled as well.
+poster=poster.png
+pack=swws_weather_station
+tiledef=swws 6941
+modversion=1
+pzversion=41.50
