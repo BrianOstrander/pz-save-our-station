@@ -1,0 +1,15 @@
+version = 0
+rooms
+{
+    room = hall
+    room = garage
+}
+maps
+{
+    map = SWWS_Zulu_Gym.tbx
+    map = SWWS_Zulu.tbx
+    map = SWWS_Zulu_TrailerLarge_2.tbx
+    map = SWWS_Zulu_TrailerLarge_0.tbx
+    map = SWWS_Zulu_TrailerLarge_3.tbx
+    map = SWWS_Zulu_TrailerLarge_1.tbx
+}

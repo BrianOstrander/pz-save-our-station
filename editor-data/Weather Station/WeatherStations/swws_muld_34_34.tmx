@@ -1,742 +1,742 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="levelisometric" width="300" height="300" tilewidth="64" tileheight="32">
  <tileset firstgid="1" name="advertising_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/advertising_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/advertising_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="129" name="advertising_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/advertising_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/advertising_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="193" name="appliances_com_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_com_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_com_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="273" name="appliances_cooking_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_cooking_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_cooking_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="401" name="appliances_laundry_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_laundry_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_laundry_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="465" name="appliances_misc_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_misc_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_misc_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="529" name="appliances_radio_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_radio_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_radio_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="593" name="appliances_refrigeration_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_refrigeration_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_refrigeration_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="657" name="appliances_television_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/appliances_television_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/appliances_television_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="785" name="blends_grassoverlays_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blends_grassoverlays_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blends_grassoverlays_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="865" name="blends_natural_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blends_natural_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blends_natural_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="945" name="blends_natural_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blends_natural_02.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blends_natural_02.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="1025" name="blends_street_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blends_street_01.png" width="512" height="2560"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blends_street_01.png" width="512" height="2560"/>
  </tileset>
  <tileset firstgid="1185" name="blends_streetoverlays_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blends_streetoverlays_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blends_streetoverlays_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="1265" name="blueprints_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/blueprints_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/blueprints_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="1329" name="books&amp;misc_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/books&amp;misc_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/books&amp;misc_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="1457" name="books&amp;misc_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/books&amp;misc_02.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/books&amp;misc_02.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="1577" name="brokenglass_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/brokenglass_1.png" width="512" height="128"/>
+  <image source="../../../../../Zomboid Modding/Tiles/brokenglass_1.png" width="512" height="128"/>
  </tileset>
  <tileset firstgid="1585" name="camping_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/camping_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/camping_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="1649" name="carpentry_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/carpentry_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/carpentry_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="1713" name="carpentry_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/carpentry_02.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/carpentry_02.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="1841" name="clothing_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/clothing_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/clothing_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="1905" name="clothing_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/clothing_02.png" width="512" height="896"/>
+  <image source="../../../../../Zomboid Modding/Tiles/clothing_02.png" width="512" height="896"/>
  </tileset>
  <tileset firstgid="1961" name="constructedobjects_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/constructedobjects_01.png" width="512" height="1536"/>
+  <image source="../../../../../Zomboid Modding/Tiles/constructedobjects_01.png" width="512" height="1536"/>
  </tileset>
  <tileset firstgid="2057" name="constructedobjects_signs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/constructedobjects_signs_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/constructedobjects_signs_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2121" name="construction_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/construction_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/construction_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2185" name="crafted_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/crafted_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/crafted_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2249" name="d_blends_natural_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_blends_natural_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_blends_natural_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="2329" name="d_doors_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_doors_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_doors_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2393" name="d_floorleaves_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_floorleaves_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_floorleaves_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="2425" name="d_furniture_bedroom_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_bedroom_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_bedroom_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2489" name="d_furniture_bedroom_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_bedroom_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_bedroom_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2553" name="d_furniture_bedroom_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_bedroom_03.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_bedroom_03.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2617" name="d_furniture_bedroom_04" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_bedroom_04.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_bedroom_04.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2681" name="d_furniture_bedroom_05" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_bedroom_05.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_bedroom_05.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2745" name="d_furniture_couches_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_couches_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_couches_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2809" name="d_furniture_kitchen_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_furniture_kitchen_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_furniture_kitchen_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="2873" name="d_generic_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_generic_1.png" width="1024" height="1664"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_generic_1.png" width="1024" height="1664"/>
  </tileset>
  <tileset firstgid="3081" name="d_location_arcadian_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_location_arcadian_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_location_arcadian_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3145" name="d_location_sofaking" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_location_sofaking.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_location_sofaking.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3209" name="d_plants_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_plants_1.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_plants_1.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3273" name="d_streetcracks_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_streetcracks_1.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_streetcracks_1.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="3401" name="d_trash_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_trash_1.png" width="640" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_trash_1.png" width="640" height="1024"/>
  </tileset>
  <tileset firstgid="3481" name="d_wall_decorations_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_wall_decorations_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_wall_decorations_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3545" name="d_wallcracks_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_wallcracks_1.png" width="576" height="1152"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_wallcracks_1.png" width="576" height="1152"/>
  </tileset>
  <tileset firstgid="3626" name="d_walls_interior_bathroom_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/d_walls_interior_bathroom_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/d_walls_interior_bathroom_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3690" name="damaged_objects_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/damaged_objects_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/damaged_objects_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="3818" name="ddd_railroad_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/ddd_railroad_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/ddd_railroad_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="3882" name="desks_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/desks_01.png" width="512" height="1536"/>
+  <image source="../../../../../Zomboid Modding/Tiles/desks_01.png" width="512" height="1536"/>
  </tileset>
  <tileset firstgid="3978" name="e_americanholly_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_americanholly_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_americanholly_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4010" name="e_americanlinden_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_americanlinden_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_americanlinden_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4042" name="e_canadianhemlock_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_canadianhemlock_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_canadianhemlock_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4074" name="e_carolinasilverbell_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_carolinasilverbell_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_carolinasilverbell_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4106" name="e_cockspurhawthorn_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_cockspurhawthorn_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_cockspurhawthorn_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4138" name="e_dogwood_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_dogwood_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_dogwood_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4170" name="e_easternredbud_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_easternredbud_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_easternredbud_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4202" name="e_exterior_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_exterior_1.png" width="512" height="128"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_exterior_1.png" width="512" height="128"/>
  </tileset>
  <tileset firstgid="4210" name="e_exterior_snow_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_exterior_snow_1.png" width="128" height="128"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_exterior_snow_1.png" width="128" height="128"/>
  </tileset>
  <tileset firstgid="4212" name="e_newgrass_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_newgrass_1.png" width="384" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_newgrass_1.png" width="384" height="1920"/>
  </tileset>
  <tileset firstgid="4302" name="e_newgrassbase_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_newgrassbase_1.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_newgrassbase_1.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="4366" name="e_newgrassbase_snow_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_newgrassbase_snow_1.png" width="512" height="512"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_newgrassbase_snow_1.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="4398" name="e_newsnow_ground_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_newsnow_ground_1.png" width="512" height="768"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_newsnow_ground_1.png" width="512" height="768"/>
  </tileset>
  <tileset firstgid="4446" name="e_redmaple_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_redmaple_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_redmaple_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4478" name="e_riverbirch_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_riverbirch_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_riverbirch_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4510" name="e_roof_snow_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_roof_snow_1.png" width="512" height="1792"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_roof_snow_1.png" width="512" height="1792"/>
  </tileset>
  <tileset firstgid="4622" name="e_virginiapine_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_virginiapine_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_virginiapine_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4654" name="e_yellowwood_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/e_yellowwood_1.png" width="256" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/e_yellowwood_1.png" width="256" height="1024"/>
  </tileset>
  <tileset firstgid="4686" name="f_bushes_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/f_bushes_1.png" width="1024" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/f_bushes_1.png" width="1024" height="2048"/>
  </tileset>
  <tileset firstgid="4942" name="f_bushes_2" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/f_bushes_2.png" width="640" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/f_bushes_2.png" width="640" height="1024"/>
  </tileset>
  <tileset firstgid="5022" name="f_flowerbed_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/f_flowerbed_1.png" width="768" height="512"/>
+  <image source="../../../../../Zomboid Modding/Tiles/f_flowerbed_1.png" width="768" height="512"/>
  </tileset>
  <tileset firstgid="5070" name="f_wallvines_1" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/f_wallvines_1.png" width="384" height="1536"/>
+  <image source="../../../../../Zomboid Modding/Tiles/f_wallvines_1.png" width="384" height="1536"/>
  </tileset>
  <tileset firstgid="5142" name="fencing_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fencing_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fencing_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="5270" name="fencing_burnt_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fencing_burnt_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fencing_burnt_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="5334" name="fencing_damaged_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fencing_damaged_01.png" width="512" height="2816"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fencing_damaged_01.png" width="512" height="2816"/>
  </tileset>
  <tileset firstgid="5510" name="fencing_damaged_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fencing_damaged_02.png" width="512" height="2816"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fencing_damaged_02.png" width="512" height="2816"/>
  </tileset>
  <tileset firstgid="5686" name="fixtures_bathroom_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_bathroom_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_bathroom_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="5766" name="fixtures_bathroom_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_bathroom_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_bathroom_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="5830" name="fixtures_counters_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_counters_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_counters_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="5958" name="fixtures_doors_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_doors_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_doors_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="6086" name="fixtures_doors_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_doors_02.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_doors_02.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="6214" name="fixtures_doors_fences_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_doors_fences_01.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_doors_fences_01.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="6334" name="fixtures_doors_frames_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_doors_frames_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_doors_frames_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="6398" name="fixtures_escalators_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_escalators_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_escalators_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="6462" name="fixtures_fireplaces_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_fireplaces_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_fireplaces_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="6542" name="fixtures_overlay_counters_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_overlay_counters_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_overlay_counters_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="6606" name="fixtures_railings_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_railings_01.png" width="512" height="2304"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_railings_01.png" width="512" height="2304"/>
  </tileset>
  <tileset firstgid="6750" name="fixtures_sinks_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_sinks_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_sinks_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="6814" name="fixtures_stairs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_stairs_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_stairs_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="6942" name="fixtures_windows_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_windows_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_windows_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="7022" name="fixtures_windows_curtains_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_windows_curtains_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_windows_curtains_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="7150" name="fixtures_windows_curtains_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_windows_curtains_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_windows_curtains_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7214" name="fixtures_windows_detailing_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/fixtures_windows_detailing_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/fixtures_windows_detailing_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7278" name="flooring_raised_ddd" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/flooring_raised_ddd.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/flooring_raised_ddd.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7342" name="floors_burnt_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_burnt_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_burnt_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7406" name="floors_exterior_natural_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_exterior_natural_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_exterior_natural_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7470" name="floors_exterior_street_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_exterior_street_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_exterior_street_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7534" name="floors_exterior_tilesandstone_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_exterior_tilesandstone_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_exterior_tilesandstone_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7598" name="floors_interior_carpet_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_interior_carpet_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_interior_carpet_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="7662" name="floors_interior_tilesandwood_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_interior_tilesandwood_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_interior_tilesandwood_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="7790" name="floors_rugs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/floors_rugs_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/floors_rugs_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="7918" name="food_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/food_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/food_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="8046" name="foraging_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/foraging_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/foraging_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8110" name="furniture_bedding_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_bedding_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_bedding_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="8238" name="furniture_seating_indoor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_seating_indoor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_seating_indoor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8302" name="furniture_seating_indoor_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_seating_indoor_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_seating_indoor_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8366" name="furniture_seating_indoor_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_seating_indoor_03.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_seating_indoor_03.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="8446" name="furniture_seating_outdoor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_seating_outdoor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_seating_outdoor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8510" name="furniture_shelving_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_shelving_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_shelving_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8574" name="furniture_storage_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_storage_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_storage_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8638" name="furniture_storage_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_storage_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_storage_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8702" name="furniture_storage_ddd_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_storage_ddd_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_storage_ddd_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8766" name="furniture_tables_high_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_tables_high_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_tables_high_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8830" name="furniture_tables_low_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/furniture_tables_low_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/furniture_tables_low_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8894" name="industry_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="8958" name="industry_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_02.png" width="512" height="2176"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_02.png" width="512" height="2176"/>
  </tileset>
  <tileset firstgid="9094" name="industry_bunker_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_bunker_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_bunker_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="9174" name="industry_railroad_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9238" name="industry_railroad_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9302" name="industry_railroad_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_03.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_03.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9366" name="industry_railroad_04" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_04.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_04.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9430" name="industry_railroad_05" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_05.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_05.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9494" name="industry_railroad_ddd_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_ddd_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_ddd_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9558" name="industry_railroad_ddd_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_railroad_ddd_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_railroad_ddd_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9622" name="industry_trucks_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_trucks_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_trucks_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="9702" name="industry_trucks_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/industry_trucks_02.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/industry_trucks_02.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="9782" name="lighting_indoor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/lighting_indoor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/lighting_indoor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9846" name="lighting_outdoor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/lighting_outdoor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/lighting_outdoor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9910" name="location_barn_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_barn_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_barn_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="9974" name="location_business_bank_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_business_bank_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_business_bank_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10038" name="location_business_distillery_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_business_distillery_01.png" width="512" height="640"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_business_distillery_01.png" width="512" height="640"/>
  </tileset>
  <tileset firstgid="10078" name="location_business_machinery" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_business_machinery.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_business_machinery.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10142" name="location_business_machinery_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_business_machinery_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_business_machinery_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10206" name="location_business_office_generic_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_business_office_generic_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_business_office_generic_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10270" name="location_community_cemetary_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_cemetary_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_cemetary_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="10350" name="location_community_church_small_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_church_small_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_church_small_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="10478" name="location_community_church_small_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_church_small_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_church_small_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10542" name="location_community_medical_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_medical_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_medical_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="10670" name="location_community_park_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_park_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_park_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="10750" name="location_community_police_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_police_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_police_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10814" name="location_community_school_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_community_school_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_community_school_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="10878" name="location_entertainment_theatre_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_entertainment_theatre_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_entertainment_theatre_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="11006" name="location_farm_accesories_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_farm_accesories_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_farm_accesories_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="11086" name="location_hospitality_sunstarmotel_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_hospitality_sunstarmotel_01.png" width="512" height="1152"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_hospitality_sunstarmotel_01.png" width="512" height="1152"/>
  </tileset>
  <tileset firstgid="11158" name="location_hospitality_sunstarmotel_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_hospitality_sunstarmotel_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_hospitality_sunstarmotel_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11222" name="location_restaurant_bar_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_bar_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_bar_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="11302" name="location_restaurant_diner_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_diner_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_diner_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11366" name="location_restaurant_generic_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_generic_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_generic_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11430" name="location_restaurant_pie_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_pie_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_pie_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11494" name="location_restaurant_pileocrepe_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_pileocrepe_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_pileocrepe_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11558" name="location_restaurant_pizzawhirled_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_pizzawhirled_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_pizzawhirled_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="11686" name="location_restaurant_seahorse_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_seahorse_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_seahorse_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="11814" name="location_restaurant_spiffos_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_spiffos_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_spiffos_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="11894" name="location_restaurant_spiffos_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_spiffos_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_spiffos_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="11958" name="location_restaurant_spiffos_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_restaurant_spiffos_03.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_restaurant_spiffos_03.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12022" name="location_services_beauty_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_services_beauty_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_services_beauty_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="12102" name="location_sewer_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_sewer_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_sewer_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12166" name="location_shop_accessories_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_accessories_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_accessories_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12230" name="location_shop_accessories_genericsigns_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_accessories_genericsigns_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_accessories_genericsigns_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="12358" name="location_shop_bargNclothes_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_bargNclothes_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_bargNclothes_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12422" name="location_shop_fossoil_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_fossoil_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_fossoil_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12486" name="location_shop_gas2go_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_gas2go_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_gas2go_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="12550" name="location_shop_generic_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_generic_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_generic_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="12678" name="location_shop_greenes_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_greenes_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_greenes_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="12758" name="location_shop_mall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_mall_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_mall_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="12886" name="location_shop_mall_signs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_mall_signs_01.png" width="512" height="2304"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_mall_signs_01.png" width="512" height="2304"/>
  </tileset>
  <tileset firstgid="13030" name="location_shop_mall_signs_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_mall_signs_02.png" width="512" height="2304"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_mall_signs_02.png" width="512" height="2304"/>
  </tileset>
  <tileset firstgid="13174" name="location_shop_zippee_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_shop_zippee_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_shop_zippee_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13238" name="location_trailer_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_trailer_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_trailer_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13302" name="location_trailer_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/location_trailer_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/location_trailer_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13366" name="missing_tileset_666" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/missing_tileset_666.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/missing_tileset_666.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13430" name="office_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/office_01.png" width="512" height="512"/>
+  <image source="../../../../../Zomboid Modding/Tiles/office_01.png" width="512" height="512"/>
  </tileset>
  <tileset firstgid="13462" name="overlay_blood_fence_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_blood_fence_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_blood_fence_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13526" name="overlay_blood_floor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_blood_floor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_blood_floor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13590" name="overlay_blood_wall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_blood_wall_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_blood_wall_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13654" name="overlay_graffiti_wall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_graffiti_wall_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_graffiti_wall_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13718" name="overlay_grime_floor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_grime_floor_01.png" width="512" height="1536"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_grime_floor_01.png" width="512" height="1536"/>
  </tileset>
  <tileset firstgid="13814" name="overlay_grime_wall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_grime_wall_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_grime_wall_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13878" name="overlay_messages_wall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/overlay_messages_wall_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/overlay_messages_wall_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="13942" name="papernotices_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/papernotices_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/papernotices_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="14006" name="recreational_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/recreational_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/recreational_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="14070" name="recreational_sports_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/recreational_sports_01.png" width="512" height="1536"/>
+  <image source="../../../../../Zomboid Modding/Tiles/recreational_sports_01.png" width="512" height="1536"/>
  </tileset>
  <tileset firstgid="14166" name="roofs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_01.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_01.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="14286" name="roofs_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_02.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_02.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="14406" name="roofs_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_03.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_03.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="14534" name="roofs_04" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_04.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_04.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="14654" name="roofs_05" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_05.png" width="512" height="2304"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_05.png" width="512" height="2304"/>
  </tileset>
  <tileset firstgid="14798" name="roofs_accents_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_accents_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_accents_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="14878" name="roofs_burnt_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/roofs_burnt_01.png" width="512" height="1920"/>
+  <image source="../../../../../Zomboid Modding/Tiles/roofs_burnt_01.png" width="512" height="1920"/>
  </tileset>
  <tileset firstgid="14998" name="security_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/security_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/security_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="15078" name="signs_miscbrands_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/signs_miscbrands_01.png" width="512" height="1664"/>
+  <image source="../../../../../Zomboid Modding/Tiles/signs_miscbrands_01.png" width="512" height="1664"/>
  </tileset>
  <tileset firstgid="15182" name="signs_one-off_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/signs_one-off_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/signs_one-off_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="15310" name="stashes_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/stashes_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/stashes_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="15438" name="street_curbs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/street_curbs_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/street_curbs_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="15518" name="street_decoration_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/street_decoration_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/street_decoration_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="15646" name="street_roadsigns_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/street_roadsigns_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/street_roadsigns_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="15726" name="street_trafficlines_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/street_trafficlines_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/street_trafficlines_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="15790" name="swws_antennas_0" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_antennas_0.png" width="512" height="1664"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_antennas_0.png" width="512" height="1664"/>
  </tileset>
  <tileset firstgid="15894" name="swws_fencing_0" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_fencing_0.png" width="512" height="384"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_fencing_0.png" width="512" height="384"/>
  </tileset>
  <tileset firstgid="15918" name="swws_industrial_0" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_industrial_0.png" width="512" height="768"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_industrial_0.png" width="512" height="768"/>
  </tileset>
  <tileset firstgid="15966" name="swws_industry_tk_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_industry_tk_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_industry_tk_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="16094" name="swws_signs_0" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_signs_0.png" width="512" height="1408"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_signs_0.png" width="512" height="1408"/>
  </tileset>
  <tileset firstgid="16182" name="swws_walls_exterior_roofs_tk_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_walls_exterior_roofs_tk_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_walls_exterior_roofs_tk_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="16262" name="swws_walls_exterior_roofs_tk_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/swws_walls_exterior_roofs_tk_02.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/swws_walls_exterior_roofs_tk_02.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="16342" name="trash&amp;junk_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/trash&amp;junk_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/trash&amp;junk_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="16422" name="trash_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/trash_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/trash_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16486" name="trash_walls_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/trash_walls_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/trash_walls_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16550" name="trashcontainers_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/trashcontainers_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/trashcontainers_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16614" name="vegetation_farm_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_farm_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_farm_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16678" name="vegetation_farming_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_farming_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_farming_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="16758" name="vegetation_foliage_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_foliage_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_foliage_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16822" name="vegetation_groundcover_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_groundcover_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_groundcover_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16886" name="vegetation_indoor_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_indoor_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_indoor_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="16950" name="vegetation_ornamental_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_ornamental_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_ornamental_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="17014" name="vegetation_trees_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_trees_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_trees_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="17078" name="vegetation_wall_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/vegetation_wall_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/vegetation_wall_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="17142" name="walls_burnt_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_burnt_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_burnt_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="17206" name="walls_burnt_roofs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_burnt_roofs_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_burnt_roofs_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="17286" name="walls_commercial_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_commercial_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_commercial_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="17414" name="walls_commercial_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_commercial_02.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_commercial_02.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="17494" name="walls_commercial_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_commercial_03.png" width="512" height="1152"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_commercial_03.png" width="512" height="1152"/>
  </tileset>
  <tileset firstgid="17566" name="walls_decoration_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_decoration_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_decoration_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="17694" name="walls_detailing_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_detailing_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_detailing_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="17822" name="walls_exterior_house_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_house_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_house_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="17886" name="walls_exterior_house_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_house_02.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_house_02.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="18014" name="walls_exterior_roofs_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18094" name="walls_exterior_roofs_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_02.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_02.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18174" name="walls_exterior_roofs_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_03.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_03.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18254" name="walls_exterior_roofs_04" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_04.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_04.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18334" name="walls_exterior_roofs_05" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_05.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_05.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18414" name="walls_exterior_roofs_06" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_06.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_06.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="18478" name="walls_exterior_roofs_07" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_07.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_07.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18558" name="walls_exterior_roofs_08" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_08.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_08.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18638" name="walls_exterior_roofs_09" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_roofs_09.png" width="512" height="2688"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_roofs_09.png" width="512" height="2688"/>
  </tileset>
  <tileset firstgid="18806" name="walls_exterior_wooden_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_wooden_01.png" width="512" height="1280"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_wooden_01.png" width="512" height="1280"/>
  </tileset>
  <tileset firstgid="18886" name="walls_exterior_wooden_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_exterior_wooden_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_exterior_wooden_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="18950" name="walls_garage_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_garage_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_garage_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19014" name="walls_garage_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_garage_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_garage_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19078" name="walls_interior_bathroom_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_bathroom_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_bathroom_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19142" name="walls_interior_cutaways_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_cutaways_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_cutaways_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="19270" name="walls_interior_detailing_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_detailing_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_detailing_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="19398" name="walls_interior_house_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_house_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_house_01.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19462" name="walls_interior_house_02" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_house_02.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_house_02.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19526" name="walls_interior_house_03" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_house_03.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_house_03.png" width="512" height="1024"/>
  </tileset>
  <tileset firstgid="19590" name="walls_interior_house_04" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_interior_house_04.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_interior_house_04.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="19718" name="walls_special_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/walls_special_01.png" width="512" height="2048"/>
+  <image source="../../../../../Zomboid Modding/Tiles/walls_special_01.png" width="512" height="2048"/>
  </tileset>
  <tileset firstgid="19846" name="weapons_01" tilewidth="64" tileheight="128">
-  <image source="../../Tiles/weapons_01.png" width="512" height="1024"/>
+  <image source="../../../../../Zomboid Modding/Tiles/weapons_01.png" width="512" height="1024"/>
  </tileset>
  <layer name="0_Floor" width="300" height="300">
   <data encoding="base64" compression="zlib">
@@ -750,7 +750,7 @@
  </layer>
  <layer name="0_FloorOverlay2" width="300" height="300">
   <data encoding="base64" compression="zlib">
-   eJzt3bEJgDAQhtEsZZmlnMGN7JzORhBBtPT++B5clf6DK460BgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN9ap+f3pV8HoCq9AlLoFZBCr4AUegVUMfdz7ugVUIVeAaPQKyCFXgEp9ApIoVdACr0CAP7s7XYZAACAcW12QgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7+sgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqtoBqFkr+Q==
+   eJzt3TEKwkAQQNFcyjKX8gAW4o3sPJ2lGIKBgHG/vAdTbbPVhy2WmSaWrvM0XeZf3wJgm14BFXoFVOgVUKFXQIVeARV6BVToFVChV0CFXgEVegVU6BVQoVdAhV4BFXoFVOgVUKFXQIVeARV6BVToFVChV8BR7qfP57f5fZb0ChiFXgEVegVU6BVQoVfAKM7za9boFTAKvQL+hV4BFXoFVOgVUKFXQIVeAf9Cr4A9tv4uf4NeARV6BVToFbDX4+A3oV4BFXoFVOgVUKFXQIVeARV6BVToFVChV0CFXgEVegVU6BVQoVdAhV4BFXoFVOgVUKFXQIVeARV6BVToFVChV0CFXgEjWttloVdAhV4BFXoFVOgVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKN5Agosh4U=
   </data>
  </layer>
  <layer name="0_FloorOverlay3" width="300" height="300">
