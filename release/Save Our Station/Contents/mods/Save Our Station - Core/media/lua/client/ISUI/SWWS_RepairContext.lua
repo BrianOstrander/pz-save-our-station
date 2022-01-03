@@ -32,7 +32,7 @@ function SWWS_RepairContext.fix(_player, _context, _worldObjects, _test)
 		return
 	end
 
-	local repairOption = _context:addOption("Repair automated broadcast", nil, SWWS_RepairContext.onSelectRoot)
+	local repairOption = _context:addOption(SWWS_Localization.GetLine("UI_RepairAutomatedBroadcast"), nil, SWWS_RepairContext.onSelectRoot)
 	local subMenuRepair = ISContextMenu:getNew(_context)
 	_context:addSubMenu(repairOption, subMenuRepair);
 

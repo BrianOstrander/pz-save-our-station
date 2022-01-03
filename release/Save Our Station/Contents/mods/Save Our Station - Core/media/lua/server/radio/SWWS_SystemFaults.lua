@@ -77,102 +77,102 @@ SWWS_SystemFaults.solutions = {
 
 SWWS_SystemFaults.pool = {
     {
-        id = "FUEL-PUMP",
+        id = "AEBS_FaultFuelPump",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replacePipe,
-                description = "REPLACE FUEL LINE"
+                description = "AEBS_FaultRepairReplaceFuelLine"
             }
         }
     },
     {
-        id = "TRANSFORMER",
+        id = "AEBS_FaultTransformer",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replaceElectronicScrap,
-                description = "CONTROL BOARD REPLACEMENT"
+                description = "AEBS_FaultRepairControlBoardReplacement"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceWire,
-                description = "REROUTE SHORT"
+                description = "AEBS_FaultRepairRerouteShort"
             }
         }
     },
     {
-        id = "TRANSMITTER",
+        id = "AEBS_FaultTransmitter",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replaceRadioTransmitter,
-                description = "REPLACE UNIT"
+                description = "AEBS_FaultRepairReplaceUnit"
             }
         }
     },
     {
-        id = "RECIEVER",
+        id = "AEBS_FaultReciever",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replaceRadioReceiver,
-                description = "REPLACE UNIT"
+                description = "AEBS_FaultRepairReplaceUnit"
             }
         }
     },
     {
-        id = "GENERATOR",
+        id = "AEBS_FaultGenerator",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replacePipe,
-                description = "REPLACE FUEL LINE"
+                description = "AEBS_FaultRepairReplaceFuelLine"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceGenerator,
-                description = "REPLACE UNIT"
+                description = "AEBS_FaultRepairReplaceUnit"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceEngineParts,
-                description = "REPAIR UNIT"
+                description = "AEBS_FaultRepairRepairUnit"
             },
             {
                 solution = SWWS_SystemFaults.solutions.refuelGasoline,
-                description = "REFUEL GASOLINE"
+                description = "AEBS_FaultRepairRefuelGasoline"
             }
         }
     },
     {
-        id = "DIESEL-UNIT",
+        id = "AEBS_FaultDieselUnit",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replacePipe,
-                description = "REPLACE FUEL LINE"
+                description = "AEBS_FaultRepairReplaceFuelLine"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceEngineParts,
-                description = "REPAIR UNIT"
+                description = "AEBS_FaultRepairRepairUnit"
             }
         }
     },
     {
-        id = "CURRENT-REGULATOR",
+        id = "AEBS_FaultCurrentRegulator",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replaceElectronicScrap,
-                description = "REPLACE CONTROL BOARD"
+                description = "AEBS_FaultRepairControlBoardReplacement"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceWire,
-                description = "CLEAR SHORT"
+                description = "AEBS_FaultRepairClearShort"
             }
         }
     },
     {
-        id = "CAPACITOR-ARRAY",
+        id = "AEBS_FaultCapacitorArray",
         repairs = {
             {
                 solution = SWWS_SystemFaults.solutions.replaceElectronicScrap,
-                description = "REPLACE CONTROL BOARD"
+                description = "AEBS_FaultRepairControlBoardReplacement"
             },
             {
                 solution = SWWS_SystemFaults.solutions.replaceWire,
-                description = "CLEAR SHORT"
+                description = "AEBS_FaultRepairClearShort"
             }
         }
     }

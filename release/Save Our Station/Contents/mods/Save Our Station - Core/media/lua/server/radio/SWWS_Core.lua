@@ -80,11 +80,11 @@ function SWWS_Core.ScheduleFailure()
 
     SWWS_Core.saveData.stageRemaining = SWWS_Config.gameplay.timeMultiplier * ZombRand(stage.hoursMinimum, stage.hoursMaximum + 1)
     
-    SWWS_Core.saveData.conditionLower = SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)]
+    SWWS_Core.saveData.conditionLower = SWWS_Localization.GetLine(SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)])
     SWWS_Core.saveData.conditionUpper = SWWS_Core.saveData.conditionLower:gsub("^%l", string.upper)
     
     local system = SWWS_SystemFaults.pool[ZombRand(1, #SWWS_SystemFaults.pool + 1)]
-    SWWS_Core.saveData.systemId = system.id
+    SWWS_Core.saveData.systemId = SWWS_Localization.GetLine(system.id)
     SWWS_Core.saveData.systemRepair = system.repairs[ZombRand(1, #system.repairs + 1)]
     SWWS_Core.saveData.systemRepairComplete = false;
 
@@ -111,9 +111,13 @@ function SWWS_Core.ScheduleFailure()
 
     SWWS_Core.saveData.systemName = SWWS_Core.saveData.systemId .. "_" .. serial
 
+    -- gsub returns a table, so we do this to avoid random numbers getting added to our table.
+    local repairInstructionLocation = SWWS_Localization.GetLine("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
+    local repairInstructionCode = SWWS_Localization.GetLine("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Core.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Core.saveData.systemName):gsub("{description}", SWWS_Localization.GetLine(SWWS_Core.saveData.systemRepair.description))
+
     SWWS_Core.saveData.systemRepairInstructions = {
-        location.id .. " requires util-crew dispatch...",
-        "Diagnostic Code [ " .. SWWS_Core.saveData.systemRepair.solution.code .. " ] " .. SWWS_Core.saveData.systemName .. " - " .. SWWS_Core.saveData.systemRepair.description
+        repairInstructionLocation,
+        repairInstructionCode
     }
 
     SWWS_Core.Save(gametime)
@@ -185,7 +189,7 @@ function SWWS_Core.FillBroadcastWarning()
         overrideForcast = nil,
         overrideChoppah = nil,
         isShutdown = false,
-        diagnostic = "Condition nominal.",
+        diagnostic = SWWS_Localization.GetLine("AEBS_ConditionNominal"),
     }
 
     if not SWWS_Core.isInitialized then
@@ -208,30 +212,30 @@ function SWWS_Core.FillBroadcastWarning()
 
     if not result.isShutdown then
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overridePower = "Knox Power Grid: Status Unavailable..."
+            result.overridePower = SWWS_Localization.GetLine("AEBS_KnoxPowerGridStatusUnavailable")
         end
         
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overrideForcast = "Forcast: Offline..."
+            result.overrideForcast = SWWS_Localization.GetLine("AEBS_ForcastOffline")
         end
 
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overrideChoppah = "Air Traffic: Radar Disabled..."
+            result.overrideChoppah = SWWS_Localization.GetLine("AEBS_AirTrafficRadarDisabled")
         end
     end
 
     result.diagnostics = {
-        SWWS_Core.PopulateDiagnostic(messages.status[ZombRand(1, #messages.status + 1)])
+        SWWS_Core.PopulateDiagnostic(SWWS_Localization.GetLine(messages.status[ZombRand(1, #messages.status + 1)]))
     }
 
     if messages.revealTime then
-        local shutdown = "Emergency shutdown "
+        local shutdown = nil
         if SWWS_Core.saveData.stageRemaining < 2 then
-            shutdown = shutdown .. "imminent..."
+            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownImminent")
         elseif SWWS_Core.saveData.stageRemaining < 24 then
-            shutdown = shutdown .. "in " .. SWWS_Core.saveData.stageRemaining .. " hours..."
+            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInHours"):gsub("{hours}", tostring(SWWS_Core.saveData.stageRemaining))
         else
-            shutdown = shutdown .. "in " .. math.floor(SWWS_Core.saveData.stageRemaining / 24) .. " days..."
+            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Core.saveData.stageRemaining / 24)))
         end
         table.insert(result.diagnostics, shutdown)
     end
@@ -246,10 +250,10 @@ function SWWS_Core.FillBroadcastWarning()
 end
 
 function SWWS_Core.PopulateDiagnostic(_diagnostic)
-   _diagnostic = _diagnostic:gsub("<condition>", SWWS_Core.saveData.conditionLower)
-   _diagnostic = _diagnostic:gsub("<Condition>", SWWS_Core.saveData.conditionUpper)
-   _diagnostic = _diagnostic:gsub("<system>", SWWS_Core.saveData.systemName)
-   _diagnostic = _diagnostic:gsub("<fuzz>", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
+   _diagnostic = _diagnostic:gsub("{condition}", SWWS_Core.saveData.conditionLower)
+   _diagnostic = _diagnostic:gsub("{Condition}", SWWS_Core.saveData.conditionUpper)
+   _diagnostic = _diagnostic:gsub("{system}", SWWS_Core.saveData.systemName)
+   _diagnostic = _diagnostic:gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
    return _diagnostic
 end
 

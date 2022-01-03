@@ -1,10 +1,10 @@
 SWWS_Strings = {}
 
 SWWS_Strings.conditions = {
-    "fault",
-    "anomaly",
-    "defect",
-    "failure"
+    "AEBS_ConditionFault",
+    "AEBS_ConditionAnomaly",
+    "AEBS_ConditionDefect",
+    "AEBS_ConditionFailure"
 }
 
 SWWS_Strings.fuzzs = {
