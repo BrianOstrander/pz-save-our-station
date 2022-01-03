@@ -1,0 +1,11 @@
+layers
+{
+    tile = 0_Floor
+    tile = 0_FloorOverlay
+    tile = 0_FloorOverlay2
+    tile = 0_FloorOverlay3
+    tile = 0_FloorOverlay4
+    tile = 0_Vegetation
+    object = 0_Lots
+}
+
