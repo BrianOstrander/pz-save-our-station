@@ -9,7 +9,7 @@
   <warn-unknown-colors checked="true"/>
   <compress checked="true"/>
   <copy-pixels checked="true"/>
-  <update-existing checked="false"/>
+  <update-existing checked="true"/>
  </BMPToTMX>
  <TMXToBMP>
   <mainImage generate="true"/>
@@ -150,8 +150,8 @@
   <object name="medium" group="ParkingStall" type="ParkingStall" x="167" y="76" level="0" width="3" height="4">
    <template name="ParkingStallN"/>
   </object>
-  <object group="Nav" type="Nav" x="0" y="65" level="0" width="96" height="8"/>
-  <object group="Nav" type="Nav" x="96" y="65" level="0" width="8" height="235"/>
+  <object group="Nav" type="Nav" x="0" y="65" level="0" width="70" height="8"/>
+  <object group="Nav" type="Nav" x="96" y="99" level="0" width="8" height="201"/>
   <object group="Vegitation" type="Vegitation" x="68" y="258" level="0" width="22" height="42"/>
   <object group="Vegitation" type="Vegitation" x="81" y="170" level="0" width="9" height="88"/>
   <object group="Vegitation" type="Vegitation" x="74" y="193" level="0" width="7" height="65"/>
@@ -207,6 +207,8 @@
   <object name="Farm" group="ZombiesType" type="ZombiesType" x="112" y="206" level="0" width="156" height="94"/>
   <object name="Offices" group="ZombiesType" type="ZombiesType" x="153" y="62" level="0" width="53" height="47"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="234" y="118" level="0" width="36" height="32"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="70,65 85,72 96,83 104,99 96,99 89,85 84,80 70,73"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="79,61 106,61 106,87"/>
  </cell>
  <cell x="25" y="9" map="WeatherStations/swws_west_35_24.tmx">
   <lot x="106" y="208" level="0" width="29" height="16" map="../TileZed/buildings/SWWS_West_Diner.tbx"/>
@@ -223,6 +225,7 @@
   <lot x="207" y="119" level="0" width="6" height="3" map="../TileZed/buildings/SWWS_West_Sign.tbx"/>
   <lot x="257" y="105" level="0" width="10" height="16" map="../TileZed/buildings/SWWS_Rivs_Transmission.tbx"/>
   <lot x="57" y="41" level="0" width="6" height="7" map="../TileZed/buildings/SWWS_West_Shed.tbx"/>
+  <lot x="166" y="221" level="0" width="22" height="9" map="../TileZed/buildings/SWWS_West_RaceGate.tbx"/>
   <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="185" y="158" level="0" width="3" height="12"/>
   <object name="trafficjamw" group="ParkingStall" type="ParkingStall" x="149" y="98" level="0" width="12" height="3"/>
   <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="163" y="100" level="0" width="3" height="12"/>
@@ -237,8 +240,8 @@
   <object name="trailerpark" group="ParkingStall" type="ParkingStall" x="154" y="214" level="0" width="6" height="8"/>
   <object name="trailerpark" group="ParkingStall" type="ParkingStall" x="162" y="203" level="0" width="3" height="8"/>
   <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="170" y="193" level="0" width="3" height="8"/>
-  <object group="Nav" type="Nav" x="198" y="0" level="0" width="10" height="256"/>
-  <object group="Nav" type="Nav" x="0" y="246" level="0" width="198" height="10"/>
+  <object group="Nav" type="Nav" x="198" y="0" level="0" width="10" height="220"/>
+  <object group="Nav" type="Nav" x="0" y="246" level="0" width="172" height="10"/>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="106" y="236" level="0" width="36" height="4">
    <template name="ParkingStallS"/>
   </object>
@@ -293,15 +296,12 @@
   <object name="medium" group="ParkingStall" type="ParkingStall" x="239" y="136" level="0" width="12" height="4">
    <template name="ParkingStallS"/>
   </object>
-  <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="187" y="229" level="0" width="3" height="12">
-   <template name="ParkingStallN"/>
-  </object>
-  <object group="DeepForest" type="DeepForest" x="218" y="261" level="0" width="81" height="38"/>
-  <object group="DeepForest" type="DeepForest" x="139" y="292" level="0" width="79" height="7"/>
+  <object group="DeepForest" type="DeepForest" x="214" y="261" level="0" width="85" height="38"/>
+  <object group="DeepForest" type="DeepForest" x="139" y="292" level="0" width="75" height="7"/>
   <object group="DeepForest" type="DeepForest" x="1" y="271" level="0" width="138" height="28"/>
   <object group="Forest" type="Forest" x="1" y="265" level="0" width="138" height="6"/>
   <object group="Vegitation" type="Vegitation" x="1" y="258" level="0" width="138" height="7"/>
-  <object group="Vegitation" type="Vegitation" x="207" y="261" level="0" width="11" height="31"/>
+  <object group="Vegitation" type="Vegitation" x="207" y="233" level="0" width="7" height="59"/>
   <object group="Vegitation" type="Vegitation" x="214" y="129" level="0" width="10" height="132"/>
   <object group="Vegitation" type="Vegitation" x="212" y="47" level="0" width="8" height="70"/>
   <object group="Vegitation" type="Vegitation" x="220" y="47" level="0" width="77" height="29"/>
@@ -336,10 +336,12 @@
   <object name="Restaurant" group="ZombiesType" type="ZombiesType" x="143" y="191" level="0" width="8" height="9"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="151" y="191" level="0" width="18" height="10"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="105" y="224" level="0" width="61" height="18"/>
-  <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="166" y="230" level="0" width="24" height="12"/>
+  <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="166" y="230" level="0" width="13" height="12"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="141" y="257" level="0" width="64" height="30"/>
   <object name="Offices" group="ZombiesType" type="ZombiesType" x="237" y="109" level="0" width="30" height="31"/>
   <object name="Farm" group="ZombiesType" type="ZombiesType" x="55" y="40" level="0" width="10" height="9"/>
+  <object group="Nav" type="Nav" level="0" geometry="polygon" points="172,246 184,240 191,233 198,220 208,220 208,223 201,237 189,249 175,256 172,256"/>
+  <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="207,256 187,256 207,233"/>
  </cell>
  <cell x="24" y="19" map="WeatherStations/swws_muld_34_34.tmx">
   <lot x="41" y="40" level="0" width="11" height="14" map="../TileZed/buildings/SWWS_Muld.tbx"/>
