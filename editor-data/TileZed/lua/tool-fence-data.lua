@@ -27,6 +27,20 @@ fence {
 }
 
 fence {
+    label = 'Tall Wooden 2',
+    west1 = 'fencing_01_72',
+    west2 = 'fencing_01_72',
+    gate_space_w = 'fencing_01_46',
+    gate_door_w = 'fixtures_doors_fences_01_12',
+    north1 = 'fencing_01_73',
+    north2 = 'fencing_01_73',
+    gate_space_n = 'fencing_01_47',
+    gate_door_n = 'fixtures_doors_fences_01_13',
+    nw = 'fencing_01_75',
+    post = 'fencing_01_74'
+}
+
+fence {
     label = 'Short Chainlink',
     west1 = 'fencing_01_27',
     west2 = 'fencing_01_26',
@@ -110,32 +124,5 @@ fence {
     post = 'fencing_01_53'
 }
 
-fence {
-    label = 'Military Grade Broken',
-    west1 = 'swws_fencing_0_3',
-    west2 = 'swws_fencing_0_2',
-    gate_space_w = nil,
-    gate_door_w = nil,
-    north1 = 'swws_fencing_0_0',
-    north2 = 'swws_fencing_0_1',
-    gate_space_n = nil,
-    gate_door_n =  nil,
-    nw = 'swws_fencing_0_4',
-    post = 'swws_fencing_0_5'
-}
-
-fence {
-    label = 'Military Grade Rubble',
-    west1 = 'swws_fencing_0_12',
-    west2 = 'swws_fencing_0_10',
-    gate_space_w = nil,
-    gate_door_w = nil,
-    north1 = 'swws_fencing_0_8',
-    north2 = 'swws_fencing_0_9',
-    gate_space_n = nil,
-    gate_door_n =  nil,
-    nw = 'swws_fencing_0_13',
-    post = 'swws_fencing_0_14'
-}
 
 

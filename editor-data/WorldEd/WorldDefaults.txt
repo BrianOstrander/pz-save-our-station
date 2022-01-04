@@ -356,26 +356,3 @@ objectgroup
     defaulttype = Mannequin
 }
 
-objecttype
-{
-    name = ZombiesType
-}
-
-objectgroup
-{
-    name = ZombiesType
-    color = #002288
-    defaulttype = ZombiesType
-}
-
-objecttype
-{
-    name = ZoneStory
-}
-
-objectgroup
-{
-    name = ZoneStory
-    color = #220088
-    defaulttype = ZoneStory
-}
