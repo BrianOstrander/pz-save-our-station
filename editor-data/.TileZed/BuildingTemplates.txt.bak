@@ -1,6 +1,6 @@
 version = 2
-revision = 6
-source_revision = 5
+revision = 9
+source_revision = 8
 TileEntry
 {
     category = curtains

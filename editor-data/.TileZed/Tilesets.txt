@@ -1,6 +1,6 @@
 version = 0
-revision = 175
-source_revision = 0
+revision = 130
+source_revision = 129
 meta-enums
 {
     DoorW = 1
@@ -543,6 +543,36 @@ tileset
         xy = 5,6
         meta-enum = DoorN
     }
+    tile
+    {
+        xy = 0,7
+        meta-enum = DoorW
+    }
+    tile
+    {
+        xy = 0,8
+        meta-enum = DoorW
+    }
+    tile
+    {
+        xy = 1,7
+        meta-enum = DoorN
+    }
+    tile
+    {
+        xy = 1,8
+        meta-enum = DoorN
+    }
+    tile
+    {
+        xy = 4,7
+        meta-enum = DoorW
+    }
+    tile
+    {
+        xy = 5,7
+        meta-enum = DoorN
+    }
 }
 tileset
 {
@@ -796,6 +826,26 @@ tileset
     tile
     {
         xy = 3,0
+        meta-enum = LightSwitch
+    }
+    tile
+    {
+        xy = 4,0
+        meta-enum = LightSwitch
+    }
+    tile
+    {
+        xy = 5,0
+        meta-enum = LightSwitch
+    }
+    tile
+    {
+        xy = 6,0
+        meta-enum = LightSwitch
+    }
+    tile
+    {
+        xy = 7,0
         meta-enum = LightSwitch
     }
 }

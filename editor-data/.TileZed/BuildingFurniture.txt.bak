@@ -1,5 +1,5 @@
 version = 0
-revision = 174
+revision = 143
 source_revision = 142
 group
 {
@@ -9169,6 +9169,30 @@ group
         entry
         {
             orient = W
+            0,0 = lighting_indoor_01_005
+        }
+        entry
+        {
+            orient = N
+            0,0 = lighting_indoor_01_004
+        }
+        entry
+        {
+            orient = E
+            0,0 = lighting_indoor_01_007
+        }
+        entry
+        {
+            orient = S
+            0,0 = lighting_indoor_01_006
+        }
+    }
+    furniture
+    {
+        layer = WallFurniture
+        entry
+        {
+            orient = W
             0,0 = lighting_indoor_01_016
         }
         entry
@@ -9378,6 +9402,52 @@ group
         {
             orient = W
             0,0 = lighting_indoor_01_011
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = lighting_indoor_01_010
+        }
+        entry
+        {
+            orient = N
+            0,0 = lighting_indoor_01_034
+        }
+        entry
+        {
+            orient = E
+            0,0 = lighting_indoor_01_042
+        }
+        entry
+        {
+            orient = S
+            0,0 = lighting_indoor_01_050
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = lighting_indoor_01_011
+        }
+        entry
+        {
+            orient = N
+            0,0 = lighting_indoor_01_035
+        }
+        entry
+        {
+            orient = E
+            0,0 = lighting_indoor_01_043
+        }
+        entry
+        {
+            orient = S
+            0,0 = lighting_indoor_01_051
         }
     }
     furniture
@@ -22773,6 +22843,26 @@ group
         {
             orient = E
             grime = false
+            0,0 = walls_garage_01_002
+            0,1 = walls_garage_01_001
+            0,2 = walls_garage_01_000
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_003
+            1,0 = walls_garage_01_004
+            2,0 = walls_garage_01_005
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = E
+            grime = false
             0,0 = walls_garage_01_010
             0,1 = walls_garage_01_009
             0,2 = walls_garage_01_008
@@ -22799,6 +22889,26 @@ group
         entry
         {
             orient = S
+            0,0 = walls_garage_01_019
+            1,0 = walls_garage_01_020
+            2,0 = walls_garage_01_021
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_018
+            0,1 = walls_garage_01_017
+            0,2 = walls_garage_01_016
+        }
+        entry
+        {
+            orient = S
+            grime = false
             0,0 = walls_garage_01_019
             1,0 = walls_garage_01_020
             2,0 = walls_garage_01_021
@@ -23058,6 +23168,350 @@ group
             orient = S
             0,0 = walls_garage_01_059
             1,0 = walls_garage_01_061
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_002
+            0,1 = walls_garage_02_001
+            0,2 = walls_garage_02_000
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_003
+            1,0 = walls_garage_02_004
+            2,0 = walls_garage_02_005
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_018
+            0,1 = walls_garage_01_017
+            0,2 = walls_garage_01_016
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_019
+            1,0 = walls_garage_01_020
+            2,0 = walls_garage_01_021
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_010
+            0,1 = walls_garage_02_009
+            0,2 = walls_garage_02_008
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_011
+            1,0 = walls_garage_02_012
+            2,0 = walls_garage_02_013
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_026
+            0,1 = walls_garage_01_025
+            0,2 = walls_garage_01_024
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_027
+            1,0 = walls_garage_01_028
+            2,0 = walls_garage_01_029
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_002
+            0,1 = walls_garage_02_000
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_003
+            1,0 = walls_garage_02_005
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_018
+            0,1 = walls_garage_01_016
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_019
+            1,0 = walls_garage_01_021
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_010
+            0,1 = walls_garage_02_008
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_011
+            1,0 = walls_garage_02_013
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_026
+            0,1 = walls_garage_01_024
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_027
+            1,0 = walls_garage_01_029
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_002
+            0,1 = walls_garage_02_001
+            0,2 = walls_garage_02_000
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_003
+            1,0 = walls_garage_02_004
+            2,0 = walls_garage_02_005
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = industry_trucks_01_034
+            0,1 = industry_trucks_01_033
+            0,2 = industry_trucks_01_032
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = industry_trucks_01_035
+            1,0 = industry_trucks_01_036
+            2,0 = industry_trucks_01_037
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_010
+            0,1 = walls_garage_02_009
+            0,2 = walls_garage_02_008
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_011
+            1,0 = walls_garage_02_012
+            2,0 = walls_garage_02_013
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = industry_trucks_01_042
+            0,1 = industry_trucks_01_041
+            0,2 = industry_trucks_01_040
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = industry_trucks_01_043
+            1,0 = industry_trucks_01_044
+            2,0 = industry_trucks_01_045
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_002
+            0,1 = walls_garage_02_000
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_003
+            1,0 = walls_garage_02_005
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_050
+            0,1 = walls_garage_01_048
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_051
+            1,0 = walls_garage_01_053
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_010
+            0,1 = walls_garage_02_008
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_011
+            1,0 = walls_garage_02_013
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_01_058
+            0,1 = walls_garage_01_056
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_01_059
+            1,0 = walls_garage_01_061
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_050
+            0,1 = walls_garage_02_049
+            0,2 = walls_garage_02_048
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_051
+            1,0 = walls_garage_02_052
+            2,0 = walls_garage_02_053
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_02_034
+            0,1 = walls_garage_02_033
+            0,2 = walls_garage_02_032
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_02_035
+            1,0 = walls_garage_02_036
+            2,0 = walls_garage_02_037
+        }
+    }
+    furniture
+    {
+        layer = Walls
+        entry
+        {
+            orient = W
+            grime = false
+            0,0 = walls_garage_02_058
+            0,1 = walls_garage_02_057
+            0,2 = walls_garage_02_056
+        }
+        entry
+        {
+            orient = N
+            grime = false
+            0,0 = walls_garage_02_059
+            1,0 = walls_garage_02_060
+            2,0 = walls_garage_02_061
+        }
+        entry
+        {
+            orient = E
+            grime = false
+            0,0 = walls_garage_02_042
+            0,1 = walls_garage_02_041
+            0,2 = walls_garage_02_040
+        }
+        entry
+        {
+            orient = S
+            grime = false
+            0,0 = walls_garage_02_043
+            1,0 = walls_garage_02_044
+            2,0 = walls_garage_02_045
         }
     }
 }
@@ -25218,6 +25672,316 @@ group
             orient = N
             0,0 = swws_signs_0_046
             1,0 = swws_signs_0_047
+        }
+    }
+}
+group
+{
+    label = SWWS Garage Locked
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_002
+            0,1 = swws_locked_walls_garage_01_001
+            0,2 = swws_locked_walls_garage_01_001
+            0,3 = swws_locked_walls_garage_01_000
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_003
+            1,0 = swws_locked_walls_garage_01_004
+            2,0 = swws_locked_walls_garage_01_004
+            3,0 = swws_locked_walls_garage_01_005
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_002
+            0,1 = swws_locked_walls_garage_01_001
+            0,2 = swws_locked_walls_garage_01_000
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_003
+            1,0 = swws_locked_walls_garage_01_004
+            2,0 = swws_locked_walls_garage_01_005
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_010
+            0,1 = swws_locked_walls_garage_01_009
+            0,2 = swws_locked_walls_garage_01_009
+            0,3 = swws_locked_walls_garage_01_008
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_011
+            1,0 = swws_locked_walls_garage_01_012
+            2,0 = swws_locked_walls_garage_01_012
+            3,0 = swws_locked_walls_garage_01_013
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_010
+            0,1 = swws_locked_walls_garage_01_009
+            0,2 = swws_locked_walls_garage_01_008
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_011
+            1,0 = swws_locked_walls_garage_01_012
+            2,0 = swws_locked_walls_garage_01_013
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_018
+            0,1 = swws_locked_walls_garage_01_017
+            0,2 = swws_locked_walls_garage_01_017
+            0,3 = swws_locked_walls_garage_01_016
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_019
+            1,0 = swws_locked_walls_garage_01_020
+            2,0 = swws_locked_walls_garage_01_020
+            3,0 = swws_locked_walls_garage_01_021
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_018
+            0,1 = swws_locked_walls_garage_01_017
+            0,2 = swws_locked_walls_garage_01_016
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_019
+            1,0 = swws_locked_walls_garage_01_020
+            2,0 = swws_locked_walls_garage_01_021
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_018
+            0,1 = swws_locked_walls_garage_01_016
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_019
+            1,0 = swws_locked_walls_garage_01_021
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_018
+            0,1 = swws_locked_walls_garage_01_016
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_019
+            1,0 = swws_locked_walls_garage_01_021
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_026
+            0,1 = swws_locked_walls_garage_01_025
+            0,2 = swws_locked_walls_garage_01_025
+            0,3 = swws_locked_walls_garage_01_024
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_027
+            1,0 = swws_locked_walls_garage_01_028
+            2,0 = swws_locked_walls_garage_01_028
+            3,0 = swws_locked_walls_garage_01_029
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_026
+            0,1 = swws_locked_walls_garage_01_025
+            0,2 = swws_locked_walls_garage_01_024
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_027
+            1,0 = swws_locked_walls_garage_01_028
+            2,0 = swws_locked_walls_garage_01_029
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_026
+            0,1 = swws_locked_walls_garage_01_024
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_027
+            1,0 = swws_locked_walls_garage_01_029
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_026
+            0,1 = swws_locked_walls_garage_01_024
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_027
+            1,0 = swws_locked_walls_garage_01_029
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_050
+            0,1 = swws_locked_walls_garage_01_049
+            0,2 = swws_locked_walls_garage_01_049
+            0,3 = swws_locked_walls_garage_01_048
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_051
+            1,0 = swws_locked_walls_garage_01_052
+            2,0 = swws_locked_walls_garage_01_052
+            3,0 = swws_locked_walls_garage_01_053
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_050
+            0,1 = swws_locked_walls_garage_01_049
+            0,2 = swws_locked_walls_garage_01_048
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_051
+            1,0 = swws_locked_walls_garage_01_052
+            2,0 = swws_locked_walls_garage_01_053
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_050
+            0,1 = swws_locked_walls_garage_01_048
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_051
+            1,0 = swws_locked_walls_garage_01_053
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_050
+            0,1 = swws_locked_walls_garage_01_048
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_051
+            1,0 = swws_locked_walls_garage_01_053
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_058
+            0,1 = swws_locked_walls_garage_01_057
+            0,2 = swws_locked_walls_garage_01_057
+            0,3 = swws_locked_walls_garage_01_056
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_059
+            1,0 = swws_locked_walls_garage_01_060
+            2,0 = swws_locked_walls_garage_01_060
+            3,0 = swws_locked_walls_garage_01_061
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_058
+            0,1 = swws_locked_walls_garage_01_057
+            0,2 = swws_locked_walls_garage_01_056
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_059
+            1,0 = swws_locked_walls_garage_01_060
+            2,0 = swws_locked_walls_garage_01_061
+        }
+    }
+    furniture
+    {
+        entry
+        {
+            orient = W
+            0,0 = swws_locked_walls_garage_01_058
+            0,1 = swws_locked_walls_garage_01_056
+        }
+        entry
+        {
+            orient = N
+            0,0 = swws_locked_walls_garage_01_059
+            1,0 = swws_locked_walls_garage_01_061
+        }
+        entry
+        {
+            orient = E
+            0,0 = swws_locked_walls_garage_01_058
+            0,1 = swws_locked_walls_garage_01_056
+        }
+        entry
+        {
+            orient = S
+            0,0 = swws_locked_walls_garage_01_059
+            1,0 = swws_locked_walls_garage_01_061
         }
     }
 }
