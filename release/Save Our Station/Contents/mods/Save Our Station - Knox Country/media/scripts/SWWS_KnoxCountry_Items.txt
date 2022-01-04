@@ -5,23 +5,25 @@ module SWWS_KnoxCountry
 		Base
 	}
 
-/******************* SWWS KNOX COUNTRY ITEMS *******************/
+	/******************* SWWS KNOX COUNTRY ITEMS *******************/
 
-	item Register
+	item SWWS_KnoxCountry_Register
 	{
-		Weight = 0.1,
-		Type = Normal,
+		DisplayCategory = Cartography,
+		Type = Map,
 		DisplayName = NWS Register,
 		Icon = swws_station_map_icon,
-		Map = media/ui/content/swws_station_map_knox_country.png
+		Weight = 0.1,
+		Map = SWWS_KnoxCountry_Register
 	}
 
-	item RegisterAnnotated
+	item SWWS_KnoxCountry_RegisterAnnotated
 	{
-		Weight = 0.1,
-		Type = Normal,
+		DisplayCategory = Cartography,
+		Type = Map,
 		DisplayName = NWS Register - Annotated,
 		Icon = swws_station_map_icon,
-		Map = media/ui/content/swws_station_map_knox_country_annotated.png
+		Weight = 0.1,
+		Map = SWWS_KnoxCountry_RegisterAnnotated
 	}
 }

@@ -7,12 +7,13 @@ module SWWS_Core
 
 /******************* SWWS CORE ITEMS *******************/
 
-    item DiagnosticManual
+    item SWWS_Core_DiagnosticManual
 	{
-		Weight = 0.1,
-		Type = Normal,
+		DisplayCategory = Cartography,
+		Type = Map,
 		DisplayName = NWS Diagnostic Manual,
+		Weight = 0.1,
 		Icon = swws_error_codes_icon,
-		Map = media/ui/content/swws_error_codes.png
+		Map = SWWS_Core_DiagnosticManual
 	}
 }
