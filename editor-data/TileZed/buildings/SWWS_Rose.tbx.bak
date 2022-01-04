@@ -1586,7 +1586,7 @@
  <room Name="Stairwell" InternalName="room4" Color="0 255 0" InteriorWall="63" InteriorWallTrim="0" Floor="44" GrimeFloor="53" GrimeWall="55"/>
  <room Name="Stairwell_2" InternalName="room4" Color="255 255 0" InteriorWall="63" InteriorWallTrim="0" Floor="44" GrimeFloor="53" GrimeWall="55"/>
  <room Name="SWWS_FixLocation" InternalName="SWWS_FixLocation_Rose" Color="0 0 255" InteriorWall="72" InteriorWallTrim="0" Floor="47" GrimeFloor="53" GrimeWall="55"/>
- <room Name="Utility" InternalName="storage" Color="0 255 255" InteriorWall="63" InteriorWallTrim="0" Floor="45" GrimeFloor="53" GrimeWall="0"/>
+ <room Name="Utility" InternalName="garagestorage" Color="0 255 255" InteriorWall="63" InteriorWallTrim="0" Floor="45" GrimeFloor="53" GrimeWall="0"/>
  <room Name="LobbyKitchen" InternalName="kitchen" Color="255 200 0" InteriorWall="71" InteriorWallTrim="0" Floor="36" GrimeFloor="53" GrimeWall="55"/>
  <floor>
   <object type="door" FrameTile="5" x="12" y="11" dir="N" Tile="13"/>

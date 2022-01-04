@@ -2179,7 +2179,7 @@
  <room Name="Stairwell" InternalName="room4" Color="0 255 0" InteriorWall="73" InteriorWallTrim="0" Floor="51" GrimeFloor="60" GrimeWall="62"/>
  <room Name="Stairwell_2" InternalName="room4" Color="255 255 0" InteriorWall="73" InteriorWallTrim="0" Floor="51" GrimeFloor="60" GrimeWall="62"/>
  <room Name="SWWS_FixLocation" InternalName="SWWS_FixLocation_West" Color="0 0 255" InteriorWall="82" InteriorWallTrim="0" Floor="54" GrimeFloor="60" GrimeWall="62"/>
- <room Name="Utility" InternalName="storage" Color="0 255 255" InteriorWall="73" InteriorWallTrim="0" Floor="52" GrimeFloor="60" GrimeWall="0"/>
+ <room Name="Utility" InternalName="garagestorage" Color="0 255 255" InteriorWall="73" InteriorWallTrim="0" Floor="52" GrimeFloor="60" GrimeWall="0"/>
  <room Name="LobbyKitchen" InternalName="kitchen" Color="255 200 0" InteriorWall="81" InteriorWallTrim="0" Floor="56" GrimeFloor="60" GrimeWall="62"/>
  <room Name="EmptyOutside" InternalName="emptyoutside" Color="255 150 0" InteriorWall="64" InteriorWallTrim="63" Floor="35" GrimeFloor="0" GrimeWall="0"/>
  <floor>

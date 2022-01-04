@@ -1661,7 +1661,6 @@
   <object type="furniture" FurnitureTiles="14" orient="N" x="6" y="7"/>
   <object type="furniture" FurnitureTiles="15" orient="E" x="6" y="1"/>
   <object type="furniture" FurnitureTiles="16" orient="N" x="6" y="1"/>
-  <object type="furniture" FurnitureTiles="11" orient="E" x="6" y="2"/>
   <object type="furniture" FurnitureTiles="17" orient="N" x="5" y="1"/>
   <object type="furniture" FurnitureTiles="18" orient="N" x="4" y="1"/>
   <object type="furniture" FurnitureTiles="19" orient="S" x="4" y="2"/>
@@ -1690,6 +1689,7 @@
   <object type="furniture" FurnitureTiles="32" orient="W" x="1" y="8"/>
   <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="4" y="11" dir="W" Tile="0"/>
   <object type="furniture" FurnitureTiles="33" orient="S" x="4" y="10"/>
+  <object type="furniture" FurnitureTiles="19" orient="E" x="6" y="2"/>
   <rooms>
 0,0,0,0,0,0,0,0,0,
 0,0,0,0,8,8,8,0,0,

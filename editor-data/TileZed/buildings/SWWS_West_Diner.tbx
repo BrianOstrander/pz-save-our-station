@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="28" height="15" ExteriorWall="29" ExteriorWallTrim="26" Door="9" DoorFrame="2" Window="76" Curtains="0" Shutters="0" Stairs="75" RoofCap="69" RoofSlope="71" RoofTop="73" GrimeWall="55">
+<building version="3" width="28" height="15" ExteriorWall="29" ExteriorWallTrim="26" Door="9" DoorFrame="2" Window="76" Curtains="0" Shutters="0" Stairs="75" RoofCap="69" RoofSlope="71" RoofTop="73" GrimeWall="55">
+ <properties>
+  <property name="Legend" value="RestaurantsAndEntertainment"/>
+ </properties>
  <tile_entry category="curtains">
   <tile enum="West" tile="fixtures_windows_curtains_01_004"/>
   <tile enum="East" tile="fixtures_windows_curtains_01_005"/>

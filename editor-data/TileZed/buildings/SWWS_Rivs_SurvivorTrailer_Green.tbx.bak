@@ -850,6 +850,7 @@
   <object type="furniture" FurnitureTiles="23" orient="W" x="2" y="8"/>
   <object type="furniture" FurnitureTiles="24" orient="W" x="6" y="8"/>
   <object type="furniture" FurnitureTiles="25" orient="W" x="6" y="2"/>
+  <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="3" y="12" dir="W" Tile="0"/>
   <rooms>
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,

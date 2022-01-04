@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="16" height="6" ExteriorWall="5" ExteriorWallTrim="0" Door="1" DoorFrame="0" Window="16" Curtains="0" Shutters="0" Stairs="15" RoofCap="11" RoofSlope="12" RoofTop="14" GrimeWall="0">
+<building version="3" width="16" height="6" ExteriorWall="5" ExteriorWallTrim="0" Door="1" DoorFrame="0" Window="16" Curtains="0" Shutters="0" Stairs="15" RoofCap="11" RoofSlope="12" RoofTop="14" GrimeWall="0">
  <tile_entry category="doors">
   <tile enum="West" tile="fixtures_doors_01_056"/>
   <tile enum="North" tile="fixtures_doors_01_057"/>

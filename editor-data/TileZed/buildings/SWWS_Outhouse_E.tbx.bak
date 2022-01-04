@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="3" height="3" ExteriorWall="13" ExteriorWallTrim="0" Door="4" DoorFrame="2" Window="98" Curtains="0" Shutters="0" Stairs="97" RoofCap="79" RoofSlope="90" RoofTop="96" GrimeWall="0">
+<building version="3" width="3" height="3" ExteriorWall="13" ExteriorWallTrim="0" Door="4" DoorFrame="2" Window="98" Curtains="0" Shutters="0" Stairs="97" RoofCap="79" RoofSlope="90" RoofTop="96" GrimeWall="0">
+ <properties>
+  <property name="Legend" value="Residential"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_004"/>
   <tile enum="North" tile="fixtures_doors_frames_01_005"/>
@@ -2044,8 +2047,9 @@
   </entry>
  </furniture>
  <user_tiles>
-  <tile tile="overlay_grime_wall_01_000"/>
-  <tile tile="overlay_grime_wall_01_011"/>
+  <tile tile="overlay_grime_wall_01_001"/>
+  <tile tile="overlay_grime_wall_01_003"/>
+  <tile tile="overlay_grime_wall_01_010"/>
  </user_tiles>
  <used_tiles>8 40 31 39 77 83 74 85 84 88 89 86 87 79 81 82 80 78 76 73 72 75 9 14 15 13 12 7 16 17 6 10 11 53 48 41 43 70 69 68 67 66 65 64 63 62 60 61 58 59 55 56 51 57 52 50 47 46 44 45 49 54 38 37 98 5 1 91 42 4 2 97 21 23 24 32 34 35 36 33 19 20 22 18 27 26 28 25 30 29 92 93 96 94 3 90 95 71</used_tiles>
  <used_furniture>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 20 33 34 35 36 37 38 39 40 41 42 43 44 45 0 46 47 48 49 50 51 52 53 54 55</used_furniture>
@@ -2061,8 +2065,8 @@
  <room Name="Bedroom2" InternalName="bedroom" Color="0 64 255" InteriorWall="39" InteriorWallTrim="0" Floor="31" GrimeFloor="0" GrimeWall="0"/>
  <room Name="Bedroom3" InternalName="bedroom" Color="0 128 255" InteriorWall="39" InteriorWallTrim="0" Floor="31" GrimeFloor="0" GrimeWall="0"/>
  <floor>
-  <object type="door" FrameTile="2" x="1" y="2" dir="N" Tile="3"/>
-  <object type="furniture" FurnitureTiles="0" orient="N" x="1" y="1"/>
+  <object type="door" FrameTile="2" x="2" y="1" dir="W" Tile="3"/>
+  <object type="furniture" FurnitureTiles="0" orient="W" x="1" y="1"/>
   <rooms>
 0,0,0,
 0,7,0,
@@ -2070,13 +2074,13 @@
 </rooms>
   <tiles layer="WallGrime">
 0,0,0,0,
-0,0,1,0,
-0,2,0,0,
+0,0,3,0,
+0,1,2,0,
 0,0,0,0
 </tiles>
  </floor>
  <floor>
-  <object type="roof" width="1" height="1" RoofType="PeakNS" Depth="Point5" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="79" SlopeTiles="90" TopTiles="95" x="1" y="1"/>
+  <object type="roof" width="1" height="1" RoofType="PeakWE" Depth="Point5" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="79" SlopeTiles="90" TopTiles="95" x="1" y="1"/>
   <rooms>
 0,0,0,
 0,0,0,

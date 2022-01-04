@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="9" height="7" ExteriorWall="9" ExteriorWallTrim="4" Door="2" DoorFrame="1" Window="26" Curtains="0" Shutters="0" Stairs="25" RoofCap="20" RoofSlope="22" RoofTop="23" GrimeWall="0">
+<building version="3" width="9" height="7" ExteriorWall="9" ExteriorWallTrim="4" Door="2" DoorFrame="1" Window="26" Curtains="0" Shutters="0" Stairs="25" RoofCap="20" RoofSlope="22" RoofTop="23" GrimeWall="0">
+ <properties>
+  <property name="Legend" value="Industrial"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_002"/>
   <tile enum="North" tile="fixtures_doors_frames_01_003"/>
@@ -736,11 +739,6 @@
  </furniture>
  <furniture>
   <entry orient="W">
-   <tile x="0" y="0" name="trashcontainers_01_016"/>
-  </entry>
- </furniture>
- <furniture>
-  <entry orient="W">
    <tile x="0" y="0" name="walls_decoration_01_071"/>
   </entry>
   <entry orient="N">
@@ -805,7 +803,7 @@
   <tile tile="walls_commercial_02_023"/>
  </user_tiles>
  <used_tiles>7 17 10 11 13 5 9 4 16 15 8 6 18 21 24 23 19 20 22 3 14 26 2 1 12</used_tiles>
- <used_furniture>20 21 0 22 23 2 24 25 26 27 1 28 29 30 31 3 4 5 6 7 8 32 9 10 11 33 12 13 34 14 15 35 16 17 18 19</used_furniture>
+ <used_furniture>20 21 0 22 23 2 24 25 26 27 1 28 29 30 31 3 4 5 6 7 8 18 9 10 11 32 12 13 33 14 15 34 16 17 18 19</used_furniture>
  <room Name="storage" InternalName="garagestorage" Color="200 200 200" InteriorWall="16" InteriorWallTrim="15" Floor="10" GrimeFloor="11" GrimeWall="12"/>
  <room Name="storage2" InternalName="garagestorage" Color="128 128 128" InteriorWall="16" InteriorWallTrim="15" Floor="10" GrimeFloor="11" GrimeWall="13"/>
  <floor>

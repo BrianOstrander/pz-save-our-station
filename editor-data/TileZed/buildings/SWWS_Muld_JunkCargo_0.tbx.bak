@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="14" height="17" ExteriorWall="4" ExteriorWallTrim="0" Door="2" DoorFrame="0" Window="27" Curtains="1" Shutters="0" Stairs="26" RoofCap="18" RoofSlope="19" RoofTop="25" GrimeWall="14">
+<building version="2" width="14" height="17" ExteriorWall="4" ExteriorWallTrim="0" Door="2" DoorFrame="0" Window="30" Curtains="1" Shutters="0" Stairs="29" RoofCap="21" RoofSlope="22" RoofTop="28" GrimeWall="15">
  <tile_entry category="curtains">
   <tile enum="West" tile="fixtures_windows_curtains_01_032"/>
   <tile enum="East" tile="fixtures_windows_curtains_01_033"/>
@@ -63,6 +63,9 @@
   <tile enum="NorthDoor" tile="swws_industry_tk_01_011"/>
  </tile_entry>
  <tile_entry category="floors">
+  <tile enum="Floor" tile="floors_exterior_natural_01_008"/>
+ </tile_entry>
+ <tile_entry category="floors">
   <tile enum="Floor" tile="floors_interior_tilesandwood_01_016"/>
  </tile_entry>
  <tile_entry category="floors">
@@ -104,6 +107,26 @@
   <tile enum="WestDoubleRight" tile="overlay_grime_wall_01_037"/>
   <tile enum="NorthDoubleLeft" tile="overlay_grime_wall_01_038"/>
   <tile enum="NorthDoubleRight" tile="overlay_grime_wall_01_039"/>
+ </tile_entry>
+ <tile_entry category="interior_wall_trim">
+  <tile enum="West" tile="industry_bunker_01_024"/>
+  <tile enum="North" tile="industry_bunker_01_025"/>
+  <tile enum="NorthWest" tile="industry_bunker_01_026"/>
+  <tile enum="SouthEast" tile="industry_bunker_01_027"/>
+  <tile enum="WestWindow" tile="industry_bunker_01_032"/>
+  <tile enum="NorthWindow" tile="industry_bunker_01_033"/>
+  <tile enum="WestDoor" tile="industry_bunker_01_034"/>
+  <tile enum="NorthDoor" tile="industry_bunker_01_035"/>
+ </tile_entry>
+ <tile_entry category="interior_walls">
+  <tile enum="West" tile="industry_01_000"/>
+  <tile enum="North" tile="industry_01_001"/>
+  <tile enum="NorthWest" tile="industry_01_002"/>
+  <tile enum="SouthEast" tile="industry_01_003"/>
+  <tile enum="WestWindow" tile="industry_01_008"/>
+  <tile enum="NorthWindow" tile="industry_01_009"/>
+  <tile enum="WestDoor" tile="industry_01_010"/>
+  <tile enum="NorthDoor" tile="industry_01_011"/>
  </tile_entry>
  <tile_entry category="interior_walls">
   <tile enum="West" tile="industry_trucks_01_000"/>
@@ -917,12 +940,13 @@
   <tile tile="signs_one-off_01_022"/>
   <tile tile="signs_one-off_01_023"/>
  </user_tiles>
- <used_tiles>27 2 1 17 8 13 7 3 4 18 19 20 23 22 21 24 25 16 6 5 15 14 9 12 10 11</used_tiles>
+ <used_tiles>30 2 1 20 9 14 7 3 4 21 22 23 26 25 24 27 28 19 6 5 18 15 10 13 11 12 17 16 8</used_tiles>
  <used_furniture>23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 0 1 40 2 3 22 4 5 6 7 8 9 10 11 12 13 14 15 16 17 41 18 19 20 21</used_furniture>
- <room Name="theatrestorage" InternalName="theatrestorage" Color="200 200 200" InteriorWall="16" InteriorWallTrim="0" Floor="12" GrimeFloor="13" GrimeWall="0"/>
- <room Name="loggingfactory" InternalName="loggingfactor" Color="128 128 128" InteriorWall="16" InteriorWallTrim="0" Floor="12" GrimeFloor="13" GrimeWall="0"/>
- <room Name="gardenstore" InternalName="gardenstore" Color="255 0 0" InteriorWall="16" InteriorWallTrim="0" Floor="10" GrimeFloor="13" GrimeWall="0"/>
- <room Name="BandPractice" InternalName="BandPractice" Color="0 255 0" InteriorWall="16" InteriorWallTrim="0" Floor="11" GrimeFloor="13" GrimeWall="0"/>
+ <room Name="theatrestorage" InternalName="theatrestorage" Color="200 200 200" InteriorWall="19" InteriorWallTrim="0" Floor="13" GrimeFloor="14" GrimeWall="0"/>
+ <room Name="loggingfactory" InternalName="loggingfactor" Color="128 128 128" InteriorWall="19" InteriorWallTrim="0" Floor="13" GrimeFloor="14" GrimeWall="0"/>
+ <room Name="gardenstore" InternalName="gardenstore" Color="255 0 0" InteriorWall="19" InteriorWallTrim="0" Floor="11" GrimeFloor="14" GrimeWall="0"/>
+ <room Name="BandPractice" InternalName="BandPractice" Color="0 255 0" InteriorWall="19" InteriorWallTrim="0" Floor="12" GrimeFloor="14" GrimeWall="0"/>
+ <room Name="EmptyOutside" InternalName="emptyoutside" Color="0 0 255" InteriorWall="17" InteriorWallTrim="16" Floor="8" GrimeFloor="0" GrimeWall="0"/>
  <floor>
   <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="11" y="0" dir="N" Tile="0"/>
   <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="10" y="9" dir="N" Tile="0"/>
@@ -930,12 +954,12 @@
   <object type="furniture" FurnitureTiles="0" orient="W" x="11" y="0"/>
   <object type="furniture" FurnitureTiles="0" orient="W" x="10" y="9"/>
   <object type="furniture" FurnitureTiles="1" orient="W" x="3" y="13"/>
-  <object type="wall" length="10" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="0" y="12" dir="W" Tile="3"/>
-  <object type="wall" length="3" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="0" y="9" dir="N" Tile="3"/>
-  <object type="wall" length="10" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="0" y="9" dir="W" Tile="3"/>
-  <object type="wall" length="10" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="3" y="16" dir="W" Tile="5"/>
-  <object type="wall" length="10" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="3" y="13" dir="W" Tile="5"/>
-  <object type="wall" length="3" InteriorTile="16" ExteriorTrim="0" InteriorTrim="0" x="13" y="13" dir="N" Tile="5"/>
+  <object type="wall" length="10" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="0" y="12" dir="W" Tile="3"/>
+  <object type="wall" length="3" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="0" y="9" dir="N" Tile="3"/>
+  <object type="wall" length="10" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="0" y="9" dir="W" Tile="3"/>
+  <object type="wall" length="10" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="3" y="16" dir="W" Tile="5"/>
+  <object type="wall" length="10" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="3" y="13" dir="W" Tile="5"/>
+  <object type="wall" length="3" InteriorTile="19" ExteriorTrim="0" InteriorTrim="0" x="13" y="13" dir="N" Tile="5"/>
   <object type="furniture" FurnitureTiles="2" orient="W" x="13" y="13"/>
   <object type="furniture" FurnitureTiles="3" orient="N" x="10" y="16"/>
   <object type="furniture" FurnitureTiles="4" orient="N" x="11" y="16"/>
@@ -1010,12 +1034,12 @@
 0,1,1,1,1,1,1,1,1,1,1,0,0,0,
 0,1,1,1,1,1,1,1,1,1,1,0,0,0,
 0,1,1,1,1,1,1,1,1,1,1,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
+0,0,5,5,5,0,0,0,0,0,0,0,0,0,
 2,2,2,2,2,2,2,2,2,2,0,0,0,0,
 2,2,2,2,2,2,2,2,2,2,0,0,0,0,
 2,2,2,2,2,2,2,2,2,2,0,0,0,0,
@@ -1089,11 +1113,11 @@
  <floor>
   <object type="wall" length="3" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="1" y="10" dir="W" Tile="0"/>
   <object type="furniture" FurnitureTiles="0" orient="N" x="1" y="10"/>
-  <object type="roof" width="7" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="22" x="4" y="0"/>
-  <object type="roof" width="1" height="1" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="24" x="0" y="9"/>
-  <object type="roof" width="4" height="2" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="24" x="0" y="10"/>
-  <object type="roof" width="6" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="24" x="4" y="9"/>
-  <object type="roof" width="10" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="25" x="3" y="13"/>
+  <object type="roof" width="7" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="25" x="4" y="0"/>
+  <object type="roof" width="1" height="1" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="27" x="0" y="9"/>
+  <object type="roof" width="4" height="2" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="27" x="0" y="10"/>
+  <object type="roof" width="6" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="27" x="4" y="9"/>
+  <object type="roof" width="10" height="3" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="28" x="3" y="13"/>
   <object type="furniture" FurnitureTiles="22" orient="W" x="4" y="0"/>
   <object type="furniture" FurnitureTiles="15" orient="W" x="1" y="7"/>
   <object type="furniture" FurnitureTiles="15" orient="W" x="1" y="6"/>
@@ -1205,7 +1229,7 @@
 </tiles>
  </floor>
  <floor>
-  <object type="roof" width="3" height="10" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="18" SlopeTiles="19" TopTiles="21" x="1" y="0"/>
+  <object type="roof" width="3" height="10" RoofType="FlatTop" Depth="Zero" cappedW="true" cappedN="true" cappedE="true" cappedS="true" CapTiles="21" SlopeTiles="22" TopTiles="24" x="1" y="0"/>
   <rooms>
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,
