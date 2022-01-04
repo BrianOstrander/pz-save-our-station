@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="6" height="11" ExteriorWall="15" ExteriorWallTrim="9" Door="1" DoorFrame="0" Window="30" Curtains="0" Shutters="0" Stairs="29" RoofCap="26" RoofSlope="27" RoofTop="28" GrimeWall="20">
+<building version="3" width="6" height="11" ExteriorWall="15" ExteriorWallTrim="9" Door="1" DoorFrame="0" Window="30" Curtains="0" Shutters="0" Stairs="29" RoofCap="26" RoofSlope="27" RoofTop="28" GrimeWall="20">
+ <properties>
+  <property name="Legend" value="Industrial"/>
+ </properties>
  <tile_entry category="doors">
   <tile enum="West" tile="fixtures_doors_01_056"/>
   <tile enum="North" tile="fixtures_doors_01_057"/>

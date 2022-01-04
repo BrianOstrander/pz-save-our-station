@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="8" height="7" ExteriorWall="4" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="19" Curtains="0" Shutters="0" Stairs="18" RoofCap="15" RoofSlope="16" RoofTop="17" GrimeWall="10">
+<building version="3" width="8" height="7" ExteriorWall="4" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="19" Curtains="0" Shutters="0" Stairs="18" RoofCap="15" RoofSlope="16" RoofTop="17" GrimeWall="10">
+ <properties>
+  <property name="Legend" value="RestaurantsAndEntertainment"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_036"/>
   <tile enum="North" tile="fixtures_doors_frames_01_038"/>
@@ -298,6 +301,22 @@
    <tile x="0" y="0" name="location_shop_greenes_01_035"/>
   </entry>
  </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="industry_01_022"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="industry_01_023"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="trashcontainers_01_026"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="trashcontainers_01_027"/>
+  </entry>
+ </furniture>
  <furniture layer="Walls">
   <entry orient="E">
    <tile x="0" y="0" name="walls_garage_01_002"/>
@@ -370,7 +389,7 @@
   <tile tile="overlay_grime_floor_01_037"/>
  </user_tiles>
  <used_tiles>6 14 8 9 11 3 5 4 7 13 12 15 16 17 1 2 10</used_tiles>
- <used_furniture>6 7 0 1 8 9 2 3 4 5</used_furniture>
+ <used_furniture>8 9 0 1 10 11 2 3 4 5 6 7</used_furniture>
  <room Name="storage" InternalName="garage" Color="200 200 200" InteriorWall="12" InteriorWallTrim="0" Floor="8" GrimeFloor="9" GrimeWall="11"/>
  <room Name="EmptyOutside" InternalName="emptyoutside" Color="128 128 128" InteriorWall="12" InteriorWallTrim="0" Floor="8" GrimeFloor="9" GrimeWall="11"/>
  <floor>
@@ -390,6 +409,9 @@
   <object type="furniture" FurnitureTiles="3" orient="N" x="5" y="2"/>
   <object type="furniture" FurnitureTiles="4" orient="E" x="1" y="1"/>
   <object type="furniture" FurnitureTiles="5" orient="N" x="2" y="1"/>
+  <object type="furniture" FurnitureTiles="6" orient="W" x="7" y="4"/>
+  <object type="furniture" FurnitureTiles="6" orient="W" x="7" y="5"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="7" y="3"/>
   <rooms>
 0,0,0,0,0,0,0,0,
 2,2,2,2,2,2,2,0,

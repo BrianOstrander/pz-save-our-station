@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="8" height="7" ExteriorWall="5" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="35" Curtains="0" Shutters="0" Stairs="34" RoofCap="30" RoofSlope="31" RoofTop="32" GrimeWall="25">
+<building version="3" width="8" height="7" ExteriorWall="5" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="35" Curtains="0" Shutters="0" Stairs="34" RoofCap="30" RoofSlope="31" RoofTop="32" GrimeWall="25">
+ <properties>
+  <property name="Legend" value="RestaurantsAndEntertainment"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_036"/>
   <tile enum="North" tile="fixtures_doors_frames_01_038"/>
@@ -449,6 +452,45 @@
    <tile x="0" y="0" name="location_shop_greenes_01_036"/>
   </entry>
  </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="trash_01_004"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="trash_01_005"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="trash_01_006"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="trash_01_007"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="trash_01_012"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="trash_01_052"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="trash_01_053"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="trash_01_032"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="trash_01_033"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="trash_01_034"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="trash_01_035"/>
+  </entry>
+ </furniture>
  <furniture layer="Walls">
   <entry orient="E">
    <tile x="0" y="0" name="walls_garage_01_002"/>
@@ -507,7 +549,7 @@
   <tile tile="overlay_grime_floor_01_037"/>
  </user_tiles>
  <used_tiles>9 29 23 24 26 3 5 4 10 28 27 30 31 33 1 2 25 6 7 8 17 22 11 14 15 16 13 12 19 18 20 21 32</used_tiles>
- <used_furniture>6 7 0 1 8 2 3 4 5</used_furniture>
+ <used_furniture>9 10 0 1 11 2 3 4 5 6 7 8</used_furniture>
  <room Name="storage" InternalName="garage" Color="200 200 200" InteriorWall="27" InteriorWallTrim="0" Floor="23" GrimeFloor="24" GrimeWall="26"/>
  <room Name="EmptyOutside" InternalName="emptyoutside" Color="128 128 128" InteriorWall="27" InteriorWallTrim="0" Floor="23" GrimeFloor="24" GrimeWall="26"/>
  <floor>
@@ -528,6 +570,9 @@
   <object type="furniture" FurnitureTiles="4" orient="W" x="0" y="2"/>
   <object type="furniture" FurnitureTiles="5" orient="W" x="0" y="2"/>
   <object type="furniture" FurnitureTiles="4" orient="W" x="1" y="1"/>
+  <object type="furniture" FurnitureTiles="6" orient="W" x="1" y="2"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="6" y="3"/>
+  <object type="furniture" FurnitureTiles="8" orient="W" x="4" y="2"/>
   <rooms>
 0,0,0,0,0,0,0,0,
 2,2,2,2,2,2,2,0,

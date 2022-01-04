@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="3" height="3" ExteriorWall="13" ExteriorWallTrim="0" Door="4" DoorFrame="2" Window="98" Curtains="0" Shutters="0" Stairs="97" RoofCap="79" RoofSlope="90" RoofTop="96" GrimeWall="0">
+<building version="3" width="3" height="3" ExteriorWall="13" ExteriorWallTrim="0" Door="4" DoorFrame="2" Window="98" Curtains="0" Shutters="0" Stairs="97" RoofCap="79" RoofSlope="90" RoofTop="96" GrimeWall="0">
+ <properties>
+  <property name="Legend" value="Residential"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_004"/>
   <tile enum="North" tile="fixtures_doors_frames_01_005"/>
@@ -2045,6 +2048,7 @@
  </furniture>
  <user_tiles>
   <tile tile="overlay_grime_wall_01_000"/>
+  <tile tile="overlay_grime_wall_01_003"/>
   <tile tile="overlay_grime_wall_01_011"/>
  </user_tiles>
  <used_tiles>8 40 31 39 77 83 74 85 84 88 89 86 87 79 81 82 80 78 76 73 72 75 9 14 15 13 12 7 16 17 6 10 11 53 48 41 43 70 69 68 67 66 65 64 63 62 60 61 58 59 55 56 51 57 52 50 47 46 44 45 49 54 38 37 98 5 1 91 42 4 2 97 21 23 24 32 34 35 36 33 19 20 22 18 27 26 28 25 30 29 92 93 96 94 3 90 95 71</used_tiles>
@@ -2071,7 +2075,7 @@
   <tiles layer="WallGrime">
 0,0,0,0,
 0,0,1,0,
-0,2,0,0,
+0,3,2,0,
 0,0,0,0
 </tiles>
  </floor>

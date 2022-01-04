@@ -44,10 +44,10 @@
  <bmp path="../../../Google Drive/Cross Platform Shared/swws_zulu.png" x="11" y="24" width="1" height="1"/>
  <bmp path="swws_west.png" x="25" y="9" width="1" height="1"/>
  <bmp path="swws_muld.png" x="24" y="19" width="1" height="1"/>
- <propertyenum name="Direction" choices="N,S,W,E" multi="true"/>
+ <propertyenum name="Direction" choices="N,S,W,E" multi="false"/>
  <propertyenum name="Professions" choices="all,unemployed,policeofficer,constructionworker,securityguard,parkranger,fireofficer" multi="true"/>
- <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="true"/>
- <propertyenum name="Skin" choices="White,Black" multi="true"/>
+ <propertyenum name="Pose" choices="pose01,pose02,pose03" multi="false"/>
+ <propertyenum name="Skin" choices="White,Black" multi="false"/>
  <propertydef name="Direction" default="N" enum="Direction"/>
  <propertydef name="FaceDirection" default="true"/>
  <propertydef name="Professions" default="all" enum="Professions">
@@ -209,7 +209,6 @@
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="234" y="118" level="0" width="36" height="32"/>
  </cell>
  <cell x="25" y="9" map="WeatherStations/swws_west_35_24.tmx">
-  <lot x="166" y="221" level="0" width="22" height="9" map="../TileZed/buildings/SWWS_West_RaceGate.tbx"/>
   <lot x="106" y="208" level="0" width="29" height="16" map="../TileZed/buildings/SWWS_West_Diner.tbx"/>
   <lot x="135" y="203" level="0" width="9" height="8" map="../TileZed/buildings/SWWS_West_RaceGarage_0.tbx"/>
   <lot x="144" y="203" level="0" width="9" height="8" map="../TileZed/buildings/SWWS_West_RaceGarage_1.tbx"/>

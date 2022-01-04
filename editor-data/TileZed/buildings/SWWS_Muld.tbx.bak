@@ -4571,7 +4571,7 @@
  <room Name="office" InternalName="hall" Color="200 200 200" InteriorWall="220" InteriorWallTrim="138" Floor="61" GrimeFloor="128" GrimeWall="0"/>
  <room Name="SWWS_FixLocation" InternalName="SWWS_FixLocation_Muld" Color="255 110 0" InteriorWall="227" InteriorWallTrim="0" Floor="82" GrimeFloor="128" GrimeWall="132"/>
  <room Name="storage2" InternalName="storage" Color="255 150 0" InteriorWall="214" InteriorWallTrim="139" Floor="65" GrimeFloor="128" GrimeWall="130"/>
- <room Name="storage" InternalName="storage" Color="255 200 0" InteriorWall="219" InteriorWallTrim="0" Floor="57" GrimeFloor="127" GrimeWall="129"/>
+ <room Name="storage" InternalName="garagestorage" Color="255 200 0" InteriorWall="219" InteriorWallTrim="0" Floor="57" GrimeFloor="127" GrimeWall="129"/>
  <room Name="bathroom" InternalName="bathroom" Color="128 128 128" InteriorWall="214" InteriorWallTrim="0" Floor="72" GrimeFloor="127" GrimeWall="131"/>
  <room Name="kitchen" InternalName="room1" Color="255 0 0" InteriorWall="151" InteriorWallTrim="0" Floor="68" GrimeFloor="128" GrimeWall="0"/>
  <room Name="hallway" InternalName="hallway" Color="0 255 0" InteriorWall="231" InteriorWallTrim="133" Floor="123" GrimeFloor="128" GrimeWall="132"/>

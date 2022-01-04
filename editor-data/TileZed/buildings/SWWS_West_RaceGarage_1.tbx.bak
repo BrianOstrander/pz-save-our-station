@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="8" height="7" ExteriorWall="4" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="20" Curtains="0" Shutters="0" Stairs="19" RoofCap="16" RoofSlope="17" RoofTop="18" GrimeWall="10">
+<building version="3" width="8" height="7" ExteriorWall="4" ExteriorWallTrim="0" Door="0" DoorFrame="2" Window="20" Curtains="0" Shutters="0" Stairs="19" RoofCap="16" RoofSlope="17" RoofTop="18" GrimeWall="10">
+ <properties>
+  <property name="Legend" value="RestaurantsAndEntertainment"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_036"/>
   <tile enum="North" tile="fixtures_doors_frames_01_038"/>
@@ -273,6 +276,114 @@
    <tile x="1" y="0" name="roofs_04_006"/>
   </entry>
  </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_shelving_01_025"/>
+   <tile x="0" y="1" name="furniture_shelving_01_024"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_shelving_01_026"/>
+   <tile x="1" y="0" name="furniture_shelving_01_027"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="carpentry_01_016"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="carpentry_01_017"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="carpentry_01_018"/>
+  </entry>
+ </furniture>
+ <furniture corners="true">
+  <entry orient="W">
+   <tile x="0" y="0" name="carpentry_02_019"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="carpentry_02_021"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="carpentry_02_023"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="carpentry_02_017"/>
+  </entry>
+  <entry orient="SW">
+   <tile x="0" y="0" name="carpentry_02_018"/>
+  </entry>
+  <entry orient="NW">
+   <tile x="0" y="0" name="carpentry_02_020"/>
+  </entry>
+  <entry orient="NE">
+   <tile x="0" y="0" name="carpentry_02_022"/>
+  </entry>
+  <entry orient="SE">
+   <tile x="0" y="0" name="carpentry_02_016"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="carpentry_01_045"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="carpentry_01_044"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="carpentry_01_047"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="carpentry_01_046"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="carpentry_02_053"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="carpentry_02_052"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="furniture_seating_outdoor_01_023"/>
+   <tile x="0" y="1" name="furniture_seating_outdoor_01_022"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="furniture_seating_outdoor_01_020"/>
+   <tile x="1" y="0" name="furniture_seating_outdoor_01_021"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="walls_decoration_01_017"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="walls_decoration_01_016"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="location_community_school_01_033"/>
+  </entry>
+  <entry orient="N">
+   <tile x="0" y="0" name="location_community_school_01_032"/>
+  </entry>
+  <entry orient="E">
+   <tile x="0" y="0" name="location_community_school_01_035"/>
+  </entry>
+  <entry orient="S">
+   <tile x="0" y="0" name="location_community_school_01_034"/>
+  </entry>
+ </furniture>
+ <furniture>
+  <entry orient="W">
+   <tile x="0" y="0" name="overlay_messages_wall_01_005"/>
+   <tile x="0" y="1" name="overlay_messages_wall_01_004"/>
+   <tile x="0" y="2" name="overlay_messages_wall_01_003"/>
+  </entry>
+ </furniture>
  <furniture layer="Walls">
   <entry orient="E">
    <tile x="0" y="0" name="walls_garage_01_002"/>
@@ -331,7 +442,7 @@
   <tile tile="overlay_grime_floor_01_037"/>
  </user_tiles>
  <used_tiles>6 15 8 9 11 3 5 4 7 14 13 16 17 18 1 2 10 12</used_tiles>
- <used_furniture>2 3 0 1 4</used_furniture>
+ <used_furniture>11 12 0 1 13 2 3 4 5 6 7 8 9 10</used_furniture>
  <room Name="storage" InternalName="garage" Color="200 200 200" InteriorWall="13" InteriorWallTrim="0" Floor="8" GrimeFloor="9" GrimeWall="10"/>
  <room Name="EmptyOutside" InternalName="emptyoutside" Color="128 128 128" InteriorWall="13" InteriorWallTrim="0" Floor="8" GrimeFloor="9" GrimeWall="11"/>
  <floor>
@@ -347,6 +458,16 @@
   <object type="wall" length="2" InteriorTile="0" ExteriorTrim="0" InteriorTrim="0" x="5" y="3" dir="N" Tile="0"/>
   <object type="door" FrameTile="1" x="5" y="4" dir="W" Tile="0"/>
   <object type="door" FrameTile="2" x="5" y="3" dir="W" Tile="0"/>
+  <object type="furniture" FurnitureTiles="2" orient="N" x="1" y="1"/>
+  <object type="furniture" FurnitureTiles="3" orient="W" x="3" y="1"/>
+  <object type="furniture" FurnitureTiles="4" orient="NW" x="5" y="2"/>
+  <object type="furniture" FurnitureTiles="4" orient="N" x="6" y="2"/>
+  <object type="furniture" FurnitureTiles="5" orient="W" x="5" y="5"/>
+  <object type="furniture" FurnitureTiles="6" orient="N" x="0" y="2"/>
+  <object type="furniture" FurnitureTiles="7" orient="W" x="0" y="3"/>
+  <object type="furniture" FurnitureTiles="8" orient="W" x="5" y="5"/>
+  <object type="furniture" FurnitureTiles="9" orient="N" x="5" y="2"/>
+  <object type="furniture" FurnitureTiles="10" orient="W" x="7" y="2"/>
   <rooms>
 0,0,0,0,0,0,0,0,
 2,2,2,2,2,2,2,0,

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="42" height="51" ExteriorWall="36" ExteriorWallTrim="0" Door="11" DoorFrame="0" Window="163" Curtains="0" Shutters="0" Stairs="160" RoofCap="144" RoofSlope="147" RoofTop="159" GrimeWall="93">
+<building version="3" width="42" height="51" ExteriorWall="36" ExteriorWallTrim="0" Door="11" DoorFrame="0" Window="163" Curtains="0" Shutters="0" Stairs="160" RoofCap="144" RoofSlope="147" RoofTop="159" GrimeWall="93">
+ <properties>
+  <property name="Legend" value="CommunityServices"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_000"/>
   <tile enum="North" tile="fixtures_doors_frames_01_001"/>

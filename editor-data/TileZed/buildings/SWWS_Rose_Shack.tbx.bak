@@ -521,7 +521,7 @@
  <user_tiles/>
  <used_tiles>3 11 8 10 7 6 5 4 9 12 13 15 14 16 17 18</used_tiles>
  <used_furniture>22 0 15 19 1 2 3 4 23 24 25 5 26 6 20 7 21 8 9 10 11 12 13 14 27 16 17 18</used_furniture>
- <room Name="Foyer" InternalName="hall" Color="255 255 255" InteriorWall="11" InteriorWallTrim="0" Floor="8" GrimeFloor="0" GrimeWall="0"/>
+ <room Name="Foyer" InternalName="prisoncells" Color="255 255 255" InteriorWall="11" InteriorWallTrim="0" Floor="8" GrimeFloor="0" GrimeWall="0"/>
  <room Name="Hall" InternalName="hall" Color="200 200 200" InteriorWall="11" InteriorWallTrim="0" Floor="8" GrimeFloor="0" GrimeWall="0"/>
  <room Name="Living Room" InternalName="livingroom" Color="255 0 0" InteriorWall="10" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>
  <room Name="Dining Room" InternalName="diningroom" Color="255 0 128" InteriorWall="10" InteriorWallTrim="0" Floor="7" GrimeFloor="0" GrimeWall="0"/>

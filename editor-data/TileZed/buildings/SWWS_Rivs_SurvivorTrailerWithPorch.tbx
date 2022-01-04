@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<building version="2" width="6" height="14" ExteriorWall="4" ExteriorWallTrim="0" Door="2" DoorFrame="1" Window="40" Curtains="0" Shutters="0" Stairs="39" RoofCap="33" RoofSlope="34" RoofTop="36" GrimeWall="0">
+<building version="3" width="6" height="14" ExteriorWall="4" ExteriorWallTrim="0" Door="2" DoorFrame="1" Window="40" Curtains="0" Shutters="0" Stairs="39" RoofCap="33" RoofSlope="34" RoofTop="36" GrimeWall="0">
+ <properties>
+  <property name="Legend" value="Residential"/>
+ </properties>
  <tile_entry category="door_frames">
   <tile enum="West" tile="fixtures_doors_frames_01_000"/>
   <tile enum="North" tile="fixtures_doors_frames_01_001"/>
