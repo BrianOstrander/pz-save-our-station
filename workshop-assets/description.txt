@@ -30,30 +30,7 @@ Since these are technical publications with niche appeal, they're rarely found. 
 
 [h1]Mod Compatibility[/h1]
 
-[b]Save Our Station[/b] is compatible with all Knox Country map mods I am aware of, including the ones below. If there is a map not on this list, let me know and I'll confirm compatibility. 
-
-[b]Confirmed Compatibilities[/b]
-[list]
-    [*]West Point Expansion
-    [*]Raven Creek
-    [*]Fort Redstone
-    [*]South Muldraugh
-    [*]New Denver
-    [*]Eerie Country
-    [*]Bedford Falls
-    [*]Journey Park
-    [*]Valley Station
-    [*]Film Studio
-    [*]Xonic's Mega Mall
-    [*]The Walking Dead Project Pack
-    [*]Survival Farm
-    [*]Secret Base Road
-    [*]Over the River
-    [*]Fort Knox, KY
-    [*]Lake Ivy Township
-    [*]New Gas Station
-    [*]Daegu Metropolitan City
-[/list]
+[b]Save Our Station[/b] is compatible with all the popular Knox Country map mods I am aware of. Please see the stickied post in the forum below for the full list.
 
 I do not currently know how well this works with other radio mods, so please let me know in the comments below!
 
@@ -106,7 +83,6 @@ Daddy Dirkiedirk - Textures and quality feedback.
 Everyone in the #mapping discord channel, y'all are great!!!
 
 [h1]Changelog[/h1]
-
 [b]v5[/b]
 [list]
     [*]Added 3D models for items.
@@ -115,29 +91,24 @@ Everyone in the #mapping discord channel, y'all are great!!!
     [*]Fixed spawn rates for items.
     [*]Fixed inspection of items.
 [/list]
-
 [b]v4[/b]
 [list]
     [*]Minor tweaks to support future localization.
 [/list]
-
 [b]v3[/b]
 [list]
     [*]Spawns now default to Muldraugh instead of erroring out.
 [/list]
-
 [b]v2[/b]
 [list]
     [*]Fixed railings at RIVS-500 weather station
     [*]Fixed railings at [spoiler]REDACTED[/spoiler] weather station
     [*]Fixed railings at [spoiler]REDACTED[/spoiler] homes
 [/list]
-
 [b]v1[/b]
 [list]
     [*]Initial release
 [/list]
-
 Workshop ID: 2398274461
 Mod ID: SaveOurStation_Core
 Mod ID: SaveOurStation_KnoxCountry
