@@ -2,6 +2,13 @@ module Base
 {
 	/******************* SWWS KNOX COUNTRY ITEMS *******************/
 
+	model SWWS_KnoxCountry_Register_Ground
+	{
+		mesh = WorldItems/Map,
+		texture = WorldItems/swws_station_map_ground,
+		scale = 0.6,
+	}
+
 	item SWWS_KnoxCountry_Register
 	{
 		DisplayCategory = Cartography,
@@ -24,12 +31,5 @@ module Base
 		Map = SWWS_KnoxCountry_RegisterAnnotated,
 		StaticModel = Map,
 		WorldStaticModel = SWWS_KnoxCountry_Register_Ground
-	}
-
-	model SWWS_KnoxCountry_Register_Ground
-	{
-		mesh = WorldItems/Map,
-		texture = WorldItems/swws_station_map_ground,
-		scale = 0.6,
 	}
 }
