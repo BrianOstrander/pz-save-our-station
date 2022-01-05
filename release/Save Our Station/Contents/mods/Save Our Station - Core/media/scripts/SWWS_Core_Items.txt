@@ -10,6 +10,15 @@ module Base
 		DisplayName = NWS Diagnostic Manual,
 		Weight = 0.1,
 		Icon = swws_error_codes_icon,
-		Map = SWWS_Core_DiagnosticManual
+		Map = SWWS_Core_DiagnosticManual,
+		StaticModel = Magazine,
+		WorldStaticModel = SWWS_Core_DiagnosticManual_Ground
+	}
+
+	model SWWS_Core_DiagnosticManual_Ground
+	{
+		mesh = WorldItems/Magazine,
+		texture = WorldItems/swws_error_codes_ground,
+		scale = 0.4,
 	}
 }
