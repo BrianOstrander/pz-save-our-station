@@ -1,10 +1,5 @@
-module SWWS_KnoxCountry
+module Base
 {
-	imports
-	{
-		Base
-	}
-
 	/******************* SWWS KNOX COUNTRY ITEMS *******************/
 
 	item SWWS_KnoxCountry_Register

@@ -1,11 +1,7 @@
-module SWWS_Core
+module Base
 {
-	imports
-	{
-		Base
-	}
 
-/******************* SWWS CORE ITEMS *******************/
+	/******************* SWWS CORE ITEMS *******************/
 
     item SWWS_Core_DiagnosticManual
 	{
