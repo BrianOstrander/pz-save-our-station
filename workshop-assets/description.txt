@@ -1,0 +1,144 @@
+[h1]Save Our Station![/h1]
+
+This mod adds [b]new areas[/b] and a [b]new gameplay mechanic[/b] to the vanilla Knox Country map.  
+
+[b]Updated for v41.65+[/b]
+
+[h1]Repair the Emergency Broadcast System[/h1]
+
+Do you take your hourly weather updates and air traffic alerts for granted? Ever found yourself late in the game with nothing to do? [b]Save Our Station[/b] spices up your survival experience by causing the Emergency Broadcast System to occasionally break down, requiring you to seek out the failure and fix the issue. 
+
+[h1]How it Works[/h1]
+
+At the end of every emergency broadcast, an [b]Emergency Broadcast Integrity[/b] alert will be reported, communicating the status of the Emergency Broadcast System. Once the power shuts off in Knox Country, there's a chance the Emergency Broadcast System will fail. When a fault does occur, the network will run a self diagnosis - a process that may take several days. Upon completion, a location and diagnostic code will be broadcast. Refer to NWS - National Weather Service - Diagnostic Manuals and NWS Registers to find and troubleshoot the issue. The NWS Diagnostic Manual will tell you what is wrong, and any items you need to repair the fault, while the NWS Register will tell you where to find the weather station in question. Enter the control room of the appropriate weather station, and perform the repairs by right clicking on one of the weather terminals. Once the repairs are complete, the next Emergency Broadcast will be broadcast loud and clear... until the next fault occurs!
+
+[h1]What's New in Knox Country[/h1]
+
+Five new locations have been added to the vanilla map, in the outskirts of West Point, Riverside, Muldraugh, Rosewood, and [spoiler]REDACTED[/spoiler]. In addition to weather stations, each location includes additional points of interest, such as a dirt race track, a diner, secluded homes, [spoiler]REDACTED[/spoiler], and much more!
+
+[h1]New Items[/h1]
+
+To help troubleshoot faults in the Emergency Broadcast System and find weather stations, two new items have been added to the game.
+
+[b]NWS Diagnostic Manual[/b]
+The National Weather Service Diagnostic manual provides the information you need to interpret the diagnostic codes thrown by the Emergency Broadcast System during a fault. 
+
+[b]NWS Register[/b]
+The National Weather Service Register contains the locations of all civilian weather stations, as well as a general layout of the major roads in Knox Country. You will not find [spoiler]REDACTED[/spoiler] on a typical NWS Register.
+
+Since these are technical publications with niche appeal, they're rarely found. Try your luck at the local bookstore, library, or home bookshelf. If you happen across a weather station, there's a good chance you'll find them in the control room.
+
+[h1]Mod Compatibility[/h1]
+
+[b]Save Our Station[/b] is compatible with all Knox Country map mods I am aware of, including the ones below. If there is a map not on this list, let me know and I'll confirm compatibility. 
+
+[b]Confirmed Compatibilities[/b]
+[list]
+    [*]West Point Expansion
+    [*]Raven Creek
+    [*]Fort Redstone
+    [*]South Muldraugh
+    [*]New Denver
+    [*]Eerie Country
+    [*]Bedford Falls
+    [*]Journey Park
+    [*]Valley Station
+    [*]Film Studio
+    [*]Xonic's Mega Mall
+    [*]The Walking Dead Project Pack
+    [*]Survival Farm
+    [*]Secret Base Road
+    [*]Over the River
+    [*]Fort Knox, KY
+    [*]Lake Ivy Township
+    [*]New Gas Station
+    [*]Daegu Metropolitan City
+[/list]
+
+I do not currently know how well this works with other radio mods, so please let me know in the comments below!
+
+[h1]Frequently Asked Questions[/h1]
+
+[b]Do I need to start a new game for this mod to work?[/b]
+Yes, you will need to start a fresh game for the weather stations to correctly load.
+
+[b]I see two mods listed when in my game, do I need them both enabled?[/b]
+Yes! If you are playing in Knox Country enable both the [b]Save Our Station - Core[/b] and [b]Save Our Station - Knox Country[/b] mods for the full experience. The mods are separated in case weather station support is added to future maps. If you would like [b]just[/b] the new locations without the changes to the behavior of the Emergency Broadcast System, enable [b]only[/b] the [b]Save Our Station - Knox Country[/b] mod.
+
+[b]How do I listen to the Emergency Broadcast System?[/b]
+The Emergency Broadcast System is a vanilla radio station, and appears on a randomly selected frequency. The best way to find it is to check the channel presents on any radios or walkie talkies you find in the world. To learn more, refer to the [url=https://pzwiki.net/wiki/Radio#Frequencies_and_Broadcasts]Pz Wiki.[/url]
+
+[b]When do faults start occurring?[/b]
+Only when Knox Country's power grid goes offline does the Emergency Broadcast System have a chance of failing. It still may take many weeks after that for the first fault to occur. This is a feature primarily intended for the late game, when your base is set up and you're looking for an excuse to go exploring!
+
+[b]How often do faults occur?[/b]
+About once every couple weeks, but this is subject to feedback from the community.
+
+[b]The Emergency Broadcast Integrity reports an issue, but doesn't give a location and / or diagnostic code![/b]
+It takes many in-game days for the Emergency Broadcast System to fail, and the radio text will turn red once a location and diagnostic code are being broadcast.
+
+[b]How often should I check for failures?[/b]
+Once a day is more than enough, it takes time for the network to fail, and you'll be given plenty of warning. When it is in the process of failing, certain features of the Emergency Broadcast system may go offline. If you are not seeing a diagnostic code or location, check back in 24 hours to see if the status of the network has changed.
+
+[b]The network seems to be failing but I still got my weather report, what gives?[/b]
+The Emergency Broadcast System is built with many fail-safes, and will try its best to report whatever information it can. It will, however, eventually fail completely if the player does not intervene.
+
+[b]When the network fails completely, can I still fix it?[/b]
+Yes, in case of a complete failure, a location and diagnostic code will be broadcast until the player performs the necessary maintenance.
+
+[b]Can I fix faults at any weather station?[/b]
+No, repairs must occur at the location specified during the Emergency Broadcast Integrity report.
+
+[b]What does the control room look like?[/b]
+It's a drab green room with blue radar terminals, usually found on the second story of a building with red and white antennas anchored to its roof. 
+
+[b]I'd like to add a weather station to my own map, can that be done?[/b]
+Of course! Contact [b]Spacew00t[/b] in the Project Zomboid #mapping discord channel to get started!
+
+[h1]Credits[/h1]
+
+Spacew00t - Mapping, texturing, and Lua scripting.
+Lexx - Fixes and aesthetic improvements for v41.65 update.
+Krukrapok - Texturing the weather terminal and all around advice for improving my own textures.
+throttlekitty - Answering my endless questions and providing awesome tiles!
+Daddy Dirkiedirk - Textures and quality feedback.
+
+Everyone in the #mapping discord channel, y'all are great!!!
+
+[h1]Changelog[/h1]
+
+[b]v5[/b]
+[list]
+    [*]Added 3D models for items.
+    [*]Added curved roads.
+    [*]Fixed carpet in RIVS-500.
+    [*]Fixed spawn rates for items.
+    [*]Fixed inspection of items.
+[/list]
+
+[b]v4[/b]
+[list]
+    [*]Minor tweaks to support future localization.
+[/list]
+
+[b]v3[/b]
+[list]
+    [*]Spawns now default to Muldraugh instead of erroring out.
+[/list]
+
+[b]v2[/b]
+[list]
+    [*]Fixed railings at RIVS-500 weather station
+    [*]Fixed railings at [spoiler]REDACTED[/spoiler] weather station
+    [*]Fixed railings at [spoiler]REDACTED[/spoiler] homes
+[/list]
+
+[b]v1[/b]
+[list]
+    [*]Initial release
+[/list]
+
+Workshop ID: 2398274461
+Mod ID: SaveOurStation_Core
+Mod ID: SaveOurStation_KnoxCountry
+Map Folder: SaveOurStation_KnoxCountry_World
