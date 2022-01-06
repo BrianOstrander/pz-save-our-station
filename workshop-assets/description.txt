@@ -91,6 +91,7 @@ Everyone in the #mapping discord channel, y'all are great!!!
 [list]
     [*]Added 3D models for items.
     [*]Added curved roads.
+    [*]Added ingame map support.
     [*]Fixed carpet in RIVS-500.
     [*]Fixed spawn rates for items.
     [*]Fixed inspection of items.
