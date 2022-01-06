@@ -209,6 +209,9 @@
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="234" y="118" level="0" width="36" height="32"/>
   <object group="Nav" type="Nav" level="0" geometry="polygon" points="70,65 85,72 96,83 104,99 96,99 89,85 84,80 70,73"/>
   <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="79,61 106,61 106,87"/>
+  <object type="SpawnPoint" x="189" y="71" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="25" y="9" map="WeatherStations/swws_west_35_24.tmx">
   <lot x="106" y="208" level="0" width="29" height="16" map="../TileZed/buildings/SWWS_West_Diner.tbx"/>
@@ -342,6 +345,9 @@
   <object name="Farm" group="ZombiesType" type="ZombiesType" x="55" y="40" level="0" width="10" height="9"/>
   <object group="Nav" type="Nav" level="0" geometry="polygon" points="172,246 184,240 191,233 198,220 208,220 208,223 201,237 189,249 175,256 172,256"/>
   <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="207,256 187,256 207,233"/>
+  <object type="SpawnPoint" x="244" y="115" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="24" y="19" map="WeatherStations/swws_muld_34_34.tmx">
   <lot x="41" y="40" level="0" width="11" height="14" map="../TileZed/buildings/SWWS_Muld.tbx"/>
@@ -508,6 +514,9 @@
   <object name="CarRepair" group="ZombiesType" type="ZombiesType" x="202" y="35" level="0" width="17" height="8"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="197" y="45" level="0" width="45" height="71"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="174" y="66" level="0" width="23" height="50"/>
+  <object type="SpawnPoint" x="43" y="45" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="15" y="23" map="WeatherStations/swws_rose_25_38.tmx">
   <lot x="172" y="57" level="0" width="11" height="15" map="../TileZed/buildings/SWWS_Rose_Transmission.tbx"/>
@@ -586,6 +595,9 @@
   <object name="Offices" group="ZombiesType" type="ZombiesType" x="166" y="48" level="0" width="43" height="42"/>
   <object name="Prison" group="ZombiesType" type="ZombiesType" x="147" y="209" level="0" width="21" height="17"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="44" y="211" level="0" width="34" height="26"/>
+  <object type="SpawnPoint" x="189" y="61" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="11" y="24" map="WeatherStations/swws_zulu_21_39.tmx">
   <template name="ParkingStallE"/>

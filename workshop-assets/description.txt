@@ -83,6 +83,10 @@ Daddy Dirkiedirk - Textures and quality feedback.
 Everyone in the #mapping discord channel, y'all are great!!!
 
 [h1]Changelog[/h1]
+[b]v6[/b]
+[list]
+    [*]Added spawnpoints.
+[/list]
 [b]v5[/b]
 [list]
     [*]Added 3D models for items.
