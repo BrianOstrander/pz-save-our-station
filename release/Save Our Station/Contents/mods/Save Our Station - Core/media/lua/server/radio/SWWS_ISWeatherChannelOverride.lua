@@ -1,4 +1,4 @@
-require "SWWS_Core/SWWS_Core";
+require "radio/SWWS_Core";
 
 -- I'm lazy and couldn't figure out how to override individual methods, I tried to change as little as possible below:
 

@@ -1,7 +1,7 @@
-require "SWWS_SystemFaults/SWWS_SystemFaults"
-require "SWWS_Schedules/SWWS_Schedules"
-require "SWWS_Strings/SWWS_Strings"
-require "SWWS_Config/SWWS_Config"
+require "radio/SWWS_SystemFaults"
+require "radio/SWWS_Schedules"
+require "radio/SWWS_Strings"
+require "radio/SWWS_Config"
 
 SWWS_Core = {}
 
@@ -136,13 +136,15 @@ function SWWS_Core.UpdateFailure()
         return
     end
 
-    if getGameTime():getNightsSurvived() < getSandboxOptions():getElecShutModifier() then
-        if SWWS_Config.debug.logging then
-            print("SWWS: Power not shutoff - skipping failure update")
+    if SWWS_Config.gameplay.requirePowerShutoff then
+        if getGameTime():getNightsSurvived() < getSandboxOptions():getElecShutModifier() then
+            if SWWS_Config.debug.logging then
+                print("SWWS: Power not shutoff - skipping failure update")
+            end
+            return
         end
-        return
     end
-
+    
     if SWWS_Core.saveData.systemRepairComplete then
         SWWS_Core.ScheduleFailure()
         return

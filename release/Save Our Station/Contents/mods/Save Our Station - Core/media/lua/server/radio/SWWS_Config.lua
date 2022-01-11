@@ -8,9 +8,9 @@ SWWS_Config = SWWS_Config or {}
 SWWS_Config.debug = {}
 
 -- Forces mod to reinitialize game state every time a game is loaded.
-SWWS_Config.debug.forceInitialize = false
+SWWS_Config.debug.forceInitialize = true
 -- Enables logging of various events
-SWWS_Config.debug.logging = false
+SWWS_Config.debug.logging = true
 
 -------------------------------------------------------
 -- GAMEPLAY OPTIONS --
@@ -19,7 +19,7 @@ SWWS_Config.debug.logging = false
 SWWS_Config.gameplay = {}
 
 -- Does power need to be off before faults start occuring?
-SWWS_Config.gameplay.requirePowerShutoff = true
+SWWS_Config.gameplay.requirePowerShutoff = false
 -- Fault stages are defined in hours, this controls how fast they occur.
 SWWS_Config.gameplay.timeMultiplier = 24
 -- These values should add up to 100, and represent how often pools are chosen.
