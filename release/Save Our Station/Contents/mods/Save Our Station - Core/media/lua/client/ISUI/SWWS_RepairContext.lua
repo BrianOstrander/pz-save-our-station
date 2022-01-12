@@ -1,3 +1,5 @@
+require "SWWS_Config"
+
 SWWS_RepairContext = {}
 
 function SWWS_RepairContext.itemValid(item)
@@ -21,10 +23,16 @@ function SWWS_RepairContext.fix(_player, _context, _worldObjects, _test)
 		return
 	end
 
-	local gametime = GameTime:getInstance()
-	SWWS_RepairContext.Load(gametime)
+	SWWS_RepairContext.Load()
 
-	if SWWS_RepairContext.saveData.systemRepairComplete or not SWWS_RepairContext.saveData.locationId then
+	if SWWS_RepairContext.saveData == nil then
+		if SWWS_Config.debug.logging then
+			print("SWWS: SWWS_RepairContext.saveData is nil")
+		end
+		return
+	end
+
+	if not SWWS_RepairContext.saveData or SWWS_RepairContext.saveData.systemRepairComplete or not SWWS_RepairContext.saveData.locationId then
 		return
 	end
 
@@ -77,10 +85,17 @@ function SWWS_RepairContext.onSelectItem(_playerObject, _itemType)
 	ISTimedActionQueue.add(SWWS_RepairAction:new(_playerObject, item, 300));
 end
 
-function SWWS_RepairContext.Save(_gametime)
-    _gametime:getModData()["swws_saveData"] = SWWS_RepairContext.saveData
+function SWWS_RepairContext.Save()
+	ModData.transmit("swws_saveData")
 end
 
-function SWWS_RepairContext.Load(_gametime)
-    SWWS_RepairContext.saveData = _gametime:getModData()["swws_saveData"]
+function SWWS_RepairContext.Load()
+	SWWS_RepairContext.saveData = ModData.get("swws_saveData")
 end
+
+function SWWS_RepairContext.OnReceiveGlobalModData(key, modData)
+	if key == "swws_saveData" then
+		ModData.add(key, modData)
+	end 
+end
+Events.OnReceiveGlobalModData.Add(SWWS_RepairContext.OnReceiveGlobalModData)

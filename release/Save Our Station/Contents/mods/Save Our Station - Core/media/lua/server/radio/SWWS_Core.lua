@@ -1,18 +1,16 @@
 require "radio/SWWS_SystemFaults"
 require "radio/SWWS_Schedules"
 require "radio/SWWS_Strings"
-require "radio/SWWS_Config"
+require "SWWS_Config"
 
 SWWS_Core = {}
 
-function SWWS_Core.OnGameStart()
+function SWWS_Core.OnInitializeGlobalModData()
     if SWWS_Config.debug.logging then
         print("SWWS: Initializing Weather Stations")
     end
 
-    local gametime = GameTime:getInstance()
-
-    SWWS_Core.Load(gametime)
+    SWWS_Core.Load()
 
     if SWWS_Config.debug.forceInitialize or not SWWS_Core.saveData then
         SWWS_Config.debug.forceInitialize = false
@@ -24,15 +22,15 @@ function SWWS_Core.OnGameStart()
     end
 
     SWWS_Core.isInitialized = true
+
+    SWWS_Core.Save()
 end
-Events.OnGameStart.Add(SWWS_Core.OnGameStart)
+Events.OnInitGlobalModData.Add(SWWS_Core.OnInitializeGlobalModData)
 
 function SWWS_Core.OnEveryHour()
-    local gametime = GameTime:getInstance()
-
     SWWS_Core.UpdateFailure()
     
-    SWWS_Core.Save(gametime)
+    SWWS_Core.Save()
 end
 Events.EveryHours.Add(SWWS_Core.OnEveryHour)
 
@@ -44,8 +42,6 @@ function SWWS_Core.ScheduleFailure()
     elseif SWWS_Config.debug.logging then
         print("SWWS: Locations contains " .. #SWWS_Locations .. " entries")
     end
-
-    local gametime = GameTime:getInstance()
 
     local poolChanceResult = ZombRand(1, SWWS_Config.gameplay.poolChanceNominal + SWWS_Config.gameplay.poolChanceFatal + 1)
 
@@ -120,7 +116,7 @@ function SWWS_Core.ScheduleFailure()
         repairInstructionCode
     }
 
-    SWWS_Core.Save(gametime)
+    SWWS_Core.Save()
 
     if SWWS_Config.debug.logging then
         print("SWWS: Location " .. SWWS_Core.saveData.locationId .. ", Schedule " .. SWWS_Core.saveData.scheduleId .. ", Stage " .. SWWS_Core.saveData.stageIndex .. ", StageRemaining " .. SWWS_Core.saveData.stageRemaining)
@@ -259,10 +255,20 @@ function SWWS_Core.PopulateDiagnostic(_diagnostic)
    return _diagnostic
 end
 
-function SWWS_Core.Save(_gametime)
-    _gametime:getModData()["swws_saveData"] = SWWS_Core.saveData
+function SWWS_Core.Load()
+    if SWWS_Config.debug.logging then
+        print("SWWS: SWWS_Core.Load")
+    end
+
+    SWWS_Core.saveData = GameTime:getInstance():getModData()["swws_saveData"]
+    SWWS_Core.saveData = ModData.add("swws_saveData", SWWS_Core.saveData)
 end
 
-function SWWS_Core.Load(_gametime)
-    SWWS_Core.saveData = _gametime:getModData()["swws_saveData"]
+function SWWS_Core.Save()
+    if SWWS_Config.debug.logging then
+        print("SWWS: SWWS_Core.Save")
+    end
+
+    GameTime:getInstance():getModData()["swws_saveData"] = SWWS_Core.saveData
+    ModData.transmit("swws_saveData")
 end

@@ -35,7 +35,7 @@ end
 
 function SWWS_RepairAction:perform()
     SWWS_RepairContext.saveData.systemRepairComplete = true
-    SWWS_RepairContext.Save(GameTime:getInstance())
+    SWWS_RepairContext.Save()
 
     local container = self.item:getContainer()
     local itemType = self.item:getFullType()
