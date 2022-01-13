@@ -1,5 +1,7 @@
 SWWS_Config = SWWS_Config or {}
 
+SWWS_Config.version = "v7.preview1"
+
 -------------------------------------------------------
 -- DEBUG OPTIONS -- 
 -- DO NOT MESS WITH UNLESS YOU KNOW WHAT YOU ARE DOING!
@@ -34,3 +36,16 @@ SWWS_Config.gameplay.timeMultiplier = 24
 -- Fatal: EBS has a fatal fault that requires the player to fix it.
 SWWS_Config.gameplay.poolChanceNominal  = 67;
 SWWS_Config.gameplay.poolChanceFatal    = 33;
+
+-------------------------------------------------------
+-- ON GAME START --
+-------------------------------------------------------
+
+function SWWS_Config.OnGameStart()
+    if SWWS_Config.debug.logging then
+        print("SWWS: -------")
+        print("SWWS: Server Running " .. SWWS_Config.version)
+        print("SWWS: -------")
+    end
+end
+Events.OnGameStart.Add(SWWS_Config.OnGameStart)
