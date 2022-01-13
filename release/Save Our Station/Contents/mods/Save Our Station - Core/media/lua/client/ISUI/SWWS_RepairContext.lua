@@ -1,4 +1,5 @@
 require "SWWS_Config"
+require "SWWS_Data"
 
 SWWS_RepairContext = {}
 
@@ -23,20 +24,20 @@ function SWWS_RepairContext.fix(_player, _context, _worldObjects, _test)
 		return
 	end
 
-	SWWS_RepairContext.Load()
+	SWWS_Data.Load()
 
-	if SWWS_RepairContext.saveData == nil then
+	if SWWS_Data.saveData == nil then
 		if SWWS_Config.debug.logging then
-			print("SWWS: SWWS_RepairContext.saveData is nil")
+			print("SWWS: SWWS_Data.saveData is nil")
 		end
 		return
 	end
 
-	if not SWWS_RepairContext.saveData or SWWS_RepairContext.saveData.systemRepairComplete or not SWWS_RepairContext.saveData.locationId then
+	if not SWWS_Data.saveData or SWWS_Data.saveData.systemRepairComplete or not SWWS_Data.saveData.locationId then
 		return
 	end
 
-	if roomName ~= SWWS_RepairContext.saveData.locationRoomName then
+	if roomName ~= SWWS_Data.saveData.locationRoomName then
 		return
 	end
 
@@ -47,7 +48,7 @@ function SWWS_RepairContext.fix(_player, _context, _worldObjects, _test)
 	local playerObject = getSpecificPlayer(_player)
 	local playerInventoryItems = playerObject:getInventory():getItems()
 
-	for repairItemTypeIndex, repairItemType in ipairs(SWWS_RepairContext.saveData.systemRepair.solution.items) do
+	for repairItemTypeIndex, repairItemType in ipairs(SWWS_Data.saveData.systemRepair.solution.items) do
 		local repairItemName = getItemNameFromFullType(repairItemType)
 		if repairItemName then
 			local onRepairItem = function()
@@ -84,18 +85,3 @@ function SWWS_RepairContext.onSelectItem(_playerObject, _itemType)
 	
 	ISTimedActionQueue.add(SWWS_RepairAction:new(_playerObject, item, 300));
 end
-
-function SWWS_RepairContext.Save()
-	ModData.transmit("swws_saveData")
-end
-
-function SWWS_RepairContext.Load()
-	SWWS_RepairContext.saveData = ModData.get("swws_saveData")
-end
-
-function SWWS_RepairContext.OnReceiveGlobalModData(key, modData)
-	if key == "swws_saveData" then
-		ModData.add(key, modData)
-	end 
-end
-Events.OnReceiveGlobalModData.Add(SWWS_RepairContext.OnReceiveGlobalModData)

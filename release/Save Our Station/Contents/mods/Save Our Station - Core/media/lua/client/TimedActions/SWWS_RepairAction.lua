@@ -34,15 +34,15 @@ function SWWS_RepairAction:stop()
 end
 
 function SWWS_RepairAction:perform()
-    SWWS_RepairContext.saveData.systemRepairComplete = true
-    SWWS_RepairContext.Save()
+    SWWS_Data.saveData.systemRepairComplete = true
+    SWWS_Data.Save()
 
     local container = self.item:getContainer()
     local itemType = self.item:getFullType()
 
-    if SWWS_RepairContext.saveData.systemRepair.solution.consumeItem then
+    if SWWS_Data.saveData.systemRepair.solution.consumeItem then
         self:removeItem()
-    elseif SWWS_RepairContext.saveData.systemRepair.solution.drainItem then
+    elseif SWWS_Data.saveData.systemRepair.solution.drainItem then
         for i,v in ipairs(SWWS_RepairAction.drainables) do
             if itemType == v.full then
                 self:removeItem()

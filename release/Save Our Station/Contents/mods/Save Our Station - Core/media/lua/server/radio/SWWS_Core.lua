@@ -2,6 +2,7 @@ require "radio/SWWS_SystemFaults"
 require "radio/SWWS_Schedules"
 require "radio/SWWS_Strings"
 require "SWWS_Config"
+require "SWWS_Data"
 
 SWWS_Core = {}
 
@@ -10,27 +11,27 @@ function SWWS_Core.OnInitializeGlobalModData()
         print("SWWS: Initializing Weather Stations")
     end
 
-    SWWS_Core.Load()
+    SWWS_Data.Load()
 
-    if SWWS_Config.debug.forceInitialize or not SWWS_Core.saveData then
+    if SWWS_Config.debug.forceInitialize or not SWWS_Data.saveData then
         SWWS_Config.debug.forceInitialize = false
         if SWWS_Config.debug.logging then
             print("SWWS: saveData nil, initializing")
         end
-        SWWS_Core.saveData = {}
+        SWWS_Data.saveData = {}
         SWWS_Core.ScheduleFailure()
     end
 
     SWWS_Core.isInitialized = true
 
-    SWWS_Core.Save()
+    SWWS_Data.Save()
 end
 Events.OnInitGlobalModData.Add(SWWS_Core.OnInitializeGlobalModData)
 
 function SWWS_Core.OnEveryHour()
     SWWS_Core.UpdateFailure()
     
-    SWWS_Core.Save()
+    SWWS_Data.Save()
 end
 Events.EveryHours.Add(SWWS_Core.OnEveryHour)
 
@@ -47,12 +48,18 @@ function SWWS_Core.ScheduleFailure()
 
     local poolResult = SWWS_Schedules.poolTypes.fatal
 
-    if poolChanceResult < SWWS_Config.gameplay.poolChanceNominal then
-        poolResult = SWWS_Schedules.poolTypes.nominal
-    end
+    if SWWS_Config.debug.forceFatal then
+        if SWWS_Config.debug.logging then
+            print("SWWS: Pool chosen: forced " .. poolResult)
+        end
+    else
+        if poolChanceResult < SWWS_Config.gameplay.poolChanceNominal then
+            poolResult = SWWS_Schedules.poolTypes.nominal
+        end
 
-    if SWWS_Config.debug.logging then
-        print("SWWS: Pool chosen - " .. poolResult)
+        if SWWS_Config.debug.logging then
+            print("SWWS: Pool chosen: " .. poolResult)
+        end
     end
 
     local poolIndices = {}
@@ -66,23 +73,23 @@ function SWWS_Core.ScheduleFailure()
     local schedule = SWWS_Schedules.pool[poolIndices[ZombRand(1, #poolIndices + 1)]]
     local location = SWWS_Locations[ZombRand(1, #SWWS_Locations + 1)]
 
-    SWWS_Core.saveData.locationId = location.id
-    SWWS_Core.saveData.locationRoomName = location.roomName
+    SWWS_Data.saveData.locationId = location.id
+    SWWS_Data.saveData.locationRoomName = location.roomName
 
-    SWWS_Core.saveData.scheduleId = schedule.id
-    SWWS_Core.saveData.stageIndex = 1
+    SWWS_Data.saveData.scheduleId = schedule.id
+    SWWS_Data.saveData.stageIndex = 1
 
     local stage = schedule.stages[1]
 
-    SWWS_Core.saveData.stageRemaining = SWWS_Config.gameplay.timeMultiplier * ZombRand(stage.hoursMinimum, stage.hoursMaximum + 1)
+    SWWS_Core.GenerateStageRemaining(stage)
     
-    SWWS_Core.saveData.conditionLower = SWWS_Localization.GetLine(SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)])
-    SWWS_Core.saveData.conditionUpper = SWWS_Core.saveData.conditionLower:gsub("^%l", string.upper)
+    SWWS_Data.saveData.conditionLower = SWWS_Localization.GetLine(SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)])
+    SWWS_Data.saveData.conditionUpper = SWWS_Data.saveData.conditionLower:gsub("^%l", string.upper)
     
     local system = SWWS_SystemFaults.pool[ZombRand(1, #SWWS_SystemFaults.pool + 1)]
-    SWWS_Core.saveData.systemId = SWWS_Localization.GetLine(system.id)
-    SWWS_Core.saveData.systemRepair = system.repairs[ZombRand(1, #system.repairs + 1)]
-    SWWS_Core.saveData.systemRepairComplete = false;
+    SWWS_Data.saveData.systemId = SWWS_Localization.GetLine(system.id)
+    SWWS_Data.saveData.systemRepair = system.repairs[ZombRand(1, #system.repairs + 1)]
+    SWWS_Data.saveData.systemRepairComplete = false;
 
     local serialFormat = ZombRand(1, 5)
     local serial = SWWS_Strings.serials[ZombRand(1, #SWWS_Strings.serials + 1)]
@@ -105,22 +112,22 @@ function SWWS_Core.ScheduleFailure()
         serial = serial .. ZombRand(0, 10)
     end
 
-    SWWS_Core.saveData.systemName = SWWS_Core.saveData.systemId .. "_" .. serial
+    SWWS_Data.saveData.systemName = SWWS_Data.saveData.systemId .. "_" .. serial
 
     -- gsub returns a table, so we do this to avoid random numbers getting added to our table.
     local repairInstructionLocation = SWWS_Localization.GetLine("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
-    local repairInstructionCode = SWWS_Localization.GetLine("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Core.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Core.saveData.systemName):gsub("{description}", SWWS_Localization.GetLine(SWWS_Core.saveData.systemRepair.description))
+    local repairInstructionCode = SWWS_Localization.GetLine("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Data.saveData.systemName):gsub("{description}", SWWS_Localization.GetLine(SWWS_Data.saveData.systemRepair.description))
 
-    SWWS_Core.saveData.systemRepairInstructions = {
+    SWWS_Data.saveData.systemRepairInstructions = {
         repairInstructionLocation,
         repairInstructionCode
     }
 
-    SWWS_Core.Save()
+    SWWS_Data.Save()
 
     if SWWS_Config.debug.logging then
-        print("SWWS: Location " .. SWWS_Core.saveData.locationId .. ", Schedule " .. SWWS_Core.saveData.scheduleId .. ", Stage " .. SWWS_Core.saveData.stageIndex .. ", StageRemaining " .. SWWS_Core.saveData.stageRemaining)
-        print("SWWS: System " .. SWWS_Core.saveData.systemName .. ", Repair " .. SWWS_Core.saveData.systemRepair.description)
+        print("SWWS: Location " .. SWWS_Data.saveData.locationId .. ", Schedule " .. SWWS_Data.saveData.scheduleId .. ", Stage " .. SWWS_Data.saveData.stageIndex .. ", StageRemaining " .. SWWS_Data.saveData.stageRemaining)
+        print("SWWS: System " .. SWWS_Data.saveData.systemName .. ", Repair " .. SWWS_Data.saveData.systemRepair.description)
         print("SWWS: -------")
     end
 end
@@ -132,48 +139,66 @@ function SWWS_Core.UpdateFailure()
         return
     end
 
-    if SWWS_Config.gameplay.requirePowerShutoff then
-        if getGameTime():getNightsSurvived() < getSandboxOptions():getElecShutModifier() then
-            if SWWS_Config.debug.logging then
-                print("SWWS: Power not shutoff - skipping failure update")
+    if SWWS_Config.debug.ignoreRequirePowerShutoff then
+        if SWWS_Config.debug.logging then
+            print("SWWS: Ignoring requirements for power shutoff")
+        end
+    else
+        if SWWS_Config.gameplay.requirePowerShutoff then
+            if getGameTime():getNightsSurvived() < getSandboxOptions():getElecShutModifier() then
+                if SWWS_Config.debug.logging then
+                    print("SWWS: Power not shutoff - skipping failure update")
+                end
+                return
             end
-            return
         end
     end
-    
-    if SWWS_Core.saveData.systemRepairComplete then
+
+    if SWWS_Data.saveData.systemRepairComplete then
         SWWS_Core.ScheduleFailure()
         return
     end
 
     local schedule = SWWS_Core.GetCurrentSchedule()
-    local stage = schedule.stages[SWWS_Core.saveData.stageIndex]
+    local stage = schedule.stages[SWWS_Data.saveData.stageIndex]
     
-    if 0 < SWWS_Core.saveData.stageRemaining then
-        SWWS_Core.saveData.stageRemaining = SWWS_Core.saveData.stageRemaining - 1
+    if 0 < SWWS_Data.saveData.stageRemaining then
+        SWWS_Data.saveData.stageRemaining = SWWS_Data.saveData.stageRemaining - 1
 
-        if SWWS_Core.saveData.stageRemaining == 0 then
-            if SWWS_Core.saveData.stageIndex < #schedule.stages then
-                SWWS_Core.saveData.stageIndex = SWWS_Core.saveData.stageIndex + 1 
-                stage = schedule.stages[SWWS_Core.saveData.stageIndex]
-                SWWS_Core.saveData.stageRemaining = SWWS_Config.gameplay.timeMultiplier * ZombRand(stage.hoursMinimum, stage.hoursMaximum + 1)
+        if SWWS_Data.saveData.stageRemaining == 0 then
+            if SWWS_Data.saveData.stageIndex < #schedule.stages then
+                SWWS_Data.saveData.stageIndex = SWWS_Data.saveData.stageIndex + 1 
+                stage = schedule.stages[SWWS_Data.saveData.stageIndex]
+                SWWS_Core.GenerateStageRemaining(stage)
                 if SWWS_Config.debug.logging then
-                    print("SWWS: Progressed to stage #" .. SWWS_Core.saveData.stageIndex .. " of " .. SWWS_Core.saveData.scheduleId)
-                    print("SWWS: Stage length is " .. SWWS_Core.saveData.stageRemaining .. " hours")
+                    print("SWWS: Progressed to stage #" .. SWWS_Data.saveData.stageIndex .. " of " .. SWWS_Data.saveData.scheduleId)
+                    print("SWWS: Stage length is " .. SWWS_Data.saveData.stageRemaining .. " hours")
                 end
             elseif schedule.poolType ~= SWWS_Schedules.poolTypes.fatal then
                 -- This was not a fatal fault, schedule the next failure...
                 SWWS_Core.ScheduleFailure()
             end
         elseif SWWS_Config.debug.logging then
-            print("SWWS: Stage remaining " .. SWWS_Core.saveData.stageRemaining .. " hours")
+            print("SWWS: Stage remaining " .. SWWS_Data.saveData.stageRemaining .. " hours")
         end
+    end
+end
+
+function SWWS_Core.GenerateStageRemaining(stage)
+    if SWWS_Config.debug.forceMinimumTime then
+        SWWS_Data.saveData.stageRemaining = 1
+
+        if SWWS_Config.debug.logging then
+            print("SWWS: Forced stageRemaining to " .. SWWS_Data.saveData.stageRemaining)
+        end
+    else
+        SWWS_Data.saveData.stageRemaining = SWWS_Config.gameplay.timeMultiplier * ZombRand(stage.hoursMinimum, stage.hoursMaximum + 1)
     end
 end
 
 function SWWS_Core.GetCurrentSchedule()
     for scheduleKey, schedule in ipairs(SWWS_Schedules.pool) do
-        if schedule.id == SWWS_Core.saveData.scheduleId then
+        if schedule.id == SWWS_Data.saveData.scheduleId then
             return schedule
         end
     end
@@ -196,11 +221,11 @@ function SWWS_Core.FillBroadcastWarning()
 
     local messages = nil
 
-    if SWWS_Core.saveData.systemRepairComplete then
+    if SWWS_Data.saveData.systemRepairComplete then
         messages = SWWS_Schedules.stages.repaired
     else
         local schedule = SWWS_Core.GetCurrentSchedule()
-        local stage = schedule.stages[SWWS_Core.saveData.stageIndex]
+        local stage = schedule.stages[SWWS_Data.saveData.stageIndex]
         messages = stage.messages
     end
 
@@ -228,18 +253,18 @@ function SWWS_Core.FillBroadcastWarning()
 
     if messages.revealTime then
         local shutdown = nil
-        if SWWS_Core.saveData.stageRemaining < 2 then
+        if SWWS_Data.saveData.stageRemaining < 2 then
             shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownImminent")
-        elseif SWWS_Core.saveData.stageRemaining < 24 then
-            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInHours"):gsub("{hours}", tostring(SWWS_Core.saveData.stageRemaining))
+        elseif SWWS_Data.saveData.stageRemaining < 24 then
+            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInHours"):gsub("{hours}", tostring(SWWS_Data.saveData.stageRemaining))
         else
-            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Core.saveData.stageRemaining / 24)))
+            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Data.saveData.stageRemaining / 24)))
         end
         table.insert(result.diagnostics, shutdown)
     end
 
     if messages.requestCrew then
-        for repairKey, repair in ipairs(SWWS_Core.saveData.systemRepairInstructions) do
+        for repairKey, repair in ipairs(SWWS_Data.saveData.systemRepairInstructions) do
             table.insert(result.diagnostics, repair)
         end
     end
@@ -248,44 +273,9 @@ function SWWS_Core.FillBroadcastWarning()
 end
 
 function SWWS_Core.PopulateDiagnostic(_diagnostic)
-   _diagnostic = _diagnostic:gsub("{condition}", SWWS_Core.saveData.conditionLower)
-   _diagnostic = _diagnostic:gsub("{Condition}", SWWS_Core.saveData.conditionUpper)
-   _diagnostic = _diagnostic:gsub("{system}", SWWS_Core.saveData.systemName)
+   _diagnostic = _diagnostic:gsub("{condition}", SWWS_Data.saveData.conditionLower)
+   _diagnostic = _diagnostic:gsub("{Condition}", SWWS_Data.saveData.conditionUpper)
+   _diagnostic = _diagnostic:gsub("{system}", SWWS_Data.saveData.systemName)
    _diagnostic = _diagnostic:gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
    return _diagnostic
-end
-
-function SWWS_Core.OnReceiveGlobalModData(key, modData)
-    if key == "swws_saveData" then
-        if SWWS_Core.saveData and modData and SWWS_Core.saveData.systemRepairComplete ~= modData.systemRepairComplete then
-            if not SWWS_Core.saveData.systemRepairComplete then
-                if SWWS_Config.debug.logging then
-                    print("SWWS: Client set systemRepairComplete to true")
-                end
-                SWWS_Core.saveData.systemRepairComplete = true
-                SWWS_Core.Save()
-            end
-        elseif SWWS_Config.debug.logging then
-            print("SWWS: OnRecieveGlobalModData triggered, but value from client ignored")
-        end
-    end
-end
-Events.OnReceiveGlobalModData.Add(SWWS_Core.OnReceiveGlobalModData)
-
-function SWWS_Core.Load()
-    if SWWS_Config.debug.logging then
-        print("SWWS: SWWS_Core.Load")
-    end
-
-    SWWS_Core.saveData = GameTime:getInstance():getModData()["swws_saveData"]
-    SWWS_Core.saveData = ModData.add("swws_saveData", SWWS_Core.saveData)
-end
-
-function SWWS_Core.Save()
-    if SWWS_Config.debug.logging then
-        print("SWWS: SWWS_Core.Save")
-    end
-
-    GameTime:getInstance():getModData()["swws_saveData"] = SWWS_Core.saveData
-    ModData.transmit("swws_saveData")
 end
