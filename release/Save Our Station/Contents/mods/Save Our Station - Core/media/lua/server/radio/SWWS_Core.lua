@@ -255,6 +255,23 @@ function SWWS_Core.PopulateDiagnostic(_diagnostic)
    return _diagnostic
 end
 
+function SWWS_Core.OnReceiveGlobalModData(key, modData)
+    if key == "swws_saveData" then
+        if SWWS_Core.saveData and modData and SWWS_Core.saveData.systemRepairComplete ~= modData.systemRepairComplete then
+            if not SWWS_Core.saveData.systemRepairComplete then
+                if SWWS_Config.debug.logging then
+                    print("SWWS: Client set systemRepairComplete to true")
+                end
+                SWWS_Core.saveData.systemRepairComplete = true
+                SWWS_Core.Save()
+            end
+        elseif SWWS_Config.debug.logging then
+            print("SWWS: OnRecieveGlobalModData triggered, but value from client ignored")
+        end
+    end
+end
+Events.OnReceiveGlobalModData.Add(SWWS_Core.OnReceiveGlobalModData)
+
 function SWWS_Core.Load()
     if SWWS_Config.debug.logging then
         print("SWWS: SWWS_Core.Load")
