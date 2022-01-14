@@ -6,11 +6,17 @@ require "SWWS_Data"
 
 SWWS_Core = {}
 
-function SWWS_Core.OnInitializeGlobalModData()
+function SWWS_Core.OnGameStart()
+
+    if SWWS_Core.isInitialized then
+        return
+    end
+
     if SWWS_Config.debug.logging then
         print("SWWS: Initializing Weather Stations")
     end
 
+    SWWS_Data.isServerLogicRunning = true
     SWWS_Data.Load()
 
     if SWWS_Config.debug.forceInitialize or not SWWS_Data.saveData then
@@ -26,7 +32,7 @@ function SWWS_Core.OnInitializeGlobalModData()
 
     SWWS_Data.Save()
 end
-Events.OnInitGlobalModData.Add(SWWS_Core.OnInitializeGlobalModData)
+Events.OnGameStart.Add(SWWS_Core.OnGameStart)
 
 function SWWS_Core.OnEveryHour()
     SWWS_Core.UpdateFailure()
@@ -216,6 +222,9 @@ function SWWS_Core.FillBroadcastWarning()
     }
 
     if not SWWS_Core.isInitialized then
+        if SWWS_Config.debug.logging then
+            print("SWWS: FillBroadcastWarning ignored, SWWS_Core.isInitialized is false")
+        end
         return result
     end
 

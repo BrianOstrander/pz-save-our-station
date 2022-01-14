@@ -1,6 +1,6 @@
 SWWS_Config = SWWS_Config or {}
 
-SWWS_Config.version = "v7.preview1"
+SWWS_Config.version = "v7.preview2"
 
 -------------------------------------------------------
 -- DEBUG OPTIONS -- 
@@ -43,8 +43,17 @@ SWWS_Config.gameplay.poolChanceFatal    = 33;
 
 function SWWS_Config.OnGameStart()
     if SWWS_Config.debug.logging then
+
+        local gameType = "Singleplayer"
+
+        if isServer() then
+            gameType = "Server"
+        elseif isClient() then
+            gameType = "Client or Host"
+        end 
+
         print("SWWS: -------")
-        print("SWWS: Server Running " .. SWWS_Config.version)
+        print("SWWS: " .. gameType .. " Running " .. SWWS_Config.version)
         print("SWWS: -------")
     end
 end
