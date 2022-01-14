@@ -2,8 +2,6 @@ require "SWWS_Config"
 
 SWWS_Data = {}
 
-SWWS_Data.isServerLogicRunning = false
-
 function SWWS_Data.IsSinglePlayer()
     return not isClient() and not isServer()
 end
@@ -15,7 +13,7 @@ function SWWS_Data.Save()
 
     GameTime:getInstance():getModData()["swws_saveData"] = SWWS_Data.saveData
 
-    if not SWWS_Data.IsSinglePlayer() or (isClient() and SWWS_Data.isServerLogicRunning) then
+    if not SWWS_Data.IsSinglePlayer() then
         if SWWS_Config.debug.logging then
             print("SWWS: ModData.add & ModData.transmit")
         end
@@ -37,13 +35,6 @@ function SWWS_Data.Load()
             print("SWWS: SWWS_Data.Load as Dedicated Server")
         end
         ModData.add("swws_saveData", GameTime:getInstance():getModData()["swws_saveData"])
-        SWWS_Data.saveData = ModData.get("swws_saveData")
-    elseif SWWS_Data.isServerLogicRunning then
-        -- Hosted Server
-        if SWWS_Config.debug.logging then
-            print("SWWS: SWWS_Data.Load as Hosted Server")
-        end
-        -- This doesn't actually work, but it doesn't crash either, so idk
         SWWS_Data.saveData = ModData.get("swws_saveData")
     else
         -- Client

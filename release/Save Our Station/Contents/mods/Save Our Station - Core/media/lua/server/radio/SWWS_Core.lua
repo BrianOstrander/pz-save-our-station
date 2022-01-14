@@ -6,7 +6,7 @@ require "SWWS_Data"
 
 SWWS_Core = {}
 
-function SWWS_Core.OnGameStart()
+function SWWS_Core.Initialize()
 
     if SWWS_Core.isInitialized then
         return
@@ -16,7 +16,6 @@ function SWWS_Core.OnGameStart()
         print("SWWS: Initializing Weather Stations")
     end
 
-    SWWS_Data.isServerLogicRunning = true
     SWWS_Data.Load()
 
     if SWWS_Config.debug.forceInitialize or not SWWS_Data.saveData then
@@ -32,9 +31,9 @@ function SWWS_Core.OnGameStart()
 
     SWWS_Data.Save()
 end
-Events.OnGameStart.Add(SWWS_Core.OnGameStart)
 
 function SWWS_Core.OnEveryHour()
+    SWWS_Core.Initialize()
     SWWS_Core.UpdateFailure()
     
     SWWS_Data.Save()

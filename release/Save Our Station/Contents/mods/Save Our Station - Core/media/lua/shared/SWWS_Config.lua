@@ -1,6 +1,7 @@
 SWWS_Config = SWWS_Config or {}
 
-SWWS_Config.version = "v7.preview2"
+SWWS_Config.version = "v7"
+SWWS_Config.isInitialized = false
 
 -------------------------------------------------------
 -- DEBUG OPTIONS -- 
@@ -10,15 +11,15 @@ SWWS_Config.version = "v7.preview2"
 SWWS_Config.debug = {}
 
 -- Forces mod to reinitialize game state every time a game is loaded.
-SWWS_Config.debug.forceInitialize = true
+SWWS_Config.debug.forceInitialize = false
 -- Ignores if the power is on or off, and forces breakdown checks every hour.
-SWWS_Config.debug.ignoreRequirePowerShutoff = true
+SWWS_Config.debug.ignoreRequirePowerShutoff = false
 -- Force stage time to a single hour.
-SWWS_Config.debug.forceMinimumTime = true
+SWWS_Config.debug.forceMinimumTime = false
 -- Forces the fatal pool to be chosen every time.
-SWWS_Config.debug.forceFatal = true
+SWWS_Config.debug.forceFatal = false
 -- Enables logging of various events
-SWWS_Config.debug.logging = true
+SWWS_Config.debug.logging = false
 
 -------------------------------------------------------
 -- GAMEPLAY OPTIONS --
@@ -38,23 +39,18 @@ SWWS_Config.gameplay.poolChanceNominal  = 67;
 SWWS_Config.gameplay.poolChanceFatal    = 33;
 
 -------------------------------------------------------
--- ON GAME START --
--------------------------------------------------------
 
-function SWWS_Config.OnGameStart()
-    if SWWS_Config.debug.logging then
+if SWWS_Config.debug.logging then
 
-        local gameType = "Singleplayer"
+    local gameType = "Singleplayer"
 
-        if isServer() then
-            gameType = "Server"
-        elseif isClient() then
-            gameType = "Client or Host"
-        end 
+    if isServer() then
+        gameType = "Server"
+    elseif isClient() then
+        gameType = "Client or Host"
+    end 
 
-        print("SWWS: -------")
-        print("SWWS: " .. gameType .. " Running " .. SWWS_Config.version)
-        print("SWWS: -------")
-    end
+    print("SWWS: -------")
+    print("SWWS: " .. gameType .. " Running " .. SWWS_Config.version)
+    print("SWWS: -------")
 end
-Events.OnGameStart.Add(SWWS_Config.OnGameStart)
