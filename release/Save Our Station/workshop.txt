@@ -2,5 +2,5 @@ version=1
 id=2398274461
 title=Save Our Station!
 description=Find and repair the Emergency Broadcast System
-tags=Build 41;Hardmode;Map;Realistic
+tags=Build 41;Hardmode;Map;Multiplayer;Realistic
 visibility=public
