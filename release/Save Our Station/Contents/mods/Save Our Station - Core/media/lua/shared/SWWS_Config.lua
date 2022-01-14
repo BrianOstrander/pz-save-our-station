@@ -1,5 +1,8 @@
 SWWS_Config = SWWS_Config or {}
 
+SWWS_Config.version = "v7"
+SWWS_Config.isInitialized = false
+
 -------------------------------------------------------
 -- DEBUG OPTIONS -- 
 -- DO NOT MESS WITH UNLESS YOU KNOW WHAT YOU ARE DOING!
@@ -9,6 +12,12 @@ SWWS_Config.debug = {}
 
 -- Forces mod to reinitialize game state every time a game is loaded.
 SWWS_Config.debug.forceInitialize = false
+-- Ignores if the power is on or off, and forces breakdown checks every hour.
+SWWS_Config.debug.ignoreRequirePowerShutoff = false
+-- Force stage time to a single hour.
+SWWS_Config.debug.forceMinimumTime = false
+-- Forces the fatal pool to be chosen every time.
+SWWS_Config.debug.forceFatal = false
 -- Enables logging of various events
 SWWS_Config.debug.logging = false
 
@@ -28,3 +37,20 @@ SWWS_Config.gameplay.timeMultiplier = 24
 -- Fatal: EBS has a fatal fault that requires the player to fix it.
 SWWS_Config.gameplay.poolChanceNominal  = 67;
 SWWS_Config.gameplay.poolChanceFatal    = 33;
+
+-------------------------------------------------------
+
+if SWWS_Config.debug.logging then
+
+    local gameType = "Singleplayer"
+
+    if isServer() then
+        gameType = "Server"
+    elseif isClient() then
+        gameType = "Client or Host"
+    end 
+
+    print("SWWS: -------")
+    print("SWWS: " .. gameType .. " Running " .. SWWS_Config.version)
+    print("SWWS: -------")
+end

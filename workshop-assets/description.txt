@@ -2,7 +2,11 @@
 
 This mod adds [b]new areas[/b] and a [b]new gameplay mechanic[/b] to the vanilla Knox Country map.  
 
-[b]Updated for v41.65+[/b]
+[h1]Multiplayer Support for v41.65+[/h1]
+
+Save Our Station now supports dedicated servers! 
+
+[b]Please note:[/b] support for multiplayer games started through the "host" option on the main menu is not currently supported, but will be worked on in the future. The Knox Country map mod will work no matter what, it is only the Core mod with emergency broadcast failures that does not work on "host" games.
 
 [h1]Repair the Emergency Broadcast System[/h1]
 
@@ -79,41 +83,10 @@ Lexx - Fixes and aesthetic improvements for v41.65 update.
 Krukrapok - Texturing the weather terminal and all around advice for improving my own textures.
 throttlekitty - Answering my endless questions and providing awesome tiles!
 Daddy Dirkiedirk - Textures and quality feedback.
+Konijima & Chuck - Lua debugging for multiplayer support.
 
 Everyone in the #mapping discord channel, y'all are great!!!
 
-[h1]Changelog[/h1]
-[b]v6[/b]
-[list]
-    [*]Added spawnpoints.
-[/list]
-[b]v5[/b]
-[list]
-    [*]Added 3D models for items.
-    [*]Added curved roads.
-    [*]Added ingame map support.
-    [*]Fixed carpet in RIVS-500.
-    [*]Fixed spawn rates for items.
-    [*]Fixed inspection of items.
-[/list]
-[b]v4[/b]
-[list]
-    [*]Minor tweaks to support future localization.
-[/list]
-[b]v3[/b]
-[list]
-    [*]Spawns now default to Muldraugh instead of erroring out.
-[/list]
-[b]v2[/b]
-[list]
-    [*]Fixed railings at RIVS-500 weather station
-    [*]Fixed railings at [spoiler]REDACTED[/spoiler] weather station
-    [*]Fixed railings at [spoiler]REDACTED[/spoiler] homes
-[/list]
-[b]v1[/b]
-[list]
-    [*]Initial release
-[/list]
 Workshop ID: 2398274461
 Mod ID: SaveOurStation_Core
 Mod ID: SaveOurStation_KnoxCountry
