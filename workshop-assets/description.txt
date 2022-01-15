@@ -83,6 +83,7 @@ The following languages are already supported, with more on the way! Check out t
 [list]
     [*]English - EN
     [*]Spanish - ES
+    [*]French - FR
 [/list]
 
 If you see English where it shouldn't be, it's because I need more help localizing this mod. Please help in the forum below!

@@ -1,0 +1,6 @@
+ContextMenu_FR = {
+    Texture_Register_KnoxCountry = "KNOX COUNTRY",
+    Texture_Register_Title = "REGISTRE NATIONAL DES STATIONS MÉTÉO",
+    Texture_Register_Footer_Seal = "SERVICE MÉTÉO NATIONAL",
+    Texture_Register_Footer_Unauthorized = "La distribution non autorisée est une infraction fédérale",
+}

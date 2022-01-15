@@ -1,0 +1,4 @@
+ItemName_FR = {
+    ItemName_Base.SWWS_KnoxCountry_Register = "Registre NWS",
+    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = "Registre NWS - Annoté",
+}
