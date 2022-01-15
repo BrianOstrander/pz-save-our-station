@@ -76,6 +76,17 @@ It's a drab green room with blue radar terminals, usually found on the second st
 [b]I'd like to add a weather station to my own map, can that be done?[/b]
 Of course! Contact [b]Spacew00t[/b] in the Project Zomboid #mapping discord channel to get started!
 
+[h1]What languages are supported?[/h1]
+
+The following languages are already supported, with more on the way! Check out the stickied post below to help localize Save Our Station.
+
+[list]
+    [*]English - EN
+    [*]Spanish - ES
+[/list]
+
+If you see English where it shouldn't be, it's because I need more help localizing this mod. Please help in the forum below!
+
 [h1]Credits[/h1]
 
 Spacew00t - Mapping, texturing, and Lua scripting.
