@@ -88,11 +88,11 @@ function SWWS_Core.ScheduleFailure()
 
     SWWS_Core.GenerateStageRemaining(stage)
     
-    SWWS_Data.saveData.conditionLower = SWWS_Localization.GetLine(SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)])
+    SWWS_Data.saveData.conditionLower = getRadioText(SWWS_Strings.conditions[ZombRand(1, #SWWS_Strings.conditions + 1)])
     SWWS_Data.saveData.conditionUpper = SWWS_Data.saveData.conditionLower:gsub("^%l", string.upper)
     
     local system = SWWS_SystemFaults.pool[ZombRand(1, #SWWS_SystemFaults.pool + 1)]
-    SWWS_Data.saveData.systemId = SWWS_Localization.GetLine(system.id)
+    SWWS_Data.saveData.systemId = getRadioText(system.id)
     SWWS_Data.saveData.systemRepair = system.repairs[ZombRand(1, #system.repairs + 1)]
     SWWS_Data.saveData.systemRepairComplete = false;
 
@@ -120,8 +120,8 @@ function SWWS_Core.ScheduleFailure()
     SWWS_Data.saveData.systemName = SWWS_Data.saveData.systemId .. "_" .. serial
 
     -- gsub returns a table, so we do this to avoid random numbers getting added to our table.
-    local repairInstructionLocation = SWWS_Localization.GetLine("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
-    local repairInstructionCode = SWWS_Localization.GetLine("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Data.saveData.systemName):gsub("{description}", SWWS_Localization.GetLine(SWWS_Data.saveData.systemRepair.description))
+    local repairInstructionLocation = getRadioText("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
+    local repairInstructionCode = getRadioText("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Data.saveData.systemName):gsub("{description}", getRadioText(SWWS_Data.saveData.systemRepair.description))
 
     SWWS_Data.saveData.systemRepairInstructions = {
         repairInstructionLocation,
@@ -217,7 +217,7 @@ function SWWS_Core.FillBroadcastWarning()
         overrideForcast = nil,
         overrideChoppah = nil,
         isShutdown = false,
-        diagnostic = SWWS_Localization.GetLine("AEBS_ConditionNominal"),
+        diagnostic = getRadioText("AEBS_ConditionNominal"),
     }
 
     if not SWWS_Core.isInitialized then
@@ -243,30 +243,30 @@ function SWWS_Core.FillBroadcastWarning()
 
     if not result.isShutdown then
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overridePower = SWWS_Localization.GetLine("AEBS_KnoxPowerGridStatusUnavailable")
+            result.overridePower = getRadioText("AEBS_KnoxPowerGridStatusUnavailable")
         end
         
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overrideForcast = SWWS_Localization.GetLine("AEBS_ForcastOffline")
+            result.overrideForcast = getRadioText("AEBS_ForcastOffline")
         end
 
         if ZombRand(1, 100) <= messages.failureChance then
-            result.overrideChoppah = SWWS_Localization.GetLine("AEBS_AirTrafficRadarDisabled")
+            result.overrideChoppah = getRadioText("AEBS_AirTrafficRadarDisabled")
         end
     end
 
     result.diagnostics = {
-        SWWS_Core.PopulateDiagnostic(SWWS_Localization.GetLine(messages.status[ZombRand(1, #messages.status + 1)]))
+        SWWS_Core.PopulateDiagnostic(getRadioText(messages.status[ZombRand(1, #messages.status + 1)]))
     }
 
     if messages.revealTime then
         local shutdown = nil
         if SWWS_Data.saveData.stageRemaining < 2 then
-            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownImminent")
+            shutdown = getRadioText("AEBS_EmergencyShutdownImminent")
         elseif SWWS_Data.saveData.stageRemaining < 24 then
-            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInHours"):gsub("{hours}", tostring(SWWS_Data.saveData.stageRemaining))
+            shutdown = getRadioText("AEBS_EmergencyShutdownInHours"):gsub("{hours}", tostring(SWWS_Data.saveData.stageRemaining))
         else
-            shutdown = SWWS_Localization.GetLine("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Data.saveData.stageRemaining / 24)))
+            shutdown = getRadioText("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Data.saveData.stageRemaining / 24)))
         end
         table.insert(result.diagnostics, shutdown)
     end

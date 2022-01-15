@@ -165,7 +165,7 @@ function WeatherChannel.FillBroadcast(_gametime, _bc)
         
         if not corePayload.isShutdown then
             WeatherChannel.AddFuzz(c, _bc);
-            _bc:AddRadioLine( RadioLine.new(SWWS_Localization.GetLine("AEBS_Integrity"), c.r, c.g, c.b) );
+            _bc:AddRadioLine( RadioLine.new(getRadioText("AEBS_Integrity"), c.r, c.g, c.b) );
         end
 
         for diagnosticKey, diagnostic in ipairs(corePayload.diagnostics) do
