@@ -1,0 +1,3 @@
+ItemName_ES = {
+    ItemName_Base.SWWS_Core_DiagnosticManual = "NWS Diagnostic Manual",
+}
