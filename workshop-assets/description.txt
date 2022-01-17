@@ -96,6 +96,7 @@ Krukrapok - Texturing the weather terminal and all around advice for improving m
 throttlekitty - Answering my endless questions and providing awesome tiles!
 Daddy Dirkiedirk - Textures and quality feedback.
 Konijima & Chuck - Lua debugging for multiplayer support.
+Xianah - French localization
 
 Everyone in the #mapping discord channel, y'all are great!!!
 
