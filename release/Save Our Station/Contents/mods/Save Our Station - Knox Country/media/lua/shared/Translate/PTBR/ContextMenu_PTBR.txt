@@ -1,0 +1,6 @@
+ContextMenu_PTBR = {
+    Texture_Register_KnoxCountry = "KNOX COUNTRY",
+    Texture_Register_Title = "REGISTRO DA ESTAÇÃO METEOROLÓGICA NACIONAL",
+    Texture_Register_Footer_Seal = "SERVIÇO DA ESTAÇÃO METEOROLÓGICA NACIONAL",
+    Texture_Register_Footer_Unauthorized = "A distribuição não autorizada é um crime federal",
+}
