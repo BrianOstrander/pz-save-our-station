@@ -1,0 +1,3 @@
+ItemName_PTBR = {
+    ItemName_Base.SWWS_Core_DiagnosticManual = "Manual de Diagnóstico da EMN",
+}
