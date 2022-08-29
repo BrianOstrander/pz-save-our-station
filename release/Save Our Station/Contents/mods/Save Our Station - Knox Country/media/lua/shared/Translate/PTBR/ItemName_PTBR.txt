@@ -1,4 +1,4 @@
 ItemName_PTBR = {
-    ItemName_Base.SWWS_KnoxCountry_Register = "Registro do EMN",
-    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = Registro da EMN - Com anotaÃ§Ãµes",
+    ItemName_Base.SWWS_KnoxCountry_Register = "Registro da EMN",
+    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = Registro da EMN - Com anotações",
 }
