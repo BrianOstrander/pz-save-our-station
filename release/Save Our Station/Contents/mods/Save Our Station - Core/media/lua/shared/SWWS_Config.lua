@@ -1,6 +1,6 @@
 SWWS_Config = SWWS_Config or {}
 
-SWWS_Config.version = "v8"
+SWWS_Config.version = "v10"
 SWWS_Config.isInitialized = false
 
 -------------------------------------------------------

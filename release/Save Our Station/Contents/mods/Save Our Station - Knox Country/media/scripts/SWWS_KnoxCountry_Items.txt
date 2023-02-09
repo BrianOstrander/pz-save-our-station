@@ -2,6 +2,8 @@ module Base
 {
 	/******************* SWWS KNOX COUNTRY ITEMS *******************/
 
+	/**** Registers ****/
+
 	model SWWS_KnoxCountry_Register_Ground
 	{
 		mesh = WorldItems/Map,
@@ -32,4 +34,23 @@ module Base
 		StaticModel = Map,
 		WorldStaticModel = SWWS_KnoxCountry_Register_Ground
 	}
+
+	/**** Miscellaneous ****/
+
+	model SWWS_KnoxCountry_WswuCard_Ground
+	{
+		mesh = WorldItems/CreditCard,
+		texture = WorldItems/swws_wswucard_ground,
+		scale = 0.6,
+	}
+
+	item SWWS_KnoxCountry_WswuCard
+    {
+        DisplayCategory = Literature,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	= Weather Service Workers United Membership,
+        Icon	=	swws_wswucard_icon,
+        WorldStaticModel = SWWS_KnoxCountry_WswuCard_Ground,
+    }
 }

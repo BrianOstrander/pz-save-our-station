@@ -17,14 +17,14 @@
   <buildingsImage path="" generate="false"/>
  </TMXToBMP>
  <GenerateLots>
-  <exportdir path="../../../../../Zomboid/Workshop/Save Our Station/Contents/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World"/>
+  <exportdir path="../../../../../Zomboid/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World"/>
   <ZombieSpawnMap path="ws_zomb.png"/>
   <TileDefFolder path="../Tiles"/>
   <worldOrigin origin="10,15"/>
  </GenerateLots>
  <LuaSettings>
-  <spawnPointsFile path="../../../../../Zomboid/Workshop/Save Our Station/Contents/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World/spawnpoints.lua"/>
-  <worldObjectsFile path="../../../../../Zomboid/Workshop/Save Our Station/Contents/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World/objects.lua"/>
+  <spawnPointsFile path="../../../../../Zomboid/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World/spawnpoints.lua"/>
+  <worldObjectsFile path="../../../../../Zomboid/mods/Save Our Station - Knox Country/media/maps/SaveOurStation_KnoxCountry_World/objects.lua"/>
  </LuaSettings>
  <bmp path="yourmap.bmp" x="0" y="0" width="1" height="1"/>
  <bmp path="yourmap.bmp" x="0" y="0" width="1" height="1"/>
@@ -141,7 +141,7 @@
   <object name="medium" group="ParkingStall" type="ParkingStall" x="189" y="85" level="0" width="3" height="4">
    <template name="ParkingStallS"/>
   </object>
-  <object name="bad" group="ParkingStall" type="ParkingStall" x="192" y="85" level="0" width="6" height="4">
+  <object name="swws_station" group="ParkingStall" type="ParkingStall" x="192" y="85" level="0" width="6" height="4">
    <template name="ParkingStallS"/>
   </object>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="192" y="89" level="0" width="6" height="4">
@@ -209,6 +209,9 @@
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="234" y="118" level="0" width="36" height="32"/>
   <object group="Nav" type="Nav" level="0" geometry="polygon" points="70,65 85,72 96,83 104,99 96,99 89,85 84,80 70,73"/>
   <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="79,61 106,61 106,87"/>
+  <object type="SpawnPoint" x="189" y="71" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="25" y="9" map="WeatherStations/swws_west_35_24.tmx">
   <lot x="106" y="208" level="0" width="29" height="16" map="../TileZed/buildings/SWWS_West_Diner.tbx"/>
@@ -284,7 +287,7 @@
   <object name="trafficjame" group="ParkingStall" type="ParkingStall" x="149" y="281" level="0" width="8" height="3">
    <template name="ParkingStallW"/>
   </object>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="239" y="128" level="0" width="12" height="4">
+  <object name="swws_station" group="ParkingStall" type="ParkingStall" x="239" y="128" level="0" width="12" height="4">
    <template name="ParkingStallN"/>
   </object>
   <object name="medium" group="ParkingStall" type="ParkingStall" x="255" y="128" level="0" width="12" height="4">
@@ -342,6 +345,9 @@
   <object name="Farm" group="ZombiesType" type="ZombiesType" x="55" y="40" level="0" width="10" height="9"/>
   <object group="Nav" type="Nav" level="0" geometry="polygon" points="172,246 184,240 191,233 198,220 208,220 208,223 201,237 189,249 175,256 172,256"/>
   <object group="Vegitation" type="Vegitation" level="0" geometry="polygon" points="207,256 187,256 207,233"/>
+  <object type="SpawnPoint" x="244" y="115" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="24" y="19" map="WeatherStations/swws_muld_34_34.tmx">
   <lot x="41" y="40" level="0" width="11" height="14" map="../TileZed/buildings/SWWS_Muld.tbx"/>
@@ -377,7 +383,7 @@
   <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="234" y="83" level="0" width="3" height="28"/>
   <object name="trafficjams" group="ParkingStall" type="ParkingStall" x="226" y="83" level="0" width="3" height="16"/>
   <object group="Nav" type="Nav" x="67" y="0" level="0" width="6" height="73"/>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="53" y="38" level="0" width="4" height="21">
+  <object name="swws_station" group="ParkingStall" type="ParkingStall" x="53" y="38" level="0" width="4" height="12">
    <template name="ParkingStallW"/>
   </object>
   <object name="medium" group="ParkingStall" type="ParkingStall" x="61" y="38" level="0" width="4" height="21">
@@ -508,6 +514,12 @@
   <object name="CarRepair" group="ZombiesType" type="ZombiesType" x="202" y="35" level="0" width="17" height="8"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="197" y="45" level="0" width="45" height="71"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="174" y="66" level="0" width="23" height="50"/>
+  <object type="SpawnPoint" x="43" y="45" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
+  <object name="medium" group="ParkingStall" type="ParkingStall" x="53" y="50" level="0" width="4" height="9">
+   <property name="Direction" value="W"/>
+  </object>
  </cell>
  <cell x="15" y="23" map="WeatherStations/swws_rose_25_38.tmx">
   <lot x="172" y="57" level="0" width="11" height="15" map="../TileZed/buildings/SWWS_Rose_Transmission.tbx"/>
@@ -524,7 +536,7 @@
   <object name="medium" group="ParkingStall" type="ParkingStall" x="194" y="82" level="0" width="6" height="4">
    <template name="ParkingStallS"/>
   </object>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="185" y="72" level="0" width="15" height="4">
+  <object name="swws_station" group="ParkingStall" type="ParkingStall" x="185" y="72" level="0" width="15" height="4">
    <template name="ParkingStallN"/>
   </object>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="59" y="220" level="0" width="4" height="3"/>
@@ -586,6 +598,9 @@
   <object name="Offices" group="ZombiesType" type="ZombiesType" x="166" y="48" level="0" width="43" height="42"/>
   <object name="Prison" group="ZombiesType" type="ZombiesType" x="147" y="209" level="0" width="21" height="17"/>
   <object name="TrailerPark" group="ZombiesType" type="ZombiesType" x="44" y="211" level="0" width="34" height="26"/>
+  <object type="SpawnPoint" x="189" y="61" level="0" width="1" height="1">
+   <template name="SpawnPoint"/>
+  </object>
  </cell>
  <cell x="11" y="24" map="WeatherStations/swws_zulu_21_39.tmx">
   <template name="ParkingStallE"/>
@@ -609,7 +624,7 @@
   <lot x="94" y="140" level="0" width="16" height="10" map="../TileZed/buildings/SWWS_Zulu_Construction_1.tbx"/>
   <lot x="110" y="149" level="0" width="17" height="20" map="../TileZed/buildings/SWWS_Zulu_ConstructionOffice.tbx"/>
   <lot x="94" y="167" level="0" width="12" height="6" map="../TileZed/buildings/SWWS_Zulu_ConstructionLot_0.tbx"/>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="158" y="166" level="0" width="4" height="24">
+  <object name="swws_station" group="ParkingStall" type="ParkingStall" x="158" y="166" level="0" width="4" height="24">
    <template name="ParkingStallW"/>
   </object>
   <object name="medium" group="ParkingStall" type="ParkingStall" x="166" y="175" level="0" width="4" height="3">
@@ -621,7 +636,7 @@
   <object name="medium" group="ParkingStall" type="ParkingStall" x="166" y="184" level="0" width="4" height="15">
    <template name="ParkingStallE"/>
   </object>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="145" y="199" level="0" width="21" height="4">
+  <object name="military" group="ParkingStall" type="ParkingStall" x="145" y="199" level="0" width="21" height="4">
    <template name="ParkingStallS"/>
   </object>
   <object name="bad" group="ParkingStall" type="ParkingStall" x="142" y="199" level="0" width="3" height="4">
@@ -642,7 +657,7 @@
   <object name="bad" group="ParkingStall" type="ParkingStall" x="104" y="86" level="0" width="4" height="6">
    <template name="ParkingStallW"/>
   </object>
-  <object name="medium" group="ParkingStall" type="ParkingStall" x="112" y="86" level="0" width="4" height="12">
+  <object name="military" group="ParkingStall" type="ParkingStall" x="112" y="86" level="0" width="4" height="12">
    <template name="ParkingStallE"/>
   </object>
   <object name="medium" group="ParkingStall" type="ParkingStall" x="112" y="104" level="0" width="4" height="12">

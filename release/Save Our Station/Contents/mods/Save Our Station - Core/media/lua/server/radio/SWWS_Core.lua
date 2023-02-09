@@ -6,6 +6,12 @@ require "SWWS_Data"
 
 SWWS_Core = {}
 
+function SWWS_Core.GameBoot()
+    -- Server does not seem to load translation files by default...
+    Translator.loadFiles()
+end
+Events.OnGameBoot.Add(SWWS_Core.GameBoot)
+
 function SWWS_Core.Initialize()
 
     if SWWS_Core.isInitialized then
