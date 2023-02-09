@@ -2,11 +2,9 @@
 
 This mod adds [b]new areas[/b] and a [b]new gameplay mechanic[/b] to the vanilla Knox Country map.  
 
-[h1]Multiplayer Support for v41.65+[/h1]
+[h1]Multiplayer Support for v41.78+[/h1]
 
-Save Our Station now supports dedicated servers! 
-
-[b]Please note:[/b] support for multiplayer games started through the "host" option on the main menu is not currently supported, but will be worked on in the future. The Knox Country map mod will work no matter what, it is only the Core mod with emergency broadcast failures that does not work on "host" games.
+Save Our Station now supports dedicated and local servers! 
 
 [h1]Repair the Emergency Broadcast System[/h1]
 
@@ -96,7 +94,9 @@ Krukrapok - Texturing the weather terminal and all around advice for improving m
 throttlekitty - Answering my endless questions and providing awesome tiles!
 Daddy Dirkiedirk - Textures and quality feedback.
 Konijima & Chuck - Lua debugging for multiplayer support.
-Xianah - French localization
+Xianah - French localization.
+Olipro - Fixes for v41.78 update.
+UNKNOWNFOX & Skizot - Vehicle texture help.
 
 Everyone in the #mapping discord channel, y'all are great!!!
 
