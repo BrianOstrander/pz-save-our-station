@@ -227,6 +227,7 @@ property
         IsoBrokenGlass = IsoBrokenGlass
         IsoClothingDryer = IsoClothingDryer
         IsoClothingWasher = IsoClothingWasher
+        IsoCombinationWasherDryer = IsoCombinationWasherDryer
         IsoFireplace = IsoFireplace
         IsoMannequin = IsoMannequin
         IsoRadio = IsoRadio
@@ -1568,9 +1569,18 @@ property
         Sliding Glass Door = SlidingGlassDoor
         Wood Door = WoodDoor
         Wood Gate = WoodGate
+        Wood Shack Door = WoodShackDoor
     }
     Default = None
     ValueAsPropertyName = false
+}
+
+property
+{
+    Type = String
+    Name = AmbientSound
+    ShortName =
+    Default = 
 }
 
 property
@@ -1583,6 +1593,7 @@ property
         None =
         Wood =
         Metal =
+        MetalBars = MetalGate
     }
     Default = None
     ValueAsPropertyName = false
@@ -1601,6 +1612,8 @@ property
         Sandbag =
         Gravelbag =
         Barbwire =
+        RoadBlock =
+        MetalGate =
         Other =
     }
     Default = None
@@ -1626,6 +1639,21 @@ property
         Metal = Metal
     }
     Default = None
+    ValueAsPropertyName = false
+}
+
+property
+{
+    Type = Enum
+    Name = SinkType
+    ShortName = 
+    Enums
+    {
+        Generic =
+        Ceramic =
+        Metal =
+    }
+    Default = Generic
     ValueAsPropertyName = false
 }
 
