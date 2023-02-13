@@ -7,7 +7,7 @@ SWWS_SystemFaults.solutions = {
         drainItem = false,
         chance = 1.0,
         items = {
-            "Base.LeadPipe"
+            "Base.MetalPipe"
         }
     },
     replaceElectronicScrap = {
