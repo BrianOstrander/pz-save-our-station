@@ -16,7 +16,7 @@ SWWS_Debug.isInitialized = false
 function SWWS_DebugSetup()
 
 	-- Forces mod to reinitialize game state every time a game is loaded (= Clears any currently-ongoing stages)
-	SWWS_Debug.forceInitialize = true
+	SWWS_Debug.forceInitialize = false
 
 	-- Ignores if the power is on or off, and forces breakdown checks every hour.
 	SWWS_Debug.ignoreRequirePowerShutoff = false
@@ -32,7 +32,7 @@ function SWWS_DebugSetup()
 	SWWS_Debug.forceNonFatal = false
 
 	-- Enables logging of various events
-	SWWS_Debug.logging = true
+	SWWS_Debug.logging = false
 
 	-------------------------------------------------------
 
