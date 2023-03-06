@@ -1,4 +1,4 @@
-require "SWWS_Config"
+require "SWWS_Debug"
 require "SWWS_Data"
 
 SWWS_RepairContext = {}
@@ -27,7 +27,7 @@ function SWWS_RepairContext.fix(_player, _context, _worldObjects, _test)
 	SWWS_Data.Load()
 
 	if SWWS_Data.saveData == nil then
-		if SWWS_Config.debug.logging then
+		if SWWS_Debug.logging then
 			print("SWWS: SWWS_Data.saveData is nil")
 		end
 		return

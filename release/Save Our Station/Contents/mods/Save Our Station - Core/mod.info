@@ -2,5 +2,5 @@ name=Save Our Station - Core
 id=SaveOurStation_Core
 description=Core functionality of the Save Our Station mod, and required for automated broadcast repair events to occur. Make sure you have one or more "Save Our Station - LOCATION" mods enabled as well, e.g. "Save Our Station - Knox Country".  
 poster=poster.png
-modversion=10
+modversion=11
 pzversion=41.78

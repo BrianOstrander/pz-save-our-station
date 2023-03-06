@@ -1,3 +1,4 @@
-IG_UI_EN = {
+IGUI_EN = {
     IGUI_VehicleName_SWWS_PickUp = "Weather Station Pickup Truck",
+    IGUI_Sandbox_SaveOurStationCore = "Save Our Station!",
 }

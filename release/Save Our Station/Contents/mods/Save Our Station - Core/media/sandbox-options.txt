@@ -1,0 +1,51 @@
+VERSION = 1,
+
+option SaveOurStationCore.RequirePowerShutoff
+{
+	type = boolean,
+	default = true,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_RequirePowerShutoff,
+}
+
+option SaveOurStationCore.EnableInterruptions
+{
+	type = boolean,
+	default = true,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_EnableInterruptions,
+}
+
+option SaveOurStationCore.EnableFaults
+{
+	type = boolean,
+	default = true,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_EnableFaults,
+}
+
+option SaveOurStationCore.ReliabilityProfile
+{
+	type = enum,
+	numValues = 5,
+	default = 3,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_ReliabilityProfile,
+	valueTranslation = SaveOurStationCore_ReliabilityProfile,
+}
+
+option SaveOurStationCore.TimeDurationMultiplier
+{
+	type = enum,
+	numValues = 4,
+	default = 3,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_TimeDurationMultiplier,
+	valueTranslation = SaveOurStationCore_TimeDurationMultiplier,
+}
+

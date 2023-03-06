@@ -10,6 +10,8 @@ SWWS_Strings.conditions = {
 SWWS_Strings.fuzzs = {
     "<bzzt>",
     "<fzzt>",
+    "<beep>",
+    "<szzt>",
     "<wzzt>"
 }
 
