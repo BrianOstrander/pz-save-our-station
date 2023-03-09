@@ -403,14 +403,12 @@ function SWWS_Core.FillBroadcastWarning()
 		messages = stage.messages
 	end
 
-	function setColor ()
+	if messages then
 		result.color = messages.statusColor
+	else
+		-- Not sure why, but messages is sometimes nil, probably an off by one error somewhere.
+		print("SWWS: Error, messages was unexpectedly nil for id "..SWWS_Data.saveData.scheduleId..", index "..SWWS_Data.saveData.stageIndex)
 	end
-
-	pcall(setColor);
-	-- FIXME! This is a terrible bandaid :(
-	-- But it prevents an "attempted index: statusColor of non-table: null".
-	-- I'm as of yet unsure what causes this, but oh well.
 
 
 	result.isShutdown = messages.failureChance == 100
