@@ -42,7 +42,7 @@ function SWWS_Debug.PrintTable(_table, _indents)
 		local formatting = string.rep("  ", _indents) .. k .. ": "
 		if type(v) == "table" then
 			print("SWWS:> " , formatting)
-			Debug_TablePrint(v, _indents+1)
+			SWWS_Debug.PrintTable(v, _indents+1)
 		elseif type(v) == 'boolean' then
 			print("SWWS:> " , formatting .. tostring(v))
 		else
