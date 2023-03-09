@@ -35,6 +35,22 @@ SWWS_Debug.infiniteBattery = true
 -- Enables logging of various events
 SWWS_Debug.logging = false
 
+function SWWS_Debug.PrintTable(_table, _indents)
+	_indents = _indents or 0
+
+	for k, v in pairs(_table) do
+		local formatting = string.rep("  ", _indents) .. k .. ": "
+		if type(v) == "table" then
+			print("SWWS:> " , formatting)
+			Debug_TablePrint(v, _indents+1)
+		elseif type(v) == 'boolean' then
+			print("SWWS:> " , formatting .. tostring(v))
+		else
+			print("SWWS:> " , formatting .. v)
+		end
+	end
+end
+
 -------------------------------------------------------
 
 if SWWS_Debug.logging then

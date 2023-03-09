@@ -6,20 +6,6 @@ require "SWWS_Data"
 
 SWWS_Core = {}
 
-function Debug_TablePrint (tbl, indent)
-	if not indent then indent = 0 end
-		for k, v in pairs(tbl) do
-		formatting = string.rep("  ", indent) .. k .. ": "
-		if type(v) == "table" then
-			print("SWWS:> " , formatting)
-			Debug_TablePrint(v, indent+1)
-		elseif type(v) == 'boolean' then
-			print("SWWS:> " , formatting .. tostring(v))
-		else
-			print("SWWS:> " , formatting .. v)
-		end
-	end
-end
 
 function SWWS_Core.loadGameplayOptions()
 	-------------------------------------------------------
@@ -111,7 +97,7 @@ function SWWS_Core.loadGameplayOptions()
 		print("SWWS: > AEBS Faults enabled? ", SWWS_EnableFaults)
 		print("SWWS: > Time Duration Multiplier: ", SWWS_TimeDurationMultiplier)
 		print("SWWS: > Reliability Profile: ", SWWS_Reliability)
-		Debug_TablePrint(SWWS_Core.SWWS_ReliabilityChancePool)
+		SWWS_Debug.PrintTable(SWWS_Core.SWWS_ReliabilityChancePool)
 		print("SWWS: ----------------------------")
 	end
 
