@@ -12,7 +12,7 @@ option SaveOurStationCore.RequirePowerShutoff
 option SaveOurStationCore.EnableInterruptions
 {
 	type = boolean,
-	default = true,
+	default = false,
 
 	page = SaveOurStationCore,
 	translation = SaveOurStationCore_EnableInterruptions,
