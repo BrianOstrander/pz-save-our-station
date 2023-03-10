@@ -46,8 +46,20 @@ function SWWS_DebugScenarios.CleanupZombies()
 end
 
 function SWWS_DebugScenarios.SetSandbox()
-    SandboxVars.VehicleEasyUse = true
-    SandboxVars.Zombies = 5
+    SandboxVars.DayLength                                   = 1       -- 15 minutes
+    SandboxVars.VehicleEasyUse                              = true
+    SandboxVars.TimeSinceApo                                = 5       -- 4 months
+    SandboxVars.ElecShutModifier                            = -1
+    SandboxVars.ElecShut                                    = 1       -- Instant
+    SandboxVars.Zombies                                     = 5       -- None
+    SandboxVars.ZombieConfig.PopulationMultiplier           = 0       -- None
+    SandboxVars.Map = {
+        AllowMiniMap                                        = false,
+        AllowWorldMap                                       = true,
+        MapAllKnown                                         = true,
+    }
+    SandboxVars.SaveOurStationCore.ReliabilityProfile       = 5       -- Lost Cause
+    SandboxVars.SaveOurStationCore.TimeDurationMultiplier   = 1       -- 12x
 end
 
 function SWWS_DebugScenarios.OnStart()
