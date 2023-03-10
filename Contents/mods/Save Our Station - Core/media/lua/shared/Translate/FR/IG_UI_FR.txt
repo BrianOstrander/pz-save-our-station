@@ -1,3 +1,3 @@
-IGUI_EN = {
+IG_UI_FR = {
     IGUI_Sandbox_SaveOurStationCore = "Save Our Station!",
 }

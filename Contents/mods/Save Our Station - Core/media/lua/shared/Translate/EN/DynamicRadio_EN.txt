@@ -45,7 +45,7 @@ DynamicRadio_EN = {
 
     AEBS_StageStatusDetected_1 = "{Condition} detected.",
     AEBS_StageStatusDetected_2 = "{Condition} {fuzz}",
-    AEBS_StageStatusDetected_3 = "{fuzz} detected",
+    AEBS_StageStatusDetected_3 = "{fuzz} detected.",
     AEBS_StageStatusDetected_4 = "{fuzz}",
 
     AEBS_StageStatusDiagnosing_1 = "Diagnosing {condition}.",

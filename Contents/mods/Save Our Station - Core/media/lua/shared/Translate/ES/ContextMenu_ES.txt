@@ -1,5 +1,5 @@
 ContextMenu_ES = {
-    ContextMenu_RepairAutomatedBroadcast = "Reparar transmisión automatica",
+    ContextMenu_RepairAutomatedBroadcast = "Reparar transmisiï¿½n automatica",
 
     Texture_DiagnosticManual_Chapter = "Chapter 8",
     Texture_DiagnosticManual_Title = "Diagnostic Codes",
@@ -13,7 +13,7 @@ ContextMenu_ES = {
     Texture_DiagnosticManual_Footer_Unauthorized = "Unauthorized distribution is a federal offense",
     Texture_DiagnosticManual_ItemRequired = "ITEM REQUIRED",
     Texture_DiagnosticManual_ARPO_Description = "Plumbing for fuel or coolant lines",
-    Texture_DiagnosticManual_ARPO_Item = "LEAD PIPE",
+    Texture_DiagnosticManual_ARPO_Item = "METAL PIPE",
     Texture_DiagnosticManual_BRES_Description = "Clearing of minor electrical issues",
     Texture_DiagnosticManual_BRES_Item = "SCRAP ELECTRONICS",
     Texture_DiagnosticManual_CRWO_Description = "Wire short resulting in electrical fault",

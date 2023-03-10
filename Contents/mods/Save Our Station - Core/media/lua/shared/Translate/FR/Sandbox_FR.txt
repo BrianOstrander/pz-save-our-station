@@ -1,0 +1,27 @@
+Sandbox_FR = {
+	Sandbox_SaveOurStationCore = "Save Our Station!",
+
+	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Require Knox Power-Grid Shutoff",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "Does the Knox Power-Grid need to fail before broadcast faults/interruptions start occuring?",
+
+	Sandbox_SaveOurStationCore_EnableInterruptions = "Enable Broadcast Interruptions",
+	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Broadcast interruptions may occur at random, and will cause systems like Weather Forecasts and the Air Traffic Radar to temporarily stop working. Interruptions will resolve themselves after some time.",
+
+	Sandbox_SaveOurStationCore_EnableFaults = "Enable Broadcast Faults",
+	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Broadcast faults may occur at random and, if not repaired by a player, will eventually cause a permanent failure of the broadcast system. Once a fault is identified, the broadcast system will provide a diagnostic code and the location of the affected system. Further information can be obtained through NWS Diagnostics Manuals and Registers.",
+
+	Sandbox_SaveOurStationCore_ReliabilityProfile = "Broadcast Reliability Profile",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "The Reliability Profile determines the probability/chance of a Fault or Interruption occuring.",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Well-Maintained  |  Rare Faults, Rare Interruptions",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Reliable  |  Rare Faults, Occasional Interruptions",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Normal  |  Rare Faults, Frequent Interruptions",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Unreliable  |  Occasional Faults, Frequent Interruptions",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Lost Cause  |  Frequent Faults, Frequent Interruptions",
+
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Time Duration Multiplier",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "This multiplier affects how long Fault/Interruption cycles last, how much time there is to repair a Fault, and how long the 'grace period' between each cycle is.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Very Short (Recommended for Large Servers)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Short",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Recommended for Singleplayer)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Long",
+}
