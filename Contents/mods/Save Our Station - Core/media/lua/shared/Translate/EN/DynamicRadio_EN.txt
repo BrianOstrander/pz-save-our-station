@@ -3,12 +3,12 @@ DynamicRadio_EN = {
 
     AEBS_ConditionNominal = "Condition nominal.",
     AEBS_KnoxPowerGridStatusUnavailable = "Knox Power Grid: Status Unavailable...",
-    AEBS_ForcastOffline = "Weather Forecast: Satellite unreachable...",
+    AEBS_ForcastOffline = "Weather Forecast: Satellite Unreachable...",
     AEBS_AirTrafficRadarDisabled = "Air Traffic Radar: System Error...",
 
-    AEBS_EmergencyShutdownImminent = "WARNING: Major system fault detected <bzzt> Permanent failure in <fzzt> minutes.",
-    AEBS_EmergencyShutdownInHours = "WARNING: Major system fault detected <szzt> Permanent failure in {hours} hours.",
-    AEBS_EmergencyShutdownInDays = "WARNING: Major system fault detected <fzzt> Permanent failure in {days} days.",
+    AEBS_EmergencyShutdownImminent = "WARNING: System fault {fuzz} Shutdown in {fuzz} minutes.",
+    AEBS_EmergencyShutdownInHours = "WARNING: System fault {fuzz} Shutdown in {hours} hours.",
+    AEBS_EmergencyShutdownInDays = "WARNING: System fault {fuzz} Shutdown in {days} days.",
 
     AEBS_ConditionFault = "fault",
     AEBS_ConditionAnomaly = "anomaly",
@@ -45,12 +45,12 @@ DynamicRadio_EN = {
 
     AEBS_StageStatusDetected_1 = "{Condition} detected.",
     AEBS_StageStatusDetected_2 = "{Condition} {fuzz}",
-    AEBS_StageStatusDetected_3 = "Major {fuzz} detected",
-    AEBS_StageStatusDetected_4 = "{Condition} detected {fuzz}",
+    AEBS_StageStatusDetected_3 = "{fuzz} detected",
+    AEBS_StageStatusDetected_4 = "{fuzz}",
 
     AEBS_StageStatusDiagnosing_1 = "Diagnosing {condition}.",
-    AEBS_StageStatusDiagnosing_2 = "Running {fuzz} self-test",
-    AEBS_StageStatusDiagnosing_3 = "{fuzz} {condition} detected.",
+    AEBS_StageStatusDiagnosing_2 = "Diagnosing {fuzz}",
+    AEBS_StageStatusDiagnosing_3 = "{fuzz} {condition}.",
     AEBS_StageStatusDiagnosing_4 = "Inconclusive result {fuzz} Restarting diagnostics.",
     AEBS_StageStatusDiagnosing_5 = "Results corrupted {fuzz} Restarting diagnostics.",
     AEBS_StageStatusDiagnosing_6 = "Diagnostics incomplete {fuzz} Restarting diagnostics.",
@@ -63,17 +63,17 @@ DynamicRadio_EN = {
     AEBS_StageStatusRerouting_1 = "{Condition} identified {fuzz} Rerouting network to {fuzz} station...",
     AEBS_StageStatusRerouting_2 = "{Condition} identified in {system} {fuzz} Attempting routing bypass...",
 
-    AEBS_StageStatusInterruption_1 = "Temporary AEBS service interruption detected {fuzz} Systems unavailable...",
-    AEBS_StageStatusInterruption_2 = "Temporary AEBS service interruption detected {fuzz} Systems unavailable...",
+    AEBS_StageStatusInterruption_1 = "Temporary broadcast interruption {fuzz} Systems unavailable...",
+    AEBS_StageStatusInterruption_2 = "Temporary broadcast outage {fuzz} Systems unavailable...",
 
-    AEBS_StageStatusInterruptionResolved_1 = "AEBS {fuzz} outage restored, restarting systems...",
-    AEBS_StageStatusInterruptionResolved_2 = "AEBS network {fuzz} restored, restarting systems...",   
+    AEBS_StageStatusInterruptionResolved_1 = "System {fuzz} restored, initializing network...",
+    AEBS_StageStatusInterruptionResolved_2 = "Network {fuzz} outage restored, initializing systems...",   
 
-    AEBS_StageStatusRebootSuccess_1 = "{system} restored {fuzz} AEBS re-initialization in progress...",
-    AEBS_StageStatusRebootSuccess_2 = "System reboot has resolved {Condition} {fuzz} AEBS restart in progress...",
+    AEBS_StageStatusRebootSuccess_1 = "{system} restored {fuzz} Broadcast initialization in progress...",
+    AEBS_StageStatusRebootSuccess_2 = "System reboot has resolved {Condition} {fuzz} Network update in progress...",
 
-    AEBS_StageStatusReroutingSuccess_1 = "Successfully rerouted traffic {fuzz} AEBS re-initialization in progress...",
-    AEBS_StageStatusReroutingSuccess_2 = "Network traffic rerouted {fuzz} AEBS restart in progress...",
+    AEBS_StageStatusReroutingSuccess_1 = "Successfully rerouted traffic {fuzz} Broadcast initialization in progress...",
+    AEBS_StageStatusReroutingSuccess_2 = "Network traffic rerouted {fuzz} Network update in progress...",
 
     AEBS_StageStatusRebootFailure_1 = " {system} reboot failed {fuzz} Major {condition} remains...",
     AEBS_StageStatusRebootFailure_2 = "{system} {Condition} {fuzz} Failed to restart {fuzz}",
