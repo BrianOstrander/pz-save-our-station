@@ -4,7 +4,7 @@
 
 SWWS_Debug = SWWS_Debug or {}
 
-SWWS_Debug.version = "v11"
+SWWS_Debug.version = "v12"
 SWWS_Debug.isInitialized = false
 
 

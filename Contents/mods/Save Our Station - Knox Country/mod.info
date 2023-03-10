@@ -4,5 +4,5 @@ description=Adds five new weather station locations to Knox Country. To enable a
 poster=poster.png
 pack=swws_weather_station
 tiledef=swws 6941
-modversion=11
+modversion=12
 pzversion=41.78
