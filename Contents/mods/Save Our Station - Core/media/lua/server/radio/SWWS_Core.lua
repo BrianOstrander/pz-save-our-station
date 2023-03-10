@@ -13,62 +13,62 @@ function SWWS_Core.LoadGameplayOptions()
 	-- Do NOT edit; this is handled through SandboxVars now!
 	-------------------------------------------------------
 
+	SWWS_Core.config = SWWS_Core.config or {}
+
 	------------------------------------------------------
 	-- Does the Knox Power Grid need to be off before faults start occuring?
 	-- If enabled, will prevent any interruptions/faults until the Power Grid fails.
 
-	SWWS_Core.requireShutoff = SandboxVars.SaveOurStationCore.RequirePowerShutoff
+	SWWS_Core.config.requireShutoff = SandboxVars.SaveOurStationCore.RequirePowerShutoff
 
 	-------------------------------------------------------
 	-- Are Interruptions (Non-Fatal Faults) enabled?
 	-- Interruptions are types of faults that resolve themselves.
 
-	SWWS_Core.enableInterruptions = SandboxVars.SaveOurStationCore.EnableInterruptions
+	SWWS_Core.config.enableInterruptions = SandboxVars.SaveOurStationCore.EnableInterruptions
 
 	-------------------------------------------------------
 	-- Are Faults (Fatal Failures) enabled?
 	-- Faults require player intervention to be resolved. Further finrotmation
 
-	SWWS_Core.enableFaults = SandboxVars.SaveOurStationCore.EnableFaults
+	SWWS_Core.config.enableFaults = SandboxVars.SaveOurStationCore.EnableFaults
 
 	-------------------------------------------------------
 	-- These values represent the percentage chance for each pool to occur, and should add up to 100:
 	-- Interruption | The EBS has an Interruption/Outage that resolves itself after some time, without player intervention.
 	-- Fault | EBS has a fatal fault that requires the player to intervene and fix it.
 
-	SandboxVars.SaveOurStationCore.ReliabilityProfile = SandboxVars.SaveOurStationCore.ReliabilityProfile
-
 	if SandboxVars.SaveOurStationCore.ReliabilityProfile == 1 then
-		SWWS_Core.reliabilityDescription = "Well-Maintained"
-		SWWS_Core.reliabilityChancePool = {
+		SWWS_Core.config.reliabilityDescription = "Well-Maintained"
+		SWWS_Core.config.reliabilityChancePool = {
 			Nominal      = { probability = 80 },
 			Interruption = { probability = 15 },
 			Fault        = { probability = 5 },
 		}
 	elseif SandboxVars.SaveOurStationCore.ReliabilityProfile == 2 then
-		SWWS_Core.reliabilityDescription = "Reliable"
-		SWWS_Core.reliabilityChancePool = {
+		SWWS_Core.config.reliabilityDescription = "Reliable"
+		SWWS_Core.config.reliabilityChancePool = {
 			Nominal      = { probability = 70 },
 			Interruption = { probability = 25 },
 			Fault        = { probability = 5 },
 		}
 	elseif SandboxVars.SaveOurStationCore.ReliabilityProfile == 3 or SandboxVars.SaveOurStationCore.ReliabilityProfile == nil then
-		SWWS_Core.reliabilityDescription = "Default"
-		SWWS_Core.reliabilityChancePool = {
+		SWWS_Core.config.reliabilityDescription = "Default"
+		SWWS_Core.config.reliabilityChancePool = {
 			Nominal      = { probability = 55 },
 			Interruption = { probability = 35 },
 			Fault        = { probability = 10 },
 		}
 	elseif SandboxVars.SaveOurStationCore.ReliabilityProfile == 4 then
-		SWWS_Core.reliabilityDescription = "Unreliable"
-		SWWS_Core.reliabilityChancePool = {
+		SWWS_Core.config.reliabilityDescription = "Unreliable"
+		SWWS_Core.config.reliabilityChancePool = {
 			Nominal      = { probability = 45 },
 			Interruption = { probability = 35 },
 			Fault        = { probability = 20 },
 		}
 	elseif SandboxVars.SaveOurStationCore.ReliabilityProfile == 5 then
-		SWWS_Core.reliabilityDescription = "Lost Cause"
-		SWWS_Core.reliabilityChancePool = {
+		SWWS_Core.config.reliabilityDescription = "Lost Cause"
+		SWWS_Core.config.reliabilityChancePool = {
 			Nominal      = { probability = 35 },
 			Interruption = { probability = 35 },
 			Fault        = { probability = 30 },
@@ -81,24 +81,24 @@ function SWWS_Core.LoadGameplayOptions()
 	-- or to increase the time between failures occuring.
 
 	if SandboxVars.SaveOurStationCore.TimeDurationMultiplier == 1 then
-		SWWS_TimeDurationMultiplier = 12
+		SWWS_Core.config.timeDurationMultiplier = 12
 	elseif SandboxVars.SaveOurStationCore.TimeDurationMultiplier == 2 then
-		SWWS_TimeDurationMultiplier = 18
+		SWWS_Core.config.timeDurationMultiplier = 18
 	elseif SandboxVars.SaveOurStationCore.TimeDurationMultiplier == 3 or SandboxVars.SaveOurStationCore.TimeDurationMultiplier == nil then
-		SWWS_TimeDurationMultiplier = 24
+		SWWS_Core.config.timeDurationMultiplier = 24
 	elseif SandboxVars.SaveOurStationCore.TimeDurationMultiplier == 4 then
-		SWWS_TimeDurationMultiplier = 32
+		SWWS_Core.config.timeDurationMultiplier = 32
 	end
 
 	if SWWS_Debug.logging then
 		print("SWWS: ")
 		print("SWWS: --- [ Config ] ---")
-		print("SWWS: > Require Power Shutoff? ", SWWS_Core.requireShutoff)
-		print("SWWS: > Interruptions enabled? ", SWWS_Core.enableInterruptions)
-		print("SWWS: > AEBS Faults enabled? ", SWWS_Core.enableFaults)
-		print("SWWS: > Time Duration Multiplier: ", SWWS_TimeDurationMultiplier)
-		print("SWWS: > Reliability Profile: ", SWWS_Core.reliabilityDescription)
-		SWWS_Debug.PrintTable(SWWS_Core.reliabilityChancePool)
+		print("SWWS: > Require Power Shutoff? ", SWWS_Core.config.requireShutoff)
+		print("SWWS: > Interruptions enabled? ", SWWS_Core.config.enableInterruptions)
+		print("SWWS: > AEBS Faults enabled? ", SWWS_Core.config.enableFaults)
+		print("SWWS: > Time Duration Multiplier: ", SWWS_Core.config.timeDurationMultiplier)
+		print("SWWS: > Reliability Profile: ", SWWS_Core.config.reliabilityDescription)
+		SWWS_Debug.PrintTable(SWWS_Core.config.reliabilityChancePool)
 		print("SWWS: ----------------------------")
 	end
 
@@ -153,7 +153,7 @@ function SWWS_Core.GetPoolChance()
 	local probability = ZombRand(100) + 1
 	local cumulativeProbability = 0
 
-	for name, entry in pairs(SWWS_Core.reliabilityChancePool) do
+	for name, entry in pairs(SWWS_Core.config.reliabilityChancePool) do
 		cumulativeProbability = cumulativeProbability + entry.probability
 		if probability <= cumulativeProbability then
 			return name
@@ -175,7 +175,7 @@ function SWWS_Core.ScheduleFailure()
 	local selectedPoolType = SWWS_Schedules.poolTypes.nominal
 
 	if selectedPoolName == "Interruption" then
-		if SWWS_Core.enableInterruptions then
+		if SWWS_Core.config.enableInterruptions then
 			selectedPoolType = SWWS_Schedules.poolTypes.nonFatal
 
 		else
@@ -185,7 +185,7 @@ function SWWS_Core.ScheduleFailure()
 		end
 
 	elseif selectedPoolName == "Fault" then
-		if SWWS_Core.enableFaults then
+		if SWWS_Core.config.enableFaults then
 			selectedPoolType = SWWS_Schedules.poolTypes.fatal
 
 		else
@@ -299,7 +299,7 @@ function SWWS_Core.UpdateFailure()
 			print("SWWS: Ignoring requirements for power grid shutoff")
 		end
 	else
-		if SWWS_Core.requireShutoff then
+		if SWWS_Core.config.requireShutoff then
 			if getGameTime():getNightsSurvived() < getSandboxOptions():getElecShutModifier() then
 				if SWWS_Debug.logging then
 					print("SWWS: Power grid not off - skipping failure update")
@@ -350,7 +350,7 @@ function SWWS_Core.GenerateStageRemaining(_stage)
 			print("SWWS: Forced stageRemaining to " .. SWWS_Data.saveData.stageRemaining)
 		end
 	else
-		SWWS_Data.saveData.stageRemaining = SWWS_TimeDurationMultiplier * ZombRand(_stage.hoursMinimum, _stage.hoursMaximum + 1)
+		SWWS_Data.saveData.stageRemaining = SWWS_Core.config.timeDurationMultiplier * ZombRand(_stage.hoursMinimum, _stage.hoursMaximum + 1)
 	end
 end
 
