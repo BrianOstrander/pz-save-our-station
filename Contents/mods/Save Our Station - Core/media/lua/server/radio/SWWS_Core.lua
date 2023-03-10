@@ -200,7 +200,7 @@ function SWWS_Core.ScheduleFailure()
 	else
 		-- This should never happen.
 		print("SWWS: Error, unrecognized pool name: "..selectedPoolName)
-		
+
 	end
 
 
@@ -342,7 +342,7 @@ function SWWS_Core.UpdateFailure()
 	end
 end
 
-function SWWS_Core.GenerateStageRemaining(stage)
+function SWWS_Core.GenerateStageRemaining(_stage)
 	if SWWS_Debug.forceMinimumTime then
 		SWWS_Data.saveData.stageRemaining = 1
 
@@ -350,7 +350,7 @@ function SWWS_Core.GenerateStageRemaining(stage)
 			print("SWWS: Forced stageRemaining to " .. SWWS_Data.saveData.stageRemaining)
 		end
 	else
-		SWWS_Data.saveData.stageRemaining = SWWS_TimeDurationMultiplier * ZombRand(stage.hoursMinimum, stage.hoursMaximum + 1)
+		SWWS_Data.saveData.stageRemaining = SWWS_TimeDurationMultiplier * ZombRand(_stage.hoursMinimum, _stage.hoursMaximum + 1)
 	end
 end
 

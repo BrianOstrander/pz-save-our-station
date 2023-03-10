@@ -45,10 +45,10 @@ function SWWS_Data.Load()
     end
 end
 
-function SWWS_Data.OnReceiveGlobalModData(key, modData)
-    if key == "swws_saveData" and modData then
+function SWWS_Data.OnReceiveGlobalModData(_key, _modData)
+    if _key == "swws_saveData" and _modData then
         if isServer() then
-            if SWWS_Data.saveData and modData and SWWS_Data.saveData.systemRepairComplete ~= modData.systemRepairComplete then
+            if SWWS_Data.saveData and _modData and SWWS_Data.saveData.systemRepairComplete ~= _modData.systemRepairComplete then
                 if not SWWS_Data.saveData.systemRepairComplete then
                     if SWWS_Debug.logging then
                         print("SWWS: Server recieved client transmission setting systemRepairComplete to true")
@@ -63,7 +63,7 @@ function SWWS_Data.OnReceiveGlobalModData(key, modData)
             if SWWS_Debug.logging then
                 print("SWWS: Client recieved server transmission")
             end
-            ModData.add(key, modData)
+            ModData.add(_key, _modData)
         end 
     end
 end
