@@ -26,17 +26,17 @@ SWWS_Debug.forceMinimumTime = false
 SWWS_Debug.forceFatal = false
 
 -- Forces the NON-fatal (Interruption) pool to be chosen every time.
--- Important: This IGNORES the "Enable Interruptions?" mod option.
+-- Important: This IGNORES the "Enable Interruptions" mod option.
 SWWS_Debug.forceNonFatal = false
 
 -- Makes batteries on military walkies last forever when enabled.
-SWWS_Debug.infiniteBattery = true
+SWWS_Debug.infiniteBattery = false
 
 -- Adds basic debug loadout of a walkie talkie and a watch to players.
-SWWS_Debug.debugLoadout = true
+SWWS_Debug.debugLoadout = false
 
 -- Enables logging of various events
-SWWS_Debug.logging = true
+SWWS_Debug.logging = false
 
 function SWWS_Debug.PrintTable(_table, _indents)
 	_indents = _indents or 0
