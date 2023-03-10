@@ -1,5 +1,6 @@
 require "radio/SWWS_Core";
-require 'radio/ISWeatherChannel';
+require "radio/ISWeatherChannel";
+require "SWWS_Debug";
 
 local weatherChannelOriginal_FillBroadcast = WeatherChannel.FillBroadcast;
 
@@ -53,6 +54,9 @@ function WeatherChannel.FillBroadcast(_gametime, _bc, ...)
 		for _, diagnostic in ipairs(corePayload.diagnostics) do
 			_bc:AddRadioLine(RadioLine.new(diagnostic, c.r, c.g, c.b));
 			WeatherChannel.AddFuzz(c, _bc);
+			if SWWS_Debug.logging then
+				print("SWWS: Diagnostic Radio Line: "..diagnostic)
+			end
 		end
 	end
 end
