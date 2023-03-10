@@ -32,8 +32,11 @@ SWWS_Debug.forceNonFatal = false
 -- Makes batteries on military walkies last forever when enabled.
 SWWS_Debug.infiniteBattery = true
 
+-- Adds basic debug loadout of a walkie talkie and a watch to players.
+SWWS_Debug.debugLoadout = true
+
 -- Enables logging of various events
-SWWS_Debug.logging = false
+SWWS_Debug.logging = true
 
 function SWWS_Debug.PrintTable(_table, _indents)
 	_indents = _indents or 0
@@ -67,7 +70,7 @@ if SWWS_Debug.logging then
 
 end
 
-function SWWS_Debug.RechargeRadios()
+function SWWS_Debug.GetPlayers()
 	local players = {}
 	if not isClient() and not isServer() then
 		-- Is singleplayer
@@ -75,8 +78,11 @@ function SWWS_Debug.RechargeRadios()
     else
 		players = getOnlinePlayers()
 	end
+	return players
+end
 
-	for _, player in ipairs(players) do
+function SWWS_Debug.RechargeRadios()
+	for _, player in ipairs(SWWS_Debug.GetPlayers()) do
 		local walkie = getPlayer():getInventory():getItemFromType("Radio.WalkieTalkie5", true, true)
 		if walkie then
 			walkie:getDeviceData():setPower(1)	
@@ -85,4 +91,29 @@ function SWWS_Debug.RechargeRadios()
 end
 if SWWS_Debug.infiniteBattery then
 	Events.EveryTenMinutes.Add(SWWS_Debug.RechargeRadios)
+end
+
+SWWS_Debug.playersWithDebugLoadout = {}
+
+function SWWS_Debug.AddDebugLoadout()
+	for _, player in ipairs(SWWS_Debug.GetPlayers()) do
+		if not SWWS_Debug.playersWithDebugLoadout[player] then
+			SWWS_Debug.playersWithDebugLoadout[player] = true
+
+			player:setGodMod(true)
+			player:setUnlimitedCarry(true)
+			player:setNoClip(true)
+			player:setInvisible(true)
+
+			player:getInventory():AddItem("WristWatch_Right_DigitalBlack")
+			local walkie = player:getInventory():AddItem("Radio.WalkieTalkie5")
+
+			ISTimedActionQueue.add(ISEquipWeaponAction:new(player, walkie, 20, true, false))
+			ISTimedActionQueue.add(ISRadioAction:new("ToggleOnOff",player, walkie))
+			ISTimedActionQueue.add(ISRadioAction:new("SetChannel",player, walkie, DynamicRadio.cache[WeatherChannel.channelUUID]:GetFrequency()))
+		end
+	end
+end
+if SWWS_Debug.debugLoadout then
+	Events.EveryOneMinute.Add(SWWS_Debug.AddDebugLoadout)
 end
