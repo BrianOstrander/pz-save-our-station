@@ -330,8 +330,8 @@ function SWWS_Core.UpdateFailure()
 					print("SWWS: Location " .. SWWS_Data.saveData.locationId .. " | Schedule " .. SWWS_Data.saveData.scheduleId .. ", Stage " .. SWWS_Data.saveData.stageIndex)
 					print("SWWS: System " .. SWWS_Data.saveData.systemName .. " | Repair " .. SWWS_Data.saveData.systemRepair.description)
 				end
-			elseif schedule.poolType ~= SWWS_Schedules.poolTypes.fatal or schedule.poolType ~= SWWS_Schedules.poolTypes.nonFatal then
-				-- This was not a (non)-fatal fault, schedule the next failure...
+			elseif schedule.poolType ~= SWWS_Schedules.poolTypes.fatal then
+				-- This was not a fatal fault, schedule the next failure...
 				SWWS_Core.ScheduleFailure()
 			end
 		elseif SWWS_Debug.logging then
