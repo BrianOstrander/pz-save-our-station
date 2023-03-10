@@ -276,7 +276,7 @@ function SWWS_Core.ScheduleFailure()
 
 	-- gsub returns a table, so we do this to avoid random numbers getting added to our table.
 	local repairInstructionLocation = getRadioText("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
-	local repairInstructionCode = getRadioText("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub(" {system}", SWWS_Data.saveData.systemName):gsub(" {description}", getRadioText(SWWS_Data.saveData.systemRepair.description))
+	local repairInstructionCode = getRadioText("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Data.saveData.systemName):gsub("{description}", getRadioText(SWWS_Data.saveData.systemRepair.description))
 
 	SWWS_Data.saveData.systemRepairInstructions = {
 		repairInstructionLocation,
