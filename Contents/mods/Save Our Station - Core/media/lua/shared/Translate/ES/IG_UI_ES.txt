@@ -1,3 +1,3 @@
 IG_UI_ES = {
-    IGUI_Sandbox_SaveOurStationCore = "Save Our Station!",
+    IGUI_Sandbox_SaveOurStationCore = "¡Salva nuestra Estación!",
 }
