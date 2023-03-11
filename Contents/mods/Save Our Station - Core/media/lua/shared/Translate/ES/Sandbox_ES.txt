@@ -1,25 +1,25 @@
 Sandbox_ES = {
-	Sandbox_SaveOurStationCore = "¬°Salva nuestra Estaci√≥n!",
+	Sandbox_SaveOurStationCore = "°Salva nuestra EstaciÛn!",
 
-	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Requiere falla del sistema el√©ctrico en Knox",
-	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "¬øDebe fallar el sistema el√©ctrico de Knox antes de que comiencen a ocurrir fallas/interrupciones de transmisi√≥n?",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Requiere falla del sistema elÈctrico en Knox",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "øDebe fallar el sistema elÈctrico de Knox antes de que comiencen a ocurrir fallas/interrupciones de transmisiÛn?",
 
-	Sandbox_SaveOurStationCore_EnableInterruptions = "Habilitar interrupciones de transmisi√≥n",
-	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Las interrupciones de transmisi√≥n pueden ocurrir al azar y har√°n que sistemas como 'Previsi√≥n del Tiempo' y 'Radar de tr√°fico a√©reo' dejen de funcionar temporalmente. Las interrupciones se resolver√°n solas despu√©s de un tiempo.",
+	Sandbox_SaveOurStationCore_EnableInterruptions = "Habilitar interrupciones de transmisiÛn",
+	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Las interrupciones de transmisiÛn pueden ocurrir al azar y har·n que sistemas como 'PrevisiÛn MeteorolÛgica' y 'Radar de tr·fico aÈreo' dejen de funcionar temporalmente. Las interrupciones se resolver·n solas despuÈs de un tiempo.",
 
-	Sandbox_SaveOurStationCore_EnableFaults = "Habilitar las fallas de transmisi√≥n",
-	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Las fallas de transmisi√≥n pueden ocurrir al azar y, si un jugador no las repara, eventualmente causar√°n una falla permanente en el sistema de transmisi√≥n. Una vez que se identifica una falla, el sistema de transmisi√≥n proporcionar√° un c√≥digo de diagn√≥stico y la ubicaci√≥n del sistema afectado. Se puede obtener m√°s informaci√≥n a trav√©s de los registros y manuales de diagn√≥stico del NWS.",
+	Sandbox_SaveOurStationCore_EnableFaults = "Habilitar las fallas de transmisiÛn",
+	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Las fallas de transmisiÛn pueden ocurrir al azar y, si un jugador no las repara, eventualmente causar·n una falla permanente en el sistema de transmisiÛn. Una vez que se identifica una falla, el sistema de transmisiÛn proporcionar· un cÛdigo de diagnÛstico y la ubicaciÛn del sistema afectado. Se puede obtener m·s informaciÛn a travÈs de los registros y manuales de diagnÛstico del NWS.",
 
-	Sandbox_SaveOurStationCore_ReliabilityProfile = "Perfil de Confianza de la transmisi√≥n",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "El Perfil de Confianza determina la probabilidad/posibilidad de que ocurra una Falla o Interrupci√≥n.",
+	Sandbox_SaveOurStationCore_ReliabilityProfile = "Perfil de Confianza de la transmisiÛn",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "El Perfil de Confianza determina la probabilidad/posibilidad de que ocurra una Falla o InterrupciÛn.",
 	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Bien mantenido | Fallas raras, interrupciones raras",
 	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Confiable | Fallas raras, interrupciones ocasionales",
 	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Normales | Fallas raras, interrupciones frecuentes",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Poco fiable | Aver√≠as ocasionales, interrupciones frecuentes",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Causa perdida | Aver√≠as frecuentes, interrupciones frecuentes",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Poco fiable | AverÌas ocasionales, interrupciones frecuentes",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Causa perdida | AverÌas frecuentes, interrupciones frecuentes",
 
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Multiplicador de duraci√≥n de tiempo",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "Este multiplicador afecta la duraci√≥n de los ciclos de falla/interrupci√≥n, cu√°nto tiempo hay para reparar una falla y cu√°nto dura el 'per√≠odo de gracia' entre cada ciclo.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Multiplicador de duraciÛn de tiempo",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "Este multiplicador afecta la duraciÛn de los ciclos de falla/interrupciÛn, cu·nto tiempo hay para reparar una falla y cu·nto dura el 'perÌodo de gracia' entre cada ciclo.",
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Muy corto (recomendado para servidores grandes)",
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Corto",
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Recomendado para un jugador)",

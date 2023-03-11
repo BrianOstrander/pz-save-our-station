@@ -1,9 +1,9 @@
 DynamicRadio_ES = {
-    AEBS_Integrity = "Integridad del Sistema de transmisicón...",
+    AEBS_Integrity = "Integridad del Sistema de transmisión...",
 
     AEBS_ConditionNominal = "Condición nominal",
     AEBS_KnoxPowerGridStatusUnavailable = "Red eléctrica de Knox: Estado Inactivo",
-    AEBS_ForcastOffline = "Pronóstico del tiempo: Satélite inalcanzable...",
+    AEBS_ForcastOffline = "Pronóstico meteorológico: Satélite inalcanzable...",
     AEBS_AirTrafficRadarDisabled = "Radar de tráfico aéreo: error del sistema...",
 
     AEBS_EmergencyShutdownImminent = "ADVERTENCIA: Falla del sistema {fuzz} Apagado en {fuzz} minutos.",
@@ -48,8 +48,8 @@ DynamicRadio_ES = {
     AEBS_StageStatusDetected_3 = "{fuzz} detectado.",
     AEBS_StageStatusDetected_4 = "{fuzz}",
     
-    AEBS_StageStatusDiagnosing_1 = "Diagnósticando {condition}.",
-    AEBS_StageStatusDiagnosing_2 = "Diagnósticando {fuzz}",
+    AEBS_StageStatusDiagnosing_1 = "Diagnosticando {condition}.",
+    AEBS_StageStatusDiagnosing_2 = "Diagnosticando {fuzz}",
     AEBS_StageStatusDiagnosing_3 = "{fuzz} {condition}.",
     AEBS_StageStatusDiagnosing_4 = "Resultado no concluyente {fuzz} Reiniciando diagnóstico.",
     AEBS_StageStatusDiagnosing_5 = "Resultado corrupto {fuzz} Reiniciando diagnóstico.",
@@ -63,14 +63,14 @@ DynamicRadio_ES = {
     AEBS_StageStatusRerouting_1 = "{Condition} identificada {fuzz} Redireccionando red a estación {fuzz}...",
     AEBS_StageStatusRerouting_2 = "{Condition} identificada en {system} {fuzz} Intentando omitir redireccionado...",
 
-    AEBS_StageStatusInterruption_1 = "Interrupción temporal de la transmisión {fuzz} Sistemas no disponibles...",
-    AEBS_StageStatusInterruption_2 = "Interrupción temporal de la transmisión {fuzz} Sistemas no disponiles...",
+    AEBS_StageStatusInterruption_1 = "Interrupción temporal de la transmisi?n {fuzz} Sistemas no disponibles...",
+    AEBS_StageStatusInterruption_2 = "Interrupción temporal de la transmisi?n {fuzz} Sistemas no disponiles...",
 
     AEBS_StageStatusInterruptionResolved_1 = "Sistema {fuzz} restablecido, iniciando funciones de red...",
     AEBS_StageStatusInterruptionResolved_2 = "Interrupción de la red {fuzz} restaurada, iniciando sistemas...",
 
-    AEBS_StageStatusRebootSuccess_1 = "{system} restablecido {fuzz} Inicialización de transmisión en curso...",
-    AEBS_StageStatusRebootSuccess_2 = "Reinicio de sistema ha resuelto {Condition} {fuzz} Inicialización de transmisión en curso...",
+    AEBS_StageStatusRebootSuccess_1 = "{system} restablecido {fuzz} Inicializaci?n de transmisión en curso...",
+    AEBS_StageStatusRebootSuccess_2 = "Reinicio de sistema ha resuelto {Condition} {fuzz} Inicializaci?n de transmisión en curso...",
 
     AEBS_StageStatusReroutingSuccess_1 = "Tráfico redirigido con éxito {fuzz} Inicialización de transmisión en curso...",
     AEBS_StageStatusReroutingSuccess_2 = "Tráfico de red redirigido {fuzz} Actualización de red en curso...",
@@ -81,8 +81,8 @@ DynamicRadio_ES = {
     AEBS_StageStatusReroutingFailure_1 = "Error al redirigir el tráfico de red {fuzz} permanece {system} {condition}...",
     AEBS_StageStatusReroutingFailure_2 = "No se puede redirigir el tráfico {fuzz} No se pudo resolver {condition} en {system}...",
 
-    AEBS_StageStatusFatal_1 = "{fuzz} fatal {condition}... {fuzz}",
-    AEBS_StageStatusFatal_2 = "{fuzz} fatal {fuzz}",
-    AEBS_StageStatusFatal_3 = "{Condition} fatal...",
-    AEBS_StageStatusFatal_4 = "Fatal {condition} {fuzz} Red en espera de emergencia...",
+    AEBS_StageStatusFatal_1 = "{fuzz} FATAL {condition}... {fuzz}",
+    AEBS_StageStatusFatal_2 = "{fuzz} FATAL {fuzz}",
+    AEBS_StageStatusFatal_3 = "{Condition} FATAL...",
+    AEBS_StageStatusFatal_4 = "FATAL {condition} {fuzz} Red en espera de emergencia...",
 }
