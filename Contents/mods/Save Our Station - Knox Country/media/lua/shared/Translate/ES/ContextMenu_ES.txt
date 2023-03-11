@@ -1,6 +1,6 @@
 ContextMenu_ES = {
     Texture_Register_KnoxCountry = "KNOX COUNTRY",
-    Texture_Register_Title = "NATIONAL WEATHER STATION REGISTER",
-    Texture_Register_Footer_Seal = "NATIONAL WEATHER SERVICE",
-    Texture_Register_Footer_Unauthorized = "Unauthorized distribution is a federal offense",
+    Texture_Register_Title = "REGISTRO NACIONAL DE ESTACIONES METEOROLÓGICAS",
+    Texture_Register_Footer_Seal = "SERVICIO NACIONAL DE METEOROLOGÍA 'NWS'",
+    Texture_Register_Footer_Unauthorized = "La distribución no autorizada es un delito federal",
 }
