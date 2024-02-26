@@ -9,15 +9,6 @@ option SaveOurStationCore.RequirePowerShutoff
 	translation = SaveOurStationCore_RequirePowerShutoff,
 }
 
-option SaveOurStationCore.EnableInterruptions
-{
-	type = boolean,
-	default = false,
-
-	page = SaveOurStationCore,
-	translation = SaveOurStationCore_EnableInterruptions,
-}
-
 option SaveOurStationCore.EnableFaults
 {
 	type = boolean,
@@ -25,6 +16,15 @@ option SaveOurStationCore.EnableFaults
 
 	page = SaveOurStationCore,
 	translation = SaveOurStationCore_EnableFaults,
+}
+
+option SaveOurStationCore.EnableInterruptions
+{
+	type = boolean,
+	default = true,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_EnableInterruptions,
 }
 
 option SaveOurStationCore.ReliabilityProfile
@@ -49,3 +49,38 @@ option SaveOurStationCore.TimeDurationMultiplier
 	valueTranslation = SaveOurStationCore_TimeDurationMultiplier,
 }
 
+option SaveOurStationCore.OmitDiagnosticCode
+{
+	type = boolean,
+	default = false,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_OmitDiagnosticCode,
+}
+
+option SaveOurStationCore.OmitShutdownTime
+{
+	type = boolean,
+	default = false,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_OmitShutdownTime,
+}
+
+option SaveOurStationCore.OmitLocation
+{
+	type = boolean,
+	default = false,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_OmitLocation,
+}
+
+option SaveOurStationCore.EnableDebugging
+{
+	type = boolean,
+	default = false,
+
+	page = SaveOurStationCore,
+	translation = SaveOurStationCore_EnableDebugging,
+}

@@ -1,0 +1,40 @@
+Sandbox_DE = {
+	Sandbox_SaveOurStationCore = "Save Our Station!",
+
+	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Stromausfall benötigt?",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "Muss das Knox-Stromnetz zuerst ausfallen, bevor Systemfehler/-unterbrechungen auftreten?",
+
+	Sandbox_SaveOurStationCore_EnableInterruptions = "Unterbrechungen aktivieren?",
+	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Übertragungsunterbrechungen können zufällig auftreten und dazu führen, dass Systeme wie Wettervorhersagen oder das Flugverkehrsradar vorübergehend nicht funktionieren. Diese Untebrechungen sind temporär, und hören nach einiger Zeit von selbst auf.",
+
+	Sandbox_SaveOurStationCore_EnableFaults = "Systemfehler aktivieren?",
+	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Systemfehler können zufällig auftreten und, wenn sie nicht von einem Spieler behoben werden, schliesslich zu einem dauerhaften Ausfall des Übertragungssystems führen. Sobald ein Fehler identifiziert wird, meldet das Übertragungssystem einen Diagnostik-Code sowie dem Standort des betroffenen Systems. Weitere Informationen dazu können in NWS Diagnose-Handbüchern und -Registern gefunden werden.",
+
+	Sandbox_SaveOurStationCore_ReliabilityProfile = "Zuverlässigkeitsprofil",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "Das Zuverlässigkeitsprofil bestimmt, wie selten Untebrechungen und Systemfehler auftreten können.",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Fast wie neu  |  Seltene Systemfehler, Seltene Unterbrechungen",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Zuverlässig  |  Seltene Systemfehler, Gelegentliche Unterbrechungen",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Normal  |  Seltene Systemfehler, Häufige Unterbrechungen",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Unzuverlässig  |  Gelegentliche Systemfehler, Häufige Unterbrechungen",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Hoffnungslos |  Häufige Systemfehler, Häufige Unterbrechungen",
+
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Zeit/Dauer-Multiplikator",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "Dieser Multiplikator beeinflusst, wie lange Fehler-/Unterbrechungszyklen dauern, wie viel Zeit zur Behebung eines Systemehlers zur Verfügung steht und wie lang die „Schonfrist“ zwischen Fehler-/Unterbrechungszyklen ist.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Sehr kurz",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Kurz (Gut für grosse Server)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Gut für Einzelspieler)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Lang",
+
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode = "Diagnose-Codes auslassen?"
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode_tooltip = "Mit dieser Option wird der Diagnostik-Code bei einem Systemfehler nicht angezeigt. Dies bedeudet, dass du zuerst zur betroffenen Station musst, um das Problem selber herauszufinden."
+
+	Sandbox_SaveOurStationCore_OmitLocation = "Stations-Ort auslassen?"
+	Sandbox_SaveOurStationCore_OmitLocation_tooltip = "Achtung - diese Einstellung ist nichts für schwache Nerven! Durch die Aktivierung dieser Option wird die fehlerhafte Station bei einem Systemfehler nicht angezeigt. Im Falle einer Störung musst du zu jeder Station fahren, bis du die betroffene findest."
+
+	Sandbox_SaveOurStationCore_OmitShutdownTime = "Abschaltzeit auslassen?"
+	Sandbox_SaveOurStationCore_OmitShutdownTime_tooltip = "Durch die Aktivierung dieser Option wird die Zeit bis zur Präventivabschaltung bei einem Systemfehler weggelassen. Somit weisst du dies erst wenn das System herunterfährt und in den Notfall-Standbymodus wechselt."
+
+	Sandbox_SaveOurStationCore_EnableDebugging = "Erweiterte Protokollierung aktivieren?",
+	Sandbox_SaveOurStationCore_EnableDebugging_tooltip = "Wenn du dieses Option aktivierst, gibt Save Our Station zusätzliche Informationen an die PZ-Protokolldatei aus. Aktiviere diese Option nur wenn du weisst was du tust, oder du von einem Entwickler dazu aufgefordert wurdest (Bspw. um zusätzliche Informationen zur Diagnose eines Problems bereitzustellen).",
+
+}

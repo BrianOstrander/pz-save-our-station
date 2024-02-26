@@ -1,4 +1,4 @@
 ItemName_ES = {
-    ItemName_Base.SWWS_KnoxCountry_Register = "NWS Register",
-    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = "NWS Register - Annotated",
+    ItemName_Base.SWWS_KnoxCountry_Register = "Registro NWS",
+    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = "Registro NWS - Anotado",
 }

@@ -1,0 +1,6 @@
+ContextMenu_DE = {
+    Texture_Register_KnoxCountry = "KNOX COUNTRY",
+    Texture_Register_Title = "NATIONALES WETTERSTATIONS-REGISTER",
+    Texture_Register_Footer_Seal = "NATIONALER WETTERDIENST",
+    Texture_Register_Footer_Unauthorized = "Unerlaubte Verbreitung ist eine Straftat",
+}

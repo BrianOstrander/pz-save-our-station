@@ -1,27 +1,40 @@
 Sandbox_ES = {
 	Sandbox_SaveOurStationCore = "Save Our Station!",
 
-	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Require Knox Power-Grid Shutoff",
-	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "Does the Knox Power-Grid need to fail before broadcast faults/interruptions start occuring?",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Requiere falla del sistema el�ctrico en Knox",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "�Debe fallar el sistema el�ctrico de Knox antes de que comiencen a ocurrir fallas/interrupciones de transmisi�n?",
+	
+	Sandbox_SaveOurStationCore_EnableInterruptions = "Habilitar interrupciones de transmisi�n",
+	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Las interrupciones de transmisi�n pueden ocurrir al azar y har�n que sistemas como 'Previsi�n Meteorol�gica' y 'Radar de tr�fico a�reo' dejen de funcionar temporalmente. Las interrupciones se resolver�n solas despu�s de un tiempo.",
+	
+	Sandbox_SaveOurStationCore_EnableFaults = "Habilitar las fallas de transmisi�n",
+	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Las fallas de transmisi�n pueden ocurrir al azar y, si un jugador no las repara, eventualmente causar�n una falla permanente en el sistema de transmisi�n. Una vez que se identifica una falla, el sistema de transmisi�n proporcionar� un c�digo de diagn�stico y la ubicaci�n del sistema afectado. Se puede obtener m�s informaci�n a trav�s de los registros y manuales de diagn�stico del NWS.",
+	
+Sandbox_SaveOurStationCore_ReliabilityProfile = "Perfil de Confianza de la transmisi�n",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "El Perfil de Confianza determina la probabilidad/posibilidad de que ocurra una Falla o Interrupci�n.",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Bien mantenido | Fallas raras, interrupciones raras",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Confiable | Fallas raras, interrupciones ocasionales",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Normales | Fallas raras, interrupciones frecuentes",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Poco fiable | Aver�as ocasionales, interrupciones frecuentes",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Causa perdida | Aver�as frecuentes, interrupciones frecuentes",
 
-	Sandbox_SaveOurStationCore_EnableInterruptions = "Enable Broadcast Interruptions",
-	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Broadcast interruptions may occur at random, and will cause systems like Weather Forecasts and the Air Traffic Radar to temporarily stop working. Interruptions will resolve themselves after some time.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Multiplicador de duraci�n de tiempo",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "Este multiplicador afecta la duraci�n de los ciclos de falla/interrupci�n, cu�nto tiempo hay para reparar una falla y cu�nto dura el 'per�odo de gracia' entre cada ciclo.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Muy corto (recomendado para servidores grandes)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Corto",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Recomendado para un jugador)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Largo",
 
-	Sandbox_SaveOurStationCore_EnableFaults = "Enable Broadcast Faults",
-	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Broadcast faults may occur at random and, if not repaired by a player, will eventually cause a permanent failure of the broadcast system. Once a fault is identified, the broadcast system will provide a diagnostic code and the location of the affected system. Further information can be obtained through NWS Diagnostics Manuals and Registers.",
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode = "Omit Fault Diagnostic Code?"
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode_tooltip = "Enabling this option will omit Fault Diagnostic Code from the fault diagnostic message. You will need to travel to the affected location first to find the cause of the fault and how to fix it."
 
-	Sandbox_SaveOurStationCore_ReliabilityProfile = "Broadcast Reliability Profile",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "The Reliability Profile determines the probability/chance of a Fault or Interruption occuring.",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Well-Maintained  |  Rare Faults, Rare Interruptions",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Reliable  |  Rare Faults, Occasional Interruptions",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Normal  |  Rare Faults, Frequent Interruptions",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Unreliable  |  Occasional Faults, Frequent Interruptions",
-	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Lost Cause  |  Frequent Faults, Frequent Interruptions",
+	Sandbox_SaveOurStationCore_OmitLocation = "Omit Fault Location?"
+	Sandbox_SaveOurStationCore_OmitLocation_tooltip = "Warning - this setting is not for the faint of heart! | Enabling this option will omit the Fault Location from the fault diagnostic message. In case of a fault, you will need to travel to each station until you find which one is affected."
 
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Time Duration Multiplier",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "This multiplier affects how long Fault/Interruption cycles last, how much time there is to repair a Fault, and how long the 'grace period' between each cycle is.",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Very Short (Recommended for Large Servers)",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Short",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Recommended for Singleplayer)",
-	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Long",
+	Sandbox_SaveOurStationCore_OmitShutdownTime = "Omit Emergency Shutdown Time?"
+	Sandbox_SaveOurStationCore_OmitShutdownTime_tooltip = "Enabling this option will omit the time until emergency shutdown/standby from the fault diagnostic message. You won't know when the system shuts down and enters emergency standby until it is too late."
+
+	Sandbox_SaveOurStationCore_EnableDebugging = "Enable Advanced Debugging Info?",
+	Sandbox_SaveOurStationCore_EnableDebugging_tooltip = "Checking this box will make Save Our Station output additional information to the PZ Game Log. You should keep this turned off unless you either know what you are doing, or you have been asked to turn it on to provide additional information for diagnosing an issue.",
+
 }
