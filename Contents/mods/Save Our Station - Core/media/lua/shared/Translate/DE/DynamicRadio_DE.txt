@@ -1,0 +1,92 @@
+DynamicRadio_DE = {
+    AEBS_Integrity = "Übertragungssystem-Status...",
+
+    AEBS_ConditionNominal = "Zustand in Ordnung.",
+    AEBS_KnoxPowerGridStatusUnavailable = "Knox Stromnetz: Status unbekannt...",
+    AEBS_ForcastOffline = "Wettervorhersage: Satellit nicht erreichbar...",
+    AEBS_AirTrafficRadarDisabled = "Flugverkehrsradar: Systemfehler...",
+
+    AEBS_EmergencyShutdownImminent = "WARNUNG: Schwerwiegender Systemfehler {fuzz} Präventivabschaltung in {fuzz} Minuten.",
+    AEBS_EmergencyShutdownInHours = "WARNUNG: Schwerwiegender Systemfehler {fuzz} Präventivabschaltung in {hours} Stunden.",
+    AEBS_EmergencyShutdownInDays = "WARNUNG: Schwerwiegender Systemfehler {fuzz} Präventivabschaltung in {days} Tagen.",
+    AEBS_EmergencyShutdown_Omitted = "WARNUNG: Schwerwiegender Systemfehler {fuzz} Präventivabschaltung in {fuzz} FEHLER.",
+
+    AEBS_ConditionFault = "Fehler",
+    AEBS_ConditionAnomaly = "Systemfehler",
+    AEBS_ConditionDefect = "Defekt",
+    AEBS_ConditionFailure = "Ausfall",
+
+    AEBS_LocationRequiresUtilCrewDispatch = "{location} erfordert Reparatur...",
+    AEBS_LocationRequiresUtilCrewDispatch_Omitted = "FEHLER {fuzz} erfordert Reparatur...",
+    AEBS_DiagnosticCode = "Diagnostik-Code [ {code} ] {system} - {description}",
+    AEBS_DiagnosticCode_Omitted = "Diagnostik-Code {fuzz} [ FEHLER ] {fuzz} Code nicht verfügbar...",
+
+    AEBS_FaultFuelPump = "KRAFTSTOFFPUMPE",
+    AEBS_FaultTransformer = "TRANSFORMATOR",
+    AEBS_FaultTransmitter = "RADIOSENDER",
+    AEBS_FaultReciever = "EMPFÄNGER",
+    AEBS_FaultGenerator = "NOTSTROMAGGREGAT",
+    AEBS_FaultDieselUnit = "DIESEL-EINHEIT",
+    AEBS_FaultCurrentRegulator = "STROMREGLER",
+    AEBS_FaultCapacitorArray = "KONDENSATOR",
+    
+    AEBS_FaultRepairReplaceFuelLine = "KÜHLLEITUNG ERSETZEN",
+    AEBS_FaultRepairControlBoardReplacement = "HAUTPPLATINE ERSETZEN",
+    AEBS_FaultRepairRerouteShort = "KABEL ERSETZEN",
+    AEBS_FaultRepairReplaceUnit = "EINHEIT ERSETZEN",
+    AEBS_FaultRepairRepairUnit = "EINHEIT REPARIEREN",
+    AEBS_FaultRepairRefuelGasoline = "KRAFTSTOFF AUFFÜLLEN",
+    AEBS_FaultRepairClearShort = "KURZSCHLUSS LÖSEN",
+
+    AEBS_StageStatusNominal_1 = "Zustand in Ordnung.",
+    AEBS_StageStatusNominal_2 = "Keine Probleme erkannt.",
+    AEBS_StageStatusNominal_3 = "System funktional.",
+    AEBS_StageStatusNominal_4 = "Infrastruktur stabil.",
+
+    AEBS_StageStatusRepaired_1 = "{Condition} {fuzz} behoben.",
+    AEBS_StageStatusRepaired_2 = "Netzwerkfunktionalität wiederhergestellt.",
+    AEBS_StageStatusRepaired_3 = "System wieder betriebsbereit.",
+
+    AEBS_StageStatusDetected_1 = "{Condition} erkannt.",
+    AEBS_StageStatusDetected_2 = "{Condition} {fuzz}",
+    AEBS_StageStatusDetected_3 = "{fuzz} erkannt.",
+    AEBS_StageStatusDetected_4 = "{fuzz} {Condition}",
+
+    AEBS_StageStatusDiagnosing_1 = "{condition} wird diagnostiziert.",
+    AEBS_StageStatusDiagnosing_2 = "Diagnostiziere {fuzz}",
+    AEBS_StageStatusDiagnosing_3 = "{fuzz} {condition}.",
+    AEBS_StageStatusDiagnosing_4 = "Unschlüssige Analyse {fuzz} Diagnose wird neu gestartet.",
+    AEBS_StageStatusDiagnosing_5 = "Diagnosedaten beschädigt {fuzz} Diagnose wird neu gestartet.",
+    AEBS_StageStatusDiagnosing_6 = "Diagnose unvollständig {fuzz} Diagnose wird neu gestartet.",
+
+    AEBS_StageStatusRebooting_1 = "{Condition} erkannt {fuzz} Neustart von {system} eingeleitet...",
+    AEBS_StageStatusRebooting_2 = "{Condition} erkannt {fuzz} {system} wird neu gestartet...",
+    AEBS_StageStatusRebooting_3 = "{Condition} erkannt {fuzz} Starte {system} neu...",
+    AEBS_StageStatusRebooting_4 = "{Condition} erkannt in {system} {fuzz} Neustart läuft...",
+
+    AEBS_StageStatusRerouting_1 = "{Condition} erkannt {fuzz} Automatische Umleitung wird versucht...",
+    AEBS_StageStatusRerouting_2 = "{Condition} erkannt in {system} {fuzz} Automatische Umleitung an {fuzz}...",
+
+    AEBS_StageStatusInterruption_1 = "Vorübergehender Übertragungsunterbruch {fuzz} System nicht verfügbar...",
+    AEBS_StageStatusInterruption_2 = "Vorübergehende Übertragungsstörung {fuzz} System nicht verfügbar...",
+
+    AEBS_StageStatusInterruptionResolved_1 = "Störung {fuzz} wiederhergestellt, Netzwerk wird initialisiert...",
+    AEBS_StageStatusInterruptionResolved_2 = "{fuzz} Netzwerk wiederhergestellt, System wird gestartet...",   
+
+    AEBS_StageStatusRebootSuccess_1 = "{system} wiederhergestellt {fuzz} Netzwerk-Aktualisierung wird durchgeführt...",
+    AEBS_StageStatusRebootSuccess_2 = "Systemneustart hat {Condition} behoben {fuzz} Übertragungssystem wird initialisiert...",
+
+    AEBS_StageStatusReroutingSuccess_1 = "Umleitung erfolgreich {fuzz} Netzwerk-Aktualisierung wird durchgeführt...",
+    AEBS_StageStatusReroutingSuccess_2 = "Netzwerk erfolgreich umgeleitet {fuzz} Übertragungssystem wird initialisiert...",
+
+    AEBS_StageStatusRebootFailure_1 = "Neustart von {system} war nicht erfolgreich {fuzz} {condition} bleibt bestehen...",
+    AEBS_StageStatusRebootFailure_2 = "{system} {Condition} {fuzz} Neustart nicht erfolgreich {fuzz}",
+
+    AEBS_StageStatusReroutingFailure_1 = "Netzwerk konnte nicht umgeleitet werden {fuzz} {system} {condition} bleibt bestehen...",
+    AEBS_StageStatusReroutingFailure_2 = "Umleitung nicht erfolgreich {fuzz} {condition} in {system} bleibt bestehen...",
+
+    AEBS_StageStatusFatal_1 = "{fuzz} schwerwiegender {condition}... {fuzz}",
+    AEBS_StageStatusFatal_2 = "{fuzz} schwerwiegender {fuzz}",
+    AEBS_StageStatusFatal_3 = "Schwerwiegender {condition}...",
+    AEBS_StageStatusFatal_4 = "Schwerwiegender {condition} {fuzz} Reparatur benötigt...",
+}
