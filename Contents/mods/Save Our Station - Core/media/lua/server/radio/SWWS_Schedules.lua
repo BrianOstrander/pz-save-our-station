@@ -239,8 +239,8 @@ SWWS_Schedules.pool = {
 		poolType = SWWS_Schedules.poolTypes.nonFatal,
 		stages = {
 			{
-				hoursMinimum = 4,
-				hoursMaximum = 12,
+				hoursMinimum = 3,
+				hoursMaximum = 10,
 				messages = SWWS_Schedules.stages.nominal
 			},
 			{
@@ -257,12 +257,7 @@ SWWS_Schedules.pool = {
 				hoursMinimum = 1,
 				hoursMaximum = 1,
 				messages = SWWS_Schedules.stages.interruptionResolved
-			},
-			{
-				hoursMinimum = 7,
-				hoursMaximum = 12,
-				messages = SWWS_Schedules.stages.nominal
-			},
+			}
 		}
 	},
 }
