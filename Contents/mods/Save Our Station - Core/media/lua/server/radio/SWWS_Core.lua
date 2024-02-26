@@ -16,27 +16,58 @@ function SWWS_Core.LoadGameplayOptions()
 	SWWS_Core.config = SWWS_Core.config or {}
 
 	------------------------------------------------------
-	-- Does the Knox Power Grid need to be off before faults start occuring?
+	-- [ Does the Knox Power Grid need to be off before faults start occuring? ]
 	-- If enabled, will prevent any interruptions/faults until the Power Grid fails.
 
 	SWWS_Core.config.requireShutoff = SandboxVars.SaveOurStationCore.RequirePowerShutoff
 
 	-------------------------------------------------------
-	-- Are Interruptions (Non-Fatal Faults) enabled?
+	-- [ Are Interruptions (Non-Fatal Faults) enabled? ]
 	-- Interruptions are types of faults that resolve themselves.
 
 	SWWS_Core.config.enableInterruptions = SandboxVars.SaveOurStationCore.EnableInterruptions
 
 	-------------------------------------------------------
-	-- Are Faults (Fatal Failures) enabled?
-	-- Faults require player intervention to be resolved. Further finrotmation
+	-- [ Are Faults (Fatal Failures) enabled? ]
+	-- Faults require player intervention to be resolved.
 
 	SWWS_Core.config.enableFaults = SandboxVars.SaveOurStationCore.EnableFaults
 
 	-------------------------------------------------------
+	-- [ Omit Diagnostic Code? ]
+	-- The Diagnostic Code will not be shown, and instead is replaced with an "Error"
+	-- This is cool if you want a bit of a "surprise" factor.
+
+	SWWS_Core.config.omitDiagnosticCode = SandboxVars.SaveOurStationCore.OmitDiagnosticCode
+
+	-------------------------------------------------------
+	-- [ Omit Fault Location? ]
+	-- The Fault Location will not be shown, and instead is replaced with an "Error"
+	-- This setting is not for the faint of heart, as you will have to travel between the stations until you find the right one.
+
+	SWWS_Core.config.omitLocation = SandboxVars.SaveOurStationCore.OmitLocation
+
+	-------------------------------------------------------
+	-- [ Omit Emergency Shutdown Time? ]
+	-- The remaining time until Emergency Shutdown will not be shown, and instead is replaced with an "Error"
+	-- Useful for perhaps making you listen to the AEBS more regularly, as you won't exactly know when it goes down once a fault is detected/diagnosed.
+
+	SWWS_Core.config.omitShutdownTime = SandboxVars.SaveOurStationCore.OmitShutdownTime
+
+	-------------------------------------------------------
+	-- [ Enable Advanced Debugging Info? ]
+	-- Debug Logging allows Save Our Station to output additional information to the Game Log. Log entries related to Save Our Station are prefixed with "SWWS: "
+	--
+	-- IMPORTANT: When running PZ in Debug Mode, some of Save Our Station's Debug Messages will only
+	-- appear AFTER the game "halts" and shows the error screen, because of how the game's debug breakpoints work.
+	-- Please make sure to let the game continue for at least another 10 in-game minutes, before looking at the Log.
+
+	SWWS_Debug.logging = SandboxVars.SaveOurStationCore.EnableDebugging
+
+	-------------------------------------------------------
 	-- These values represent the percentage chance for each pool to occur, and should add up to 100:
-	-- Interruption | The EBS has an Interruption/Outage that resolves itself after some time, without player intervention.
-	-- Fault | EBS has a fatal fault that requires the player to intervene and fix it.
+	-- Interruption	| The EBS has an Interruption/Outage that resolves itself after some time, without player intervention.
+	-- Fault		| The EBS has a fatal fault that requires the player to intervene and fix it.
 
 	if SandboxVars.SaveOurStationCore.ReliabilityProfile == 1 then
 		SWWS_Core.config.reliabilityDescription = "Well-Maintained"
@@ -92,14 +123,19 @@ function SWWS_Core.LoadGameplayOptions()
 
 	if SWWS_Debug.logging then
 		print("SWWS: ")
-		print("SWWS: --- [ Config ] ---")
+		print("SWWS: --- [ Config Printout ] ---")
 		print("SWWS: > Require Power Shutoff? ", SWWS_Core.config.requireShutoff)
 		print("SWWS: > Interruptions enabled? ", SWWS_Core.config.enableInterruptions)
 		print("SWWS: > AEBS Faults enabled? ", SWWS_Core.config.enableFaults)
+		print("SWWS: > Diag-Code omitted? ", SWWS_Core.config.omitDiagnosticCode)
+		print("SWWS: > Location omitted? ", SWWS_Core.config.omitLocation)
+		print("SWWS: > Shutdown Time omitted? ", SWWS_Core.config.omitShutdownTime)
+		print("SWWS: ----------------------------")
 		print("SWWS: > Time Duration Multiplier: ", SWWS_Core.config.timeDurationMultiplier)
 		print("SWWS: > Reliability Profile: ", SWWS_Core.config.reliabilityDescription)
 		SWWS_Debug.PrintTable(SWWS_Core.config.reliabilityChancePool)
 		print("SWWS: ----------------------------")
+		print("SWWS: ")
 	end
 
 end
@@ -274,9 +310,23 @@ function SWWS_Core.ScheduleFailure()
 
 	SWWS_Data.saveData.systemName = SWWS_Data.saveData.systemId .. "_" .. serial
 
-	-- gsub returns a table, so we do this to avoid random numbers getting added to our table.
+	-- Gsub returns a table, so we do this weirdness below to avoid random numbers getting added to our table.
 	local repairInstructionLocation = getRadioText("AEBS_LocationRequiresUtilCrewDispatch"):gsub("{location}", location.id)
+	
+	-- Omit the Location if the relevant Config option is enabled.
+	-- ...if someone actually uses this, YW22 will be thoroughly impressed
+	if SWWS_Core.config.omitLocation then
+		repairInstructionLocation = getRadioText("AEBS_LocationRequiresUtilCrewDispatch_Omitted"):gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
+		
+	end
+
+	-- More gsub table weirdness.
 	local repairInstructionCode = getRadioText("AEBS_DiagnosticCode"):gsub("{code}", SWWS_Data.saveData.systemRepair.solution.code):gsub("{system}", SWWS_Data.saveData.systemName):gsub("{description}", getRadioText(SWWS_Data.saveData.systemRepair.description))
+
+	-- Omit the Diagnostic Code if the relevant Config option is enabled.
+	if SWWS_Core.config.omitDiagnosticCode then
+		repairInstructionCode = getRadioText("AEBS_DiagnosticCode_Omitted"):gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
+	end
 
 	SWWS_Data.saveData.systemRepairInstructions = {
 		repairInstructionLocation,
@@ -421,6 +471,7 @@ function SWWS_Core.FillBroadcastWarning()
 
 	if messages.revealTime then
 		local shutdown = nil
+
 		if SWWS_Data.saveData.stageRemaining < 2 then
 			shutdown = getRadioText("AEBS_EmergencyShutdownImminent"):gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
 
@@ -431,6 +482,13 @@ function SWWS_Core.FillBroadcastWarning()
 			shutdown = getRadioText("AEBS_EmergencyShutdownInDays"):gsub("{days}", tostring(math.floor(SWWS_Data.saveData.stageRemaining / 24)))
 
 		end
+		
+		-- Omit the Remaining time if the relevant Config option is enabled.
+		if SWWS_Core.config.omitShutdownTime then
+			shutdown = getRadioText("AEBS_EmergencyShutdown_Omitted"):gsub("{fuzz}", SWWS_Strings.fuzzs[ZombRand(1, #SWWS_Strings.fuzzs + 1)])
+
+		end
+
 		table.insert(result.diagnostics, shutdown)
 	end
 
