@@ -24,4 +24,17 @@ Sandbox_FR = {
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Short",
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Normal (Recommended for Singleplayer)",
 	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Long",
+
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode = "Omit Fault Diagnostic Code?"
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode_tooltip = "Enabling this option will omit Fault Diagnostic Code from the fault diagnostic message. You will need to travel to the affected location first to find the cause of the fault and how to fix it."
+
+	Sandbox_SaveOurStationCore_OmitLocation = "Omit Fault Location?"
+	Sandbox_SaveOurStationCore_OmitLocation_tooltip = "Warning - this setting is not for the faint of heart! | Enabling this option will omit the Fault Location from the fault diagnostic message. In case of a fault, you will need to travel to each station until you find which one is affected."
+
+	Sandbox_SaveOurStationCore_OmitShutdownTime = "Omit Emergency Shutdown Time?"
+	Sandbox_SaveOurStationCore_OmitShutdownTime_tooltip = "Enabling this option will omit the time until emergency shutdown/standby from the fault diagnostic message. You won't know when the system shuts down and enters emergency standby until it is too late."
+
+	Sandbox_SaveOurStationCore_EnableDebugging = "Enable Advanced Debugging Info?",
+	Sandbox_SaveOurStationCore_EnableDebugging_tooltip = "Checking this box will make Save Our Station output additional information to the PZ Game Log. You should keep this turned off unless you either know what you are doing, or you have been asked to turn it on to provide additional information for diagnosing an issue.",
+
 }
