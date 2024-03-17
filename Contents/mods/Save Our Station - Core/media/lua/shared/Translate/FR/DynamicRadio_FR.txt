@@ -9,6 +9,7 @@ DynamicRadio_FR = {
     AEBS_EmergencyShutdownImminent = "WARNING: System fault {fuzz} Shutdown in {fuzz} minutes.",
     AEBS_EmergencyShutdownInHours = "WARNING: System fault {fuzz} Shutdown in {hours} hours.",
     AEBS_EmergencyShutdownInDays = "WARNING: System fault {fuzz} Shutdown in {days} days.",
+    AEBS_EmergencyShutdown_Omitted = "WARNING: System fault {fuzz} Shutdown in {fuzz} ERROR.",
     
     AEBS_ConditionFault = "d�faut",
     AEBS_ConditionAnomaly = "anomalie",
@@ -16,8 +17,10 @@ DynamicRadio_FR = {
     AEBS_ConditionFailure = "d�faillance",
     
     AEBS_LocationRequiresUtilCrewDispatch = "N�cessite l'envoi d'une �quipe de services publics � {location}...",
+    AEBS_LocationRequiresUtilCrewDispatch_Omitted = "ERROR {fuzz} requires util-crew dispatch...",
     AEBS_DiagnosticCode = "Code diagnotique [ {code} ] {system} - {description}",
-    
+    AEBS_DiagnosticCode_Omitted = "Diagnostic Code [ ERROR ] {fuzz} unavailable...",
+
     AEBS_FaultFuelPump = "POMPE A CARBURANT",
     AEBS_FaultTransformer = "TRANSFORMATEUR",
     AEBS_FaultTransmitter = "�METTEUR",

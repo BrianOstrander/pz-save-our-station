@@ -9,6 +9,7 @@ DynamicRadio_EN = {
     AEBS_EmergencyShutdownImminent = "WARNING: System fault {fuzz} Shutdown in {fuzz} minutes.",
     AEBS_EmergencyShutdownInHours = "WARNING: System fault {fuzz} Shutdown in {hours} hours.",
     AEBS_EmergencyShutdownInDays = "WARNING: System fault {fuzz} Shutdown in {days} days.",
+    AEBS_EmergencyShutdown_Omitted = "WARNING: System fault {fuzz} Shutdown in {fuzz} ERROR.",
 
     AEBS_ConditionFault = "fault",
     AEBS_ConditionAnomaly = "anomaly",
@@ -16,7 +17,9 @@ DynamicRadio_EN = {
     AEBS_ConditionFailure = "failure",
 
     AEBS_LocationRequiresUtilCrewDispatch = "{location} requires util-crew dispatch...",
+    AEBS_LocationRequiresUtilCrewDispatch_Omitted = "ERROR {fuzz} requires util-crew dispatch...",
     AEBS_DiagnosticCode = "Diagnostic Code [ {code} ] {system} - {description}",
+    AEBS_DiagnosticCode_Omitted = "Diagnostic Code [ ERROR ] {fuzz} unavailable...",
 
     AEBS_FaultFuelPump = "FUEL-PUMP",
     AEBS_FaultTransformer = "TRANSFORMER",
@@ -26,6 +29,7 @@ DynamicRadio_EN = {
     AEBS_FaultDieselUnit = "DIESEL-UNIT",
     AEBS_FaultCurrentRegulator = "CURRENT-REGULATOR",
     AEBS_FaultCapacitorArray = "CAPACITOR-ARRAY",
+    
     AEBS_FaultRepairReplaceFuelLine = "REPLACE FUEL LINE",
     AEBS_FaultRepairControlBoardReplacement = "REPLACE CONTROL BOARD",
     AEBS_FaultRepairRerouteShort = "REROUTE ELECTRICAL SHORT",

@@ -1,5 +1,5 @@
 IG_UI_ES = {
-    IGUI_VehicleNameSWWS_PickUp = "Weather Service Pickup Truck",
-    IGUI_VehicleNameSWWS_PickUpVan = "Weather Service Pickup Van",
-    IGUI_VehicleNameSWWS_Radio = "Weather Service Mobile Laboratory",
+    IGUI_VehicleNameSWWS_PickUp = "Ranchera del Servicio de Meteorología",
+    IGUI_VehicleNameSWWS_PickUpVan = "Furgoneta del Servicio de Meteorología",
+    IGUI_VehicleNameSWWS_Radio = "Laboratorio Móvil del Servicio Meteorológico",
 }
