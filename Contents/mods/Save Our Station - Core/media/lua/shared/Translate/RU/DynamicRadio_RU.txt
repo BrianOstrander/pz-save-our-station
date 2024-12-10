@@ -1,0 +1,92 @@
+DynamicRadio_RU = {
+    AEBS_Integrity = "Целостность системы вещания...",
+
+    AEBS_ConditionNominal = "Номинальное состояние.",
+    AEBS_KnoxPowerGridStatusUnavailable = "Нокс Электросеть: Статус недоступен...",
+    AEBS_ForcastOffline = "Прогноз погоды: Спутник недоступен...",
+    AEBS_AirTrafficRadarDisabled = "Радар воздушного движения: Cистемная ошибка...",
+
+    AEBS_EmergencyShutdownImminent = "ПРЕДУПРЕЖДЕНИЕ: Системная ошибка {fuzz} Отключение через {fuzz} минут.",
+    AEBS_EmergencyShutdownInHours = "ПРЕДУПРЕЖДЕНИЕ: Системная ошибка {fuzz} Отключение через {hours} часов.",
+    AEBS_EmergencyShutdownInDays = "ПРЕДУПРЕЖДЕНИЕ: Системная ошибка {fuzz} Отключение через {days} дней.",
+    AEBS_EmergencyShutdown_Omitted = "ПРЕДУПРЕЖДЕНИЕ: Системная ошибка {fuzz} Выключение в {fuzz} ОШИБКА.",
+
+    AEBS_ConditionFault = "неисправность",
+    AEBS_ConditionAnomaly = "аномалия",
+    AEBS_ConditionDefect = "дефект",
+    AEBS_ConditionFailure = "отказ",
+
+    AEBS_LocationRequiresUtilCrewDispatch = "{location} требуется отправка утилитарного экипажа...",
+    AEBS_LocationRequiresUtilCrewDispatch_Omitted = "ОШИБКА {fuzz} требуется отправка утилитарного экипажа...",
+    AEBS_DiagnosticCode = "Диагностический код [ {code} ] {system} - {description}",
+    AEBS_DiagnosticCode_Omitted = "Диагностический код [ ОШИБКА ] {fuzz} недоступно...",
+
+    AEBS_FaultFuelPump = "ТОПЛИВНЫЙ НАСОС",
+    AEBS_FaultTransformer = "ТРАНСФОРМАТОР",
+    AEBS_FaultTransmitter = "ПЕРЕДАТЧИК",
+    AEBS_FaultReciever = "ПРИЕМНИК",
+    AEBS_FaultGenerator = "ГЕНЕРАТОР",
+    AEBS_FaultDieselUnit = "ДИЗЕЛЬНАЯ УСТАНОВКА",
+    AEBS_FaultCurrentRegulator = "РЕГУЛЯТОР ТОКА",
+    AEBS_FaultCapacitorArray = "КОНДЕНСАТОРНАЯ РЕШЕТКА",
+    
+    AEBS_FaultRepairReplaceFuelLine = "ЗАМЕНИТЕ ТОПЛИВОПРОВОД",
+    AEBS_FaultRepairControlBoardReplacement = "ЗАМЕНИТЕ ПЛАТУ УПРАВЛЕНИЯ",
+    AEBS_FaultRepairRerouteShort = "ПЕРЕКЛАДКА ЭЛЕКТРИЧЕСКОГО ПУТИ",
+    AEBS_FaultRepairReplaceUnit = "ЗАМЕНИТЬ БЛОК",
+    AEBS_FaultRepairRepairUnit = "ПОЧИНИТЬ БЛОК",
+    AEBS_FaultRepairRefuelGasoline = "ЗАПРАВИТЬ БЕНЗИНОМ",
+    AEBS_FaultRepairClearShort = "УСТРАНЕНИЕ ЭЛЕКТРИЧЕСКОГО ЗАМЫКАНИЯ",
+
+    AEBS_StageStatusNominal_1 = "Номинальное состояние.",
+    AEBS_StageStatusNominal_2 = "Никаких проблем не обнаружено.",
+    AEBS_StageStatusNominal_3 = "Работа в пределах параметров.",
+    AEBS_StageStatusNominal_4 = "Инфраструктура стабильна.",
+
+    AEBS_StageStatusRepaired_1 = "{Condition} {fuzz} восстановленно.",
+    AEBS_StageStatusRepaired_2 = "Функциональность сети восстановлена.",
+    AEBS_StageStatusRepaired_3 = "Все системы восстановлены.",
+
+    AEBS_StageStatusDetected_1 = "{Condition} обнаружено.",
+    AEBS_StageStatusDetected_2 = "{Condition} {fuzz}",
+    AEBS_StageStatusDetected_3 = "{fuzz} обнаружено.",
+    AEBS_StageStatusDetected_4 = "{fuzz}",
+
+    AEBS_StageStatusDiagnosing_1 = "Диагностика {condition}.",
+    AEBS_StageStatusDiagnosing_2 = "Диагностика {fuzz}",
+    AEBS_StageStatusDiagnosing_3 = "{fuzz} {condition}.",
+    AEBS_StageStatusDiagnosing_4 = "Неубедительный результат {fuzz} Перезапуск диагностики.",
+    AEBS_StageStatusDiagnosing_5 = "Результаты искажены {fuzz} Перезапуск диагностики.",
+    AEBS_StageStatusDiagnosing_6 = "Диагностика не завершена {fuzz} Перезапуск диагностики.",
+
+    AEBS_StageStatusRebooting_1 = "{Condition} определена {fuzz} Попытка {system} перезапуска...",
+    AEBS_StageStatusRebooting_2 = "{Condition} определена {fuzz} {system} перезапуск...",
+    AEBS_StageStatusRebooting_3 = "{Condition} определена {fuzz} Перезапуск {system}...",
+    AEBS_StageStatusRebooting_4 = "{Condition} определена в {system} {fuzz} Выполняется перезапуск...",
+
+    AEBS_StageStatusRerouting_1 = "{Condition} определены {fuzz} Перенаправление сети на {fuzz} станцию...",
+    AEBS_StageStatusRerouting_2 = "{Condition} определены в {system} {fuzz} Попытка обхода маршрутизации...",
+
+    AEBS_StageStatusInterruption_1 = "Временное прерывание вещания {fuzz} Системы недоступны...",
+    AEBS_StageStatusInterruption_2 = "Временное отключение вещания {fuzz} Системы недоступны...",
+
+    AEBS_StageStatusInterruptionResolved_1 = "Система {fuzz} восстановлена, инициализация сети...",
+    AEBS_StageStatusInterruptionResolved_2 = "Перебои в сети {fuzz} восстановлены, инициализация систем...",   
+
+    AEBS_StageStatusRebootSuccess_1 = "{system} восстановлены {fuzz} Инициализация вещания продолжается...",
+    AEBS_StageStatusRebootSuccess_2 = "Перезагрузка системы устранила проблему {Condition} {fuzz} Идет обновление сети...",
+
+    AEBS_StageStatusReroutingSuccess_1 = "Успешное перенаправление трафика {fuzz} Инициализация широковещания продолжается...",
+    AEBS_StageStatusReroutingSuccess_2 = "Сетевой трафик перенаправлен {fuzz} Идет обновление сети...",
+
+    AEBS_StageStatusRebootFailure_1 = " {system} перезагрузка не удалась {fuzz} Главное {condition} остается...",
+    AEBS_StageStatusRebootFailure_2 = "{system} {Condition} {fuzz} Не удалось перезапустить {fuzz}",
+
+    AEBS_StageStatusReroutingFailure_1 = "Не удалось перенаправить сетевой трафик {fuzz} {system} {condition} сохраняется...",
+    AEBS_StageStatusReroutingFailure_2 = "Невозможно перенаправить трафик {fuzz} Не удалось решить {condition} в {system}...",
+
+    AEBS_StageStatusFatal_1 = "{fuzz} критический {condition}... {fuzz}",
+    AEBS_StageStatusFatal_2 = "{fuzz} критический {fuzz}",
+    AEBS_StageStatusFatal_3 = "Критический {condition}...",
+    AEBS_StageStatusFatal_4 = "Критический {condition} {fuzz} Сеть в аварийном режиме...",
+}

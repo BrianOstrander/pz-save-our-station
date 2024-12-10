@@ -1,0 +1,3 @@
+IGUI_RU = {
+    IGUI_Sandbox_SaveOurStationCore = "Спасите нашу станцию!",
+}

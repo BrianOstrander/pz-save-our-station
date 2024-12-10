@@ -1,0 +1,4 @@
+ItemName_RU = {
+    ItemName_Base.SWWS_KnoxCountry_Register = "Регистр НМС",
+    ItemName_Base.SWWS_KnoxCountry_RegisterAnnotated = "Регистр НМС - аннотация",
+}

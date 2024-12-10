@@ -1,0 +1,40 @@
+Sandbox_RU = {
+	Sandbox_SaveOurStationCore = "Спасите нашу станцию!",
+
+	Sandbox_SaveOurStationCore_RequirePowerShutoff = "Требуется отключение электросети Нокс",
+	Sandbox_SaveOurStationCore_RequirePowerShutoff_tooltip = "Будет ли электросеть Нокс разрушена до того, как начнут происходить широковещательные сбои/перебои?",
+
+	Sandbox_SaveOurStationCore_EnableInterruptions = "Включить прерывание вещания",
+	Sandbox_SaveOurStationCore_EnableInterruptions_tooltip = "Прерывание вещания может происходить в произвольном порядке и привести к временному прекращению работы таких систем, как прогноз погоды и радар воздушного движения. Через некоторое время перебои устранятся сами собой.",
+
+	Sandbox_SaveOurStationCore_EnableFaults = "Включить широковещательные сбои",
+	Sandbox_SaveOurStationCore_EnableFaults_tooltip = "Неисправности в системе вещания могут возникать случайным образом и, если их не устранить с помощью игрока, в конечном итоге приведут к необратимому отказу системы вещания. После обнаружения неисправности система вещания сообщит диагностический код и местоположение поврежденной системы. Дополнительную информацию можно получить в руководствах и реестрах по диагностике НМС.",
+
+	Sandbox_SaveOurStationCore_ReliabilityProfile = "Профиль надежности вещания",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_tooltip = "Профиль надежности определяет вероятность возникновения неисправности или прерывания.",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option1 = "Поддерживается в хорошем состоянии | Редкие неисправности, редкие перебои в работе",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option2 = "Надежность | Редкие неисправности, случайные перебои",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option3 = "Нормальный | Редкие неисправности, частые перебои",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option4 = "Ненадежный | Периодические неисправности, частые перебои в работе",
+	Sandbox_SaveOurStationCore_ReliabilityProfile_option5 = "Утрата времени | Частые неисправности, частые прерывания",
+
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier = "Множитель продолжительности времени",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_tooltip = "Этот множитель влияет на продолжительность циклов сбоя/прерывания, время устранения сбоя и длительность "льготного периода" между циклами.",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option1 = "12x  |  Очень короткий (рекомендуется для больших серверов)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option2 = "18x  |  Короткий",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option3 = "24x  |  Нормальный (рекомендуется для одиночной игры)",
+	Sandbox_SaveOurStationCore_TimeDurationMultiplier_option4 = "32x  |  Длинный",
+
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode = "Не сообщать диагностический код неисправности?"
+	Sandbox_SaveOurStationCore_OmitDiagnosticCode_tooltip = "При включении этой опции диагностический код неисправности будет отсутствовать в сообщении о диагностике неисправности. Вам придется сначала отправиться на место неисправности, чтобы выяснить ее причину и способы устранения."
+
+	Sandbox_SaveOurStationCore_OmitLocation = "Не сообщать место повреждения?"
+	Sandbox_SaveOurStationCore_OmitLocation_tooltip = "Внимание - эта настройка не для слабонервных! | При включении этой опции местоположение неисправности не будет указываться в диагностическом сообщении о неисправности. В случае неисправности вам придется проехать к каждой станции, пока вы не обнаружите, какая из них повреждена."
+
+	Sandbox_SaveOurStationCore_OmitShutdownTime = "Не сообщать время аварийного отключения?"
+	Sandbox_SaveOurStationCore_OmitShutdownTime_tooltip = "При включении этой опции в диагностическом сообщении о неисправности не будет указано время до аварийного отключения/резервного режима. Вы не узнаете, когда система отключится и перейдет в аварийный режим ожидания, пока не станет слишком поздно."
+
+	Sandbox_SaveOurStationCore_EnableDebugging = "Включить расширенную информацию об отладке?",
+	Sandbox_SaveOurStationCore_EnableDebugging_tooltip = "Установка этого флажка заставит Save Our Station выводить дополнительную информацию в игровой журнал PZ. Эту опцию следует держать выключенной, если только вы не знаете, что делаете, или если вас не попросили включить ее, чтобы предоставить дополнительную информацию для диагностики проблемы.",
+
+}

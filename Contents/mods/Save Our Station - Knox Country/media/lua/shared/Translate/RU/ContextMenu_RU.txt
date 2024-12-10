@@ -1,0 +1,6 @@
+ContextMenu_RU = {
+    Texture_Register_KnoxCountry = "ОКРУГ НОКС",
+    Texture_Register_Title = "РЕЕСТР НАЦИОНАЛЬНЫХ МЕТЕОРОЛОГИЧЕСКИХ СЛУЖБ",
+    Texture_Register_Footer_Seal = "НАЦИОНАЛЬНАЯ МЕТЕОРОЛОГИЧЕСКАЯ СЛУЖБА",
+    Texture_Register_Footer_Unauthorized = "Несанкционированное распространение является федеральным преступлением",
+}

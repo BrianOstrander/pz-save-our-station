@@ -1,0 +1,5 @@
+IG_UI_RU = {
+    IGUI_VehicleNameSWWS_PickUp = "Пикап метеорологической службы",
+    IGUI_VehicleNameSWWS_PickUpVan = "Фургон метеорологической службы",
+    IGUI_VehicleNameSWWS_Radio = "Передвижная лаборатория метеорологической службы",
+}
